@@ -2352,6 +2352,12 @@
     <bcf:citekey order="5">Anleitung</bcf:citekey>
     <bcf:citekey order="6">Anleitung</bcf:citekey>
     <bcf:citekey order="7">Anleitung</bcf:citekey>
+    <bcf:citekey order="8">Anleitung2</bcf:citekey>
+    <bcf:citekey order="9">Anleitung2</bcf:citekey>
+    <bcf:citekey order="10">Anleitung3</bcf:citekey>
+    <bcf:citekey order="11">Anleitung3</bcf:citekey>
+    <bcf:citekey order="12">Anleitung4</bcf:citekey>
+    <bcf:citekey order="13">Anleitung4</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
