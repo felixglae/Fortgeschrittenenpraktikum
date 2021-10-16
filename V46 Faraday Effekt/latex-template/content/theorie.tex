@@ -42,16 +42,41 @@ wird mit Gleichung (\ref{eqn:effmass})
 \subsection{Zirkulare Doppelbrechung}
 \label{sec:zirkulare_doppelbrechung}
 In diesem Abschnitt der Theorie geht es um zirkulare Doppelbrechung. Darunter versteht man die Drehung der Polarisationsebene von linear polarisiertem Licht $E(z)$ bei Transmission durch einen Kristall.
-Dies ist schematisch in Abbildung (\ref{fig:brechung}) dargestellt.
-\begin{figure}
+Dies lässt sich durch die unterschiedlichen Phasengeschwindigkeiten der Phasengeschwindigkeiten im Kristall für rechts- bzw. linkszirkulares polarisiertes Licht $E_\mathrm{R}$, $E_\mathrm{L}$ erklärn. Mathematisch bedeutet das für
+die Zusammensetzung des Lichtstrahls als Linearkombination:
+\begin{equation}
+  \label{eqn:zusammen}
+  \vec{E}(z)=\dfrac{1}{2}(\vec{E}_\mathrm{R}(z)+\vec{E}_\mathrm{L}(z)) \, \mathrm{mit} \, k_\mathrm{L}\neq k_\mathrm{R}
+\end{equation}
+Die rechts- bzw. linkszirkularen Anteile sind wie folgt definiert:
+\begin{align}
+  \label{eqn:rechtslinks}
+  \begin{aligned}
+  \vec{E}_\text{R}(z) &= \left(E_0 \vec{x}_0 - \text{i}E_0\vec{y}_0\right)\exp\left(\text{i}{k}_\text{R}z\right)\\
+  \vec{E}_\text{L}(z) &= \left(E_0 \vec{x}_0 + \text{i}E_0\vec{y}_0\right)\exp\left(\text{i}{k}_\text{L}z\right).
+\end{aligned}
+\end{align}
+Um nun das austretende Licht zu beschreiben werden zunächst zwei Winkel $\Psi$ und $\vartheta$ eingeführt:
+\begin{align}
+  \label{eqn:winkel}
+  \begin{aligned}
+    \Psi&:=\frac{L}{2}(k_\text{R}+k_\text{L}) \\
+    \vartheta &:= \frac{L}{2}(k_\text{R}-k_\text{L}) \overset{k_i=\frac{n_i\omega}{\text{c}_0}}{=} \frac{L\omega}{2\text{c}_0}\left(n_\text{R}-n_\text{L}\right)
+\end{aligned}
+\end{align}
+Setzt man nun Gleichung (\ref{eqn:rechtslinks}) in Gleichung (\ref{eqn:zusammen}) ein ergibt sich für das austretende Licht der folgende Ausdruck:
+\begin{equation*}
+  \vec{E}(L)=E_0 \exp(\text{i}\Psi)\left(\cos(\vartheta) \vec{x}_0 + \sin(\vartheta)\vec{y}_0\right)
+\end{equation*}
+Der Effekt ist schematisch in Abbildung (\ref{fig:brechung}) dargestellt.
+\begin{figure}[h]
   \centering
   \includegraphics[scale=0.7]{fig/brechung.png}
   \caption{Darstellung von zirkularer Doppelbrechung bei Transmission eines Kristalls. \cite[1]{Anleitung}}
   \label{fig:brechung}
-\end{figure}
-Dies lässt sich durch die unterschiedlichen Phasengeschwindigkeiten der Phasengeschwindigkeiten im Kristall für rechts- bzw. linkszirkulares polarisiertes Licht $E_\mathrm{R}$, $E_\mathrm{L}$ erklärn. Mathematisch bedeutet das für
-die Zusammensetzung des Lichtstrahls:
-\begin{equation*}
-  \label{eqn:zusammen}
-  \vec{E}(z)=\dfrac{1}{2}(\vec{E}_\mathrm{R}(z)+\vec{E}_\mathrm{L}(z)) \, \mathrm{mit} \, k_\mathrm{L}\neq k_\mathrm{R}
-\end{equation*}
+\end{figure}\\
+\\
+Die Entstehung dieses Effektes beruht auf den elektrischen Dipolmomenten die im Kristall erzeugt werden können. Diese induzierten Dipole erzeugen die Polarisation $\vec{P}$ des Kristalles. Diese ist unter der Vorraussetzung eines kleinen elektrischen Feldes $\vec{E}$ proportional zu diesem. Es gilt die Beziehung:
+\begin{equation}
+  \vec{P}=\varepsilon_\mathrm{0} \chi \vec{E}
+\end{equation}

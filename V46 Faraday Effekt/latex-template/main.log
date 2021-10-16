@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.18)  16 OCT 2021 11:15
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.18)  16 OCT 2021 11:39
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -469,12 +469,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            synonyms	
 (polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            synonyms	
 (polyglossia)            righthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            loader	loadhyph-de-1901.tex on input line 10
+(polyglossia)            hyphenation	 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -1399,12 +1399,12 @@ LaTeX Info: Redefining \rmfamily on input line 26.
 LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            synonyms	
 (polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            synonyms	
 (polyglossia)            righthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            loader	loadhyph-de-1996.tex on input line 26
+(polyglossia)            hyphenation	 on input line 26
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 26
 )
@@ -1638,14 +1638,18 @@ File: fig/band.png Graphic file (type png)
 <use fig/band.png>
 Package luatex.def Info: fig/band.png  used on input line 10.
 (luatex.def)             Requested size: 368.8756pt x 225.54108pt.
- [3<./fig/band.png>]
-<fig/brechung.png, id=60, 492.84125pt x 244.915pt>
+ [3<./fig/band.png>] [4]
+<fig/brechung.png, id=76, 492.84125pt x 244.915pt>
 File: fig/brechung.png Graphic file (type png)
 <use fig/brechung.png>
-Package luatex.def Info: fig/brechung.png  used on input line 48.
+Package luatex.def Info: fig/brechung.png  used on input line 74.
 (luatex.def)             Requested size: 344.98651pt x 171.43932pt.
-)
-(./content/durchfuehrung.tex [4]) (./content/auswertung.tex)
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--80
+
+ []
+
+) (./content/durchfuehrung.tex) (./content/auswertung.tex)
 (./content/diskussion.tex)
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
@@ -1691,7 +1695,7 @@ LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 )
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 90C5D06380442E7F5458473E4F56B518;7229.
+(rerunfilecheck)             Checksum: 08586E285E4C6F7E73C5E4A69DC539A3;7372.
 Package rerunfilecheck Info: File `main.toc' has not changed.
 (rerunfilecheck)             Checksum: 920E92C531314F184A55235DD5277F2E;1112.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1700,32 +1704,33 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37354 strings out of 478112
+ 37360 strings out of 478112
  100000,1977958 words of node,token memory allocated
- 670 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 16 attribute, 77 glue_spec
-, 16 attribute_list, 1 write, 2 pdf_action nodes
-   avail lists: 1:1,2:362,3:184,4:72,5:319,6:24,7:3509,8:97,9:445,10:10,11:339
- 56539 multiletter control sequences out of 65536+600000
+ 686 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 20 attribute, 77 glue_spec
+, 20 attribute_list, 1 write, 2 pdf_action nodes
+   avail lists: 1:1,2:615,3:234,4:72,5:436,6:26,7:4328,8:101,9:864,10:12,11:371
+ 56541 multiletter control sequences out of 65536+600000
  96 fonts using 25119647 bytes
- 113i,12n,118p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 113i,20n,118p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/te
 xlive/2021/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf><c:/tex
 live/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2
-021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/20
-21/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2021/tex
-mf-dist/fonts/opentype/public/xits/XITSMath-Regular.otf><c:/texlive/2021/texmf-d
-ist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2021/texmf-di
-st/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2021/texmf-dis
-t/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2021/texmf-dist/fonts/
-opentype/public/lm/lmroman10-regular.otf><c:/texlive/2021/texmf-dist/fonts/opent
-ype/public/lm/lmroman12-regular.otf><c:/texlive/2021/texmf-dist/fonts/opentype/p
-ublic/lm/lmsans10-bold.otf><c:/texlive/2021/texmf-dist/fonts/opentype/public/lm/
-lmroman12-bold.otf>
-Output written on main.pdf (5 pages, 94444 bytes).
+021/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf><c:/texlive/2021/te
+xmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2021/tex
+mf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2021/texmf-dis
+t/fonts/opentype/public/xits/XITSMath-Regular.otf><c:/texlive/2021/texmf-dist/fo
+nts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2021/texmf-dist/fon
+ts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2021/texmf-dist/font
+s/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2021/texmf-dist/fonts/openty
+pe/public/lm/lmroman10-regular.otf><c:/texlive/2021/texmf-dist/fonts/opentype/pu
+blic/lm/lmroman12-regular.otf><c:/texlive/2021/texmf-dist/fonts/opentype/public/
+lm/lmsans10-bold.otf><c:/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroma
+n12-bold.otf>
+Output written on main.pdf (5 pages, 100146 bytes).
 
-PDF statistics: 198 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 131072)
+PDF statistics: 211 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 131072)
  65 words of extra memory for PDF output out of 10000 (max. 100000000)
 
