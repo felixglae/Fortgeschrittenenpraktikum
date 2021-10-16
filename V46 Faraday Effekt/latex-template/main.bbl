@@ -39,12 +39,39 @@
       \field{labeltitlesource}{title}
       \field{title}{Versuchanleitung V46 Faraday-Effekt}
       \verb{urlraw}
-      \verb https://moodle.tu-dortmund.de/pluginfile.php/1822404/mod_resource/content/1/V51.pdf
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732527/mod_folder/content/0/V46_Anhang.pdf
       \endverb
       \verb{url}
-      \verb https://moodle.tu-dortmund.de/pluginfile.php/1822404/mod_resource/content/1/V51.pdf
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732527/mod_folder/content/0/V46_Anhang.pdf
       \endverb
       \warn{\item Entry 'Anleitung' (lit.bib): Invalid format '2021-27-10' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Bild2}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=e87e3a848e98d756d445e3ab670abb52}{%
+           family={Rollke},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e87e3a848e98d756d445e3ab670abb52}
+      \strng{fullhash}{e87e3a848e98d756d445e3ab670abb52}
+      \strng{bibnamehash}{e87e3a848e98d756d445e3ab670abb52}
+      \strng{authorbibnamehash}{e87e3a848e98d756d445e3ab670abb52}
+      \strng{authornamehash}{e87e3a848e98d756d445e3ab670abb52}
+      \strng{authorfullhash}{e87e3a848e98d756d445e3ab670abb52}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Versuch 46: Faraday-Effekt an Halbleitern}
+      \verb{urlraw}
+      \verb http://www.rollke.com/physik/46.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.rollke.com/physik/46.pdf
+      \endverb
+      \warn{\item Entry 'Bild2' (lit.bib): Invalid format '2021-27-10' of date field 'urldate' - ignoring}
     \endentry
   \enddatalist
 \endrefsection

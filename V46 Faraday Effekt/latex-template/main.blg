@@ -1,17 +1,18 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [1] Config.pm:314> INFO - Logfile is 'main.blg'
-[124] biber-MSWIN32:340> INFO - === 
-[170] Biber.pm:415> INFO - Reading 'main.bcf'
-[311] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
-[328] Biber.pm:4340> INFO - Processing section 0
-[342] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[411] bibtex.pm:1689> INFO - LaTeX decoding ...
-[447] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
-[477] Utils.pm:395> WARN - Entry 'Anleitung' (lit.bib): Invalid format '2021-27-10' of date field 'urldate' - ignoring
-[491] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[492] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[132] biber-MSWIN32:340> INFO - === 
+[181] Biber.pm:415> INFO - Reading 'main.bcf'
+[327] Biber.pm:952> INFO - Found 2 citekeys in bib section 0
+[344] Biber.pm:4340> INFO - Processing section 0
+[358] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[438] bibtex.pm:1689> INFO - LaTeX decoding ...
+[445] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
+[474] Utils.pm:395> WARN - Entry 'Bild2' (lit.bib): Invalid format '2021-27-10' of date field 'urldate' - ignoring
+[478] Utils.pm:395> WARN - Entry 'Anleitung' (lit.bib): Invalid format '2021-27-10' of date field 'urldate' - ignoring
+[492] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[493] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
 [493] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[493] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
-[501] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[502] bbl.pm:757> INFO - Output to main.bbl
-[503] Biber.pm:128> INFO - WARNINGS: 1
+[494] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[502] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[503] bbl.pm:757> INFO - Output to main.bbl
+[504] Biber.pm:128> INFO - WARNINGS: 2

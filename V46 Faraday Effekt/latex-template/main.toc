@@ -2,14 +2,20 @@
 \defcounter {refsection}{0}\relax 
 \selectlanguage *{german}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Theorie}{3}{section.1}%
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Durchführung}{3}{section.2}%
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Auswertung}{3}{section.3}%
+\contentsline {subsection}{\numberline {2.1}Effektive Masse}{3}{subsection.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Diskussion}{4}{section.4}%
+\contentsline {subsection}{\numberline {2.2}Zirkulare Doppelbrechung}{4}{subsection.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\nonumberline Literatur}{4}{section*.4}%
+\contentsline {section}{\numberline {3}Durchführung}{5}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Auswertung}{5}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Diskussion}{5}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Literatur}{5}{section*.5}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
