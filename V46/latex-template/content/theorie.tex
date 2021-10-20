@@ -2,6 +2,22 @@
 \label{sec:Theorie}
 Unter dem Faraday-Effekt versteht man die Drehung der Polarisationsebene einer elektromagnetischen Welle in einem Medium durch den Einfluss eines Magnetfeldes, welches parallel zur Ausbreitungsrichtung dieser ist. \\
 Außerdem ist es möglich Rückschlüsse auf die Bandstruktur des Testmediums zu ziehen.
+\subsection{Elektronische Struktur von Isolatoren, Halbleitern und Metallen}
+\label{sec:Isolatoren}
+In Abbildung \ref{fig:leiter} sind die jeweiligen Bandstrukturen von Isolatoren (Nichtleitern), Halbleitern und Metallen (Leitern) dargestellt:
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.45]{fig/leiter.png}
+  \caption{Bandstruktur von Isolator, Halbleiter und Metall. \cite{Bild5}}
+  \label{fig:leiter}
+\end{figure}
+\subsubsection{Isolator}
+Wie in Abbildung \ref{fig:leiter} zu sehen ist, ist das Leitungsband eines Isolators unbesetzt und die Bandlücke ist sehr groß. Dennoch kann durch Zufuhr von großer Energie es möglich sein, dass Elektronen die Bandlücke überwinden können und vom Valenzband ins Leitungsband gelangen können. Isolatoren zeichen sich also über einen sehr hohen spezifischen Widerstand aus, der jedoch nicht unendlich ist, das heißt sie können auch leitend werden.
+\subsubsection{Halbleiter}
+Ähnlich wie bei den Isolatoren besitzen Halbleiter ein unbesetztes Leitungsband (siehe Abbildung \ref{fig:leiter}), allerdings ist die Bandlücke deutlich kleiner als bei Isolatoren und Elektronen können diese leicht überwinden. Mit Hilfe von Dotierung, das bedeutet das Entfernen oder Hinzufügen eines Fremdatoms, kann der Halbleiter gezielt manipuliert werden. Unter n-Dotierung versteht man hierbei wenn ein sogenannter Elektronen-Donator, das heißt ein Atom mit zusätzlichem Elektron, in den Halbleiter eingebunden wird. Unter p-Dotierung das Gegenteil, das heißt ein Elektronen-Akzeptor, ein Atom mit mit einem Elektron weniger, wird in den Halbleiter eingebunden.
+\subsubsection{Metall}
+In Abbildung \ref{fig:leiter} erkennt man, dass es bei Metallen keine Bandlücke gibt. Daraus folgt, dass in Metallen Elektronen sich schon bei sehr geringen elektrischen Feldstärken nahezu frei bewegen können. Dies bedeutet, dass ein Metall ein sehr guter
+elektrischer Leiter ist. Zu beachten ist, dass die durch den Stromfluss induzierte Temperaturerhöhung im Metall den Widerstand erhöht und somit das Metall einen temperaturabhängigen Widerstand besitzt.
 \subsection{Definition der effektiven Masse}
 \label{sec:effektive_masse}
 Mit Hilfe der effektiven Masse ist es möglich die physikalischen Effekte der Bandstruktur eines Halbleiters approximiert zu beschreiben. In Abbildung \ref{fig:band} ist die Bandstruktur von Leitungs- bzw. Valenzband dargestellt.
@@ -30,7 +46,7 @@ Damit wird die effektive Masse wie folgt definiert:
   \label{eqn:effmass}
   m^{*}_i := \frac{\hbar^2}{\left.\frac{\partial^2 \varepsilon}{\partial k_\mathrm{i^2}}\right|_\mathrm{k=0}}
 \end{equation}
-Dank der Berücksichtigung der Periodizität des Kristallpotentials $V(\vec{r})$ in dem Ausdruck für die effektive Masse siehe Gleichung \ref{eqn:effmass} ist es möglich den Hamilton-Operator $\hat{H}$ der Kristallelektronen in den
+Dank der Berücksichtigung der Periodizität des Kristallpotentials $V(\vec{r})$ in dem Ausdruck für die effektive Masse siehe Gleichung (\ref{eqn:effmass}) ist es unter Anderem möglich den Hamilton-Operator $\hat{H}$ der Kristallelektronen in den
 eines freien Teilchens umzuschreiben. Aus
 \begin{equation*}
   \hat{H}=\dfrac{\hbar^2}{2m_\mathrm{e}}\nabla^2+V(\vec{r})
@@ -98,7 +114,7 @@ Setzt man die beiden Audrücke in (\ref{eqn:chitensor}) und (\ref{eqn:efeldinmat
 \begin{equation*}
   \Box \vec{D} = 0
 \end{equation*}
-errechnet sich die Drehung $\vartheta$ \cite[3-5]{Anleitung} zu:
+ein errechnet sich die Drehung $\vartheta$ \cite[3-5]{Anleitung} zu:
 \begin{equation}
   \label{eqn:drehungmitchi}
   \vartheta \approx \frac{L\omega}{2c} \frac{1}{\sqrt{1+\chi_\mathrm{xx}}} \chi_\mathrm{xy}\approx \frac{L\omega}{2cn} \chi_\mathrm{xy}.
