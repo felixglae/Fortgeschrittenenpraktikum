@@ -18,10 +18,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Durchführung}{8}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Auswertung}{9}{section.4}%
+\contentsline {section}{\numberline {4}Auswertung}{10}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Diskussion}{9}{section.5}%
+\contentsline {subsection}{\numberline {4.1}Messung des Magnetfeldes}{10}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\nonumberline Literatur}{9}{section*.8}%
+\contentsline {subsection}{\numberline {4.2}Messung mit undotiertem Galliumarsenid}{11}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Messung mit dotierten Galliumarsenid-Proben}{13}{subsection.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Diskussion}{16}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Literatur}{16}{section*.15}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
