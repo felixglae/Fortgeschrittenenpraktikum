@@ -28,9 +28,9 @@ n_hochdot = 2.8e18
 B = max(bfeld)*10e-3
 m_e = 9.10938356e-31
 
-theta_dif_undot = (undotiert_1-undotiert_2)
-theta_dif_leichtdot = (leichtdotiert_1 -leichtdotiert_2)
-theta_dif_hochdot = (hochdotiert_1 - hochdotiert_2)
+theta_dif_undot = (undotiert_1-undotiert_2) / 2
+theta_dif_leichtdot = (leichtdotiert_1 -leichtdotiert_2) / 2
+theta_dif_hochdot = (hochdotiert_1 - hochdotiert_2) / 2
 
 theta_norm_undot = ToBogen(theta_dif_undot)/l_undot
 theta_norm_leichtdot = ToBogen(theta_dif_leichtdot)/l_leichtdot-theta_norm_undot
@@ -73,7 +73,7 @@ plt.clf()
 
 plt.plot(lam**2,theta_norm_leichtdot,'bo',label="leicht dotiert")
 plt.plot(lam**2,theta_norm_hochdot,'yo',label='hoch dotiert')
-plt.plot(lam[7]**2,theta_norm_leichtdot[7],'ko',label='vernachlässigter Datenpunkt')
+#plt.plot(lam[7]**2,theta_norm_leichtdot[7],'ko',label='vernachlässigter Datenpunkt')
 plt.plot(lam_fit,Gerade(lam_fit,*params_leicht),'b--')
 plt.plot(lam_fit,Gerade(lam_fit,*params_hoch),'y--')
 plt.grid()

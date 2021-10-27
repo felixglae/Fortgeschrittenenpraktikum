@@ -2362,6 +2362,7 @@
     <bcf:citekey order="15">Anleitung4</bcf:citekey>
     <bcf:citekey order="16">python</bcf:citekey>
     <bcf:citekey order="17">nGaAs</bcf:citekey>
+    <bcf:citekey order="18">Bild6</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
