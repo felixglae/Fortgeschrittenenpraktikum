@@ -19,7 +19,7 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{Anleitung}{manual}{}
+    \entry{Anleitung1}{manual}{}
       \name{author}{1}{}{%
         {{hash=2821a70f99517ac7757c95300d43e95c}{%
            family={Dortmund},
@@ -33,96 +33,76 @@
       \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
       \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
       \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
-      \field{extraname}{1}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Anhang 1, V46 - Faraday-Effekt an Halbleitern}
-      \field{urlday}{27}
-      \field{urlmonth}{10}
+      \field{title}{Anleitung zu V21 - Optisches Pumpen}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
       \field{urlyear}{2021}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732527/mod_folder/content/0/V46_Anhang.pdf
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732524/mod_resource/content/2/V21.pdf
       \endverb
       \verb{url}
-      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732527/mod_folder/content/0/V46_Anhang.pdf
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732524/mod_resource/content/2/V21.pdf
       \endverb
     \endentry
-    \entry{Anleitung2}{manual}{}
+    \entry{Anleitung3}{manual}{}
       \name{author}{1}{}{%
-        {{hash=2821a70f99517ac7757c95300d43e95c}{%
-           family={Dortmund},
-           familyi={D\bibinitperiod},
-           given={TU},
-           giveni={T\bibinitperiod}}}%
+        {{hash=edaa3cadbcd7d0075fb44e4d408a8101}{%
+           family={Internetchemie.Info},
+           familyi={I\bibinitperiod}}}%
       }
-      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
-      \field{extraname}{2}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \strng{namehash}{edaa3cadbcd7d0075fb44e4d408a8101}
+      \strng{fullhash}{edaa3cadbcd7d0075fb44e4d408a8101}
+      \strng{bibnamehash}{edaa3cadbcd7d0075fb44e4d408a8101}
+      \strng{authorbibnamehash}{edaa3cadbcd7d0075fb44e4d408a8101}
+      \strng{authornamehash}{edaa3cadbcd7d0075fb44e4d408a8101}
+      \strng{authorfullhash}{edaa3cadbcd7d0075fb44e4d408a8101}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{V46 - Faraday-Effekt an Halbleitern}
-      \field{urlday}{27}
-      \field{urlmonth}{10}
+      \field{title}{Rubidium-Isotope}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
       \field{urlyear}{2021}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732527/mod_folder/content/0/V46.pdf
+      \verb https://www.internetchemie.info/chemische-elemente/rubidium-isotope.php
       \endverb
       \verb{url}
-      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732527/mod_folder/content/0/V46.pdf
+      \verb https://www.internetchemie.info/chemische-elemente/rubidium-isotope.php
       \endverb
     \endentry
-    \entry{Bild6}{manual}{}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{labeltitlesource}{title}
-      \field{title}{Effektive Masse}
-      \field{urlday}{27}
-      \field{urlmonth}{10}
-      \field{urlyear}{2021}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://link.springer.com/content/pdf/bbm%3A978-3-662-07579-1%2F1.pdf
-      \endverb
-      \verb{url}
-      \verb https://link.springer.com/content/pdf/bbm%3A978-3-662-07579-1%2F1.pdf
-      \endverb
-    \endentry
-    \entry{nGaAs}{manual}{}
+    \entry{paint}{manual}{}
       \name{author}{1}{}{%
-        {{hash=163af0979c457f542ece576cab65b399}{%
-           family={filmetrics},
-           familyi={f\bibinitperiod}}}%
+        {{hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={Microsoft},
+           familyi={M\bibinitperiod}}}%
       }
-      \strng{namehash}{163af0979c457f542ece576cab65b399}
-      \strng{fullhash}{163af0979c457f542ece576cab65b399}
-      \strng{bibnamehash}{163af0979c457f542ece576cab65b399}
-      \strng{authorbibnamehash}{163af0979c457f542ece576cab65b399}
-      \strng{authornamehash}{163af0979c457f542ece576cab65b399}
-      \strng{authorfullhash}{163af0979c457f542ece576cab65b399}
-      \field{sortinit}{f}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Brechungsindex GaAs}
-      \field{urlday}{27}
-      \field{urlmonth}{10}
+      \field{title}{Paint}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
       \field{urlyear}{2021}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://www.filmetrics.de/refractive-index-database/GaAs/Gallium-Arsenide
+      \verb https://www.microsoft.com/de-de/p/paint/9pcfs5b6t72h#activetab=pivot:overviewtab
       \endverb
       \verb{url}
-      \verb https://www.filmetrics.de/refractive-index-database/GaAs/Gallium-Arsenide
+      \verb https://www.microsoft.com/de-de/p/paint/9pcfs5b6t72h#activetab=pivot:overviewtab
       \endverb
     \endentry
     \entry{python}{manual}{}
@@ -140,8 +120,8 @@
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
-      \field{urlday}{27}
-      \field{urlmonth}{10}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
       \field{urlyear}{2021}
       \field{urldateera}{ce}
       \verb{urlraw}
@@ -149,123 +129,6 @@
       \endverb
       \verb{url}
       \verb https://www.python.org
-      \endverb
-    \endentry
-    \entry{Bild2}{manual}{}
-      \name{author}{1}{}{%
-        {{hash=e87e3a848e98d756d445e3ab670abb52}{%
-           family={Rollke},
-           familyi={R\bibinitperiod},
-           given={Sebastian},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{e87e3a848e98d756d445e3ab670abb52}
-      \strng{fullhash}{e87e3a848e98d756d445e3ab670abb52}
-      \strng{bibnamehash}{e87e3a848e98d756d445e3ab670abb52}
-      \strng{authorbibnamehash}{e87e3a848e98d756d445e3ab670abb52}
-      \strng{authornamehash}{e87e3a848e98d756d445e3ab670abb52}
-      \strng{authorfullhash}{e87e3a848e98d756d445e3ab670abb52}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Versuch 46: Faraday-Effekt an Halbleitern}
-      \field{urlday}{27}
-      \field{urlmonth}{10}
-      \field{urlyear}{2021}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb http://www.rollke.com/physik/46.pdf
-      \endverb
-      \verb{url}
-      \verb http://www.rollke.com/physik/46.pdf
-      \endverb
-    \endentry
-    \entry{Bild5}{manual}{}
-      \name{author}{1}{}{%
-        {{hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{1}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Bändermodell}
-      \field{urlday}{27}
-      \field{urlmonth}{10}
-      \field{urlyear}{2021}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://de.wikipedia.org/wiki/Bändermodell
-      \endverb
-      \verb{url}
-      \verb https://de.wikipedia.org/wiki/B%C3%A4ndermodell
-      \endverb
-    \endentry
-    \entry{Anleitung3}{manual}{}
-      \name{author}{1}{}{%
-        {{hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{2}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Glan-Thompson-Prisma}
-      \field{urlday}{27}
-      \field{urlmonth}{10}
-      \field{urlyear}{2021}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://upload.wikimedia.org/wikipedia/commons/6/6b/Glan-Thompson_prism_DE.svg
-      \endverb
-      \verb{url}
-      \verb https://upload.wikimedia.org/wikipedia/commons/6/6b/Glan-Thompson_prism_DE.svg
-      \endverb
-    \endentry
-    \entry{Anleitung4}{manual}{}
-      \name{author}{1}{}{%
-        {{hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{3}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Interferenzfilter}
-      \field{urlday}{27}
-      \field{urlmonth}{10}
-      \field{urlyear}{2021}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://upload.wikimedia.org/wikipedia/commons/d/db/Etalon-1.svg
-      \endverb
-      \verb{url}
-      \verb https://upload.wikimedia.org/wikipedia/commons/d/db/Etalon-1.svg
       \endverb
     \endentry
   \enddatalist

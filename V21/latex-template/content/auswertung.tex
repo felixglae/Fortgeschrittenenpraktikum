@@ -2,180 +2,97 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 In diesem Abschnitt werden die aufgenommenen Messdaten in Grafiken sowie Tabellen dargestellt und ausgewertet. Grafiken sowie dazugehörige Rechnungen sind mit Python \cite{python} erstellt bzw. berechnet worden.
-
-\subsection{Messung des Magnetfeldes}
-\label{sec:magFeld}
-Als erstes wird das Magnetfeld am Ort der Probe bestimmt, dazu werden die Messdaten aus Tabelle \ref{tab:magFeld} in Abbildung \ref{abb:magFeld} visualisiert. Dafür wird die Magnetfeldstärke gegen den Ort aufgetragen.
-Der maximale Wert $B_\mathrm{max}$ mit dem die weiteren Rechnungen durchgeführt werden ist gegeben durch:
-\begin{equation}
-  B_\mathrm{max}=\SI{433}{\milli\tesla}
-\end{equation}
-Dieser legt damit das Magnetfeld am Ort $Z$ der Probe fest.
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.7]{fig/bfeld.png}
-  \caption{Zusammenhang zwischen Magnetfeldstärke und Ort im Magnetfeld.}
-  \label{abb:magFeld}
-\end{figure}
-\FloatBarrier
-
-\begin{table}[h!]
-  \centering
-  \caption{Messdaten der Messung mit der Hallsonde.}
-  \label{tab:magFeld}
-  \begin{tabular}{c | c}
-    \toprule
-    Position in $\SI{}{\milli\meter}$ & Magnetfeldstärke in $\SI{}{\milli\tesla}$ \\
-    \midrule
-    0.0 & 236.0 \\
-    1.0 & 288.0 \\
-    2.0 & 330.0 \\
-    3.0 & 358.0 \\
-    4.0 & 382.0 \\
-    5.0 & 397.0 \\
-    6.0 & 409.0 \\
-    7.0 & 421.0 \\
-    8.0 & 427.0 \\
-    9.0 & 430.0 \\
-    10.0 & 433.0 \\
-    11.0 & 432.0 \\
-    12.0 & 430.0 \\
-    13.0 & 426.0 \\
-    14.0 & 421.0 \\
-    15.0 & 411.0 \\
-    16.0 & 399.0 \\
-    17.0 & 381.0 \\
-    18.0 & 358.0 \\
-    19.0 & 325.0 \\
-    20.0 & 289.0 \\
-    21.0 & 245.0 \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-\FloatBarrier
-\newpage
-\subsection{Messung mit undotiertem Galliumarsenid}
-\label{sec:undotiert}
-In diesem Auswertungsabschnitt wird die undotierte Galliumarsenid-Probe betrachtet.
-Mit der Dicke der Probe $L_\mathrm{undotiert}=\SI{5.11}{\milli\meter}$ und den gemessenen Werten wird ein normierter Wert der Faradayrotation bestimmt. Dazu wird zunächst die Formel (\ref{eqn:rotawinkel}) benutzt um den Differenzwinkel $\vartheta$ zu bestimmen, anschließend
-wird dieser Wert in [$\SI{}{\radian\per\milli\meter}$] umgerechnet. Mit Hilfe von Gleichung (\ref{eqn:umrechnung}) wird der normierte Wert $\vartheta_\mathrm{norm,undotiert}$ erhalten. Die Formel für die Umrechnung lautet:
-\begin{equation}
-  \label{eqn:umrechnung}
-  \vartheta_\mathrm{norm}=\dfrac{2\pi}{360}\dfrac{\vartheta}{L_\mathrm{undotiert}}
-\end{equation}
-In der Tabelle \ref{tab:undot} sind die Messdaten für die verschiedenen Wellenlängen $\lambda$ sowie den dazugehörigen Winkeln $\vartheta_\mathrm{+B}$ und $\vartheta_\mathrm{-B}$, als auch den normierten Rotationswinkel $\vartheta_\mathrm{norm,undotiert}$ zu finden.
-In Abbildung \ref{abb:undot} sind die normierten Rotationswinkel $\vartheta_\mathrm{norm,undotiert}$ gegen die Quadrate der Wellenlängen $\lambda^2$ aufgetragen.
+\subsection{Landé-Faktoren und Kernspins}
+\label{sec:kernspin}
+In Tabelle (\ref{tab:rf}) sind die aufgenommenen Frequenzen sowie Ströme der Horizontalspule und der Sweepspule für die jeweiligen Transparenzminima eingetragen.
 \begin{table}
   \centering
-  \caption{Messdaten der undotierten Galliumarsenid-Probe und normierte Rotationswinkel in $\SI{}{\radian\per\milli\meter}$.}
-  \label{tab:undot}
-  \begin{tabular}{c | c | c | c}
+  \caption{RF-Frequenzen und Ströme der Horizonatalspule und Sweepspule.}
+  \label{tab:rf}
+  \begin{tabular}{c | c | c | c | c}
     \toprule
-    $\lambda$/$\SI{}{\micro\meter}$ & $\vartheta_\mathrm{+B}$/$\SI{}{\degree}$ & $\vartheta_\mathrm{-B}$/$\SI{}{\degree}$& $\vartheta_{\mathrm{norm,undotiert}}$/$\SI{}{\radian\per\milli\meter}$ \\
+    $\nu_{RF}$/kHz & $I_{H,87}$/A & $I_{S,87}$/A& $I_{H,85}$/A& $I_{S,85}$/A \\
     \midrule
-    1.060 & 276.65 & 253.00 & 0.040 \\
-    1.290 & 273.00 & 256.33 & 0.028 \\
-    1.450 & 273.00 & 260.50 & 0.021 \\
-    1.720 & 270.00 & 262.17 & 0.013 \\
-    1.960 & 264.03 & 257.45 & 0.011 \\
-    2.156 & 262.00 & 257.08 & 0.008 \\
-    2.340 & 236.50 & 231.15 & 0.009 \\
-    2.510 & 215.08 & 211.67 & 0.006 \\
-    2.650 & 161.41 & 156.15 & 0.009 \\
+    100.0 & 0.0 & 0.384 & 0.0 & 0.504 \\
+    200.0 & 0.0 & 0.656 & 0.0 & 0.893 \\
+    300.0 & 0.012 & 0.467 & 0.012 & 0.896 \\
+    400.0 & 0.035 & 0.382 & 0.035 & 0.899 \\
+    500.0 & 0.076 & 0.210 & 0.076 & 0.823 \\
+    600.0 & 0.102 & 0.134 & 0.102 & 0.792 \\
+    700.0 & 0.124 & 0.145 & 0.168 & 0.834 \\
+    800.0 & 0.128 & 0.192 & 0.189 & 0.495 \\
+    900.0 & 0.146 & 0.220 & 0.197 & 0.401 \\
+    1000.0 & 0.169 & 0.200 & 0.231 & 0.262 \\
     \bottomrule
   \end{tabular}
 \end{table}
 \FloatBarrier
-
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.7]{fig/undotiert.png}
-  \caption{Grafische Darstellung der Messdaten der undotierten Probe.}
-  \label{abb:undot}
-\end{figure}
-\FloatBarrier
-
-\subsection{Messung mit dotierten Galliumarsenid-Proben}
-\label{sec:dot}
-In dieser Messung werden nun die dotierten Galliumarsenid-Proben verwendet.
-Die zu untersuchenden Proben haben jeweils die Dicken $L_{\mathrm{leicht}}=\SI{1.296}{\milli\meter}$ bzw. $L_{\mathrm{hoch}}=\SI{1.36}{\milli\meter}$ und eine Donatorenkonzentration von $N_{\mathrm{leicht}}=\SI{1.2 e18}{\per\centi\cubic\meter}$ bzw. $N_{\mathrm{hoch}}=\SI{2.8 e18}{\per\centi\cubic\meter}$.
-In den Tabellen \ref{tab:tief} und \ref{tab:hoch} sind die erhaltenen Messdaten aufgelistet.
-Als erstes wird wieder die Differenz mit Gleichung (\ref{eqn:rotawinkel}) errechnet, daraus werden dann die normierten Rotationswinkel wieder mit Gleichung (\ref{eqn:umrechnung}) berechnet, allerdings jeweils mit den Längen $L_{\mathrm{leicht}}$ bzw. $L_{\mathrm{hoch}}$.
-Von den erhaltenen Werten werden für alle Wellenlängen die normierte Faradayrotation der undotierten Probe $\vartheta_\mathrm{norm,undotiert}$ abgezogen.
-So kann die differenzierte Faradayrotation $\Delta\vartheta_\mathrm{norm}$, die durch Leitungselektronen bedingt ist, untersucht werden.
-Die Formel ist dann:
+Aus den oben stehenden Strömen wird mit Gleichung (\ref{eqn:bfeld}) das Magnetfeld berechnet:
 \begin{equation}
-    \vartheta_\mathrm{norm}=\dfrac{2\pi}{360}\dfrac{\vartheta}{L_\mathrm{Probe}}-\vartheta_\mathrm{norm,undotiert}
+  \label{eqn:bfeld}
+  B=\mu_\mathrm{0}\dfrac{8\cdot IN}{\sqrt{125}\cdot R}
 \end{equation}
-Die berechneten Werte sind in Abbildung \ref{abb:delta} grafisch dargestellt.
-Die Daten werden mit der folgenden Funktion gefittet:
-\begin{equation}
-  \Delta\vartheta_{\mathrm{norm}} = A\lambda^2
-\end{equation}
-Daraus ergeben sich für die beiden Proben die Parameter:
+Dabei ist $I$ der Spulenstrom und $\mu_\mathrm{0}$ die magnetische Feldkonstante.
+Für die Horizontalspule gilt $N=154$ und $R=\SI{15.69}{\centi\meter}$, für die Sweepspule gilt $N=11$ und $R\SI{16.39}{\centi\meter}$.
+Eine lineare Regression des Magnetfeldes der Form $B=a\nu+b$ gegen die eingestellte Frequenz liefert
 \begin{align*}
-  A_{\mathrm{leicht}} &= \SI{0.0144248 \pm 0.0000042}{\radian\per\femto\cubic\meter} \\
-  A_{\mathrm{hoch}} &= \SI{0.0248910 \pm 0.0000074}{\radian\per\femto\cubic\meter}
+  B_{87} &= \SI{0.156\pm0.007}{\micro\tesla\per\kilo\hertz}\cdot\nu + \SI{1\pm4}{\micro\tesla} \\
+  B_{85} &= \SI{0.225\pm0.016}{\micro\tesla\per\kilo\hertz}\cdot\nu + \SI{6\pm10}{\micro\tesla} \\
 \end{align*}
-Mit Hilfe der Gleichung (\ref{eqn:massewinkel}) und den jeweiligen Parametern $A_{\mathrm{leicht}}$ bzw. $A_{\mathrm{hoch}}$ ist es nun möglich die effektive Masse zu bestimmen.
-Für den Brechungsindex von Galliumarsenid wird $n \approx 3.4$ \cite{nGaAs} genutzt.
-Mit der Formel:
-\begin{equation}
-  m^*=\sqrt{\frac{e^3\cdot N \cdot B}{A\cdot 8\pi^2\varepsilon_\mathrm{0} c^3 \cdot n }}
-\end{equation}
-ergeben sich die für die effektive Masse mit $m_\mathrm{e} = \SI{9.10938356 e-31}{\kilogram}$ als Elektronenmasse folgende Werte:
-\begin{align*}
-  m^*_{\mathrm{leicht}} &= \SI{6.8018 \pm 0.0005 e-32}{\kilogram} \\
-  \dfrac{m^*_{\mathrm{leicht}}}{m_\mathrm{e}} &= 0.074668 \pm 0.000005 \\
-  m^*_{\mathrm{hoch}} &= \SI{7.9094 \pm 0.0006 e-32}{\kilogram} \\
-  \dfrac{m^*_{\mathrm{hoch}}}{m_\mathrm{e}} &= 0.086827 \pm 0.000006
-\end{align*}
-
-\begin{table}[h!]
-  \centering
-  \caption{Messdaten der leicht dotierten Galliumarsenid-Probe und normierte Rotationswinkel in $\SI{}{\radian\per\milli\meter}$.}
-  \label{tab:tief}
-  \begin{tabular}{c | c | c | c}
-    \toprule
-    $\lambda$/$\SI{}{\micro\meter}$ & $\vartheta_\mathrm{+B}$/$\SI{}{\degree}$ & $\vartheta_\mathrm{-B}$/$\SI{}{\degree}$& $\vartheta_{\mathrm{norm}}$/$\SI{}{\radian\per\milli\meter}$ \\
-    \midrule
-    1.060 & 153.17 & 143.37 & 0.022 \\
-    1.290 & 151.35 & 144.60 & 0.015 \\
-    1.450 & 150.33 & 143.03 & 0.025 \\
-    1.720 & 150.67 & 145.00 & 0.023 \\
-    1.960 & 155.17 & 148.08 & 0.034 \\
-    2.156 & 156.48 & 150.00 & 0.033 \\
-    2.340 & 182.00 & 175.00 & 0.036 \\
-    2.510 & 213.50 & 209.23 & 0.022 \\
-    2.650 & 258.70 & 250.00 & 0.047 \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
-\begin{table}[h!]
-  \centering
-  \caption{Messdaten der hoch dotierten Galliumarsenid-Probe und normierte Rotationswinkel in $\SI{}{\radian\per\milli\meter}$.}
-  \label{tab:hoch}
-  \begin{tabular}{c | c | c | c}
-    \toprule
-    $\lambda$/$\SI{}{\micro\meter}$ & $\vartheta_\mathrm{+B}$/$\SI{}{\degree}$ & $\vartheta_\mathrm{-B}$/$\SI{}{\degree}$& $\vartheta_{\mathrm{norm}}$/$\SI{}{\radian\per\milli\meter}$ \\
-    \midrule
-    1.060 & 270.00 & 258.00 & 0.040 \\
-    1.290 & 268.28 & 259.60 & 0.030 \\
-    1.450 & 270.00 & 261.08 & 0.039 \\
-    1.720 & 268.00 & 259.43 & 0.044 \\
-    1.960 & 265.25 & 255.00 & 0.058 \\
-    2.156 & 265.00 & 253.00 & 0.072 \\
-    2.340 & 240.17 & 228.17 & 0.072 \\
-    2.510 & 206.33 & 199.00 & 0.044 \\
-    2.650 & 163.33 & 149.00 & 0.088 \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
+Die Daten mit den zugehörigen oben genannten Geraden sind in Abbildung \ref{fig:rf} zu finden:
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.7]{fig/deltaTheta.png}
-  \caption{Grafische Darstellung der Messdaten aus den Tabellen \ref{tab:tief} und \ref{tab:hoch}.}
-  \label{abb:delta}
+  \includegraphics[scale=0.7]{fig/plot1.pdf}
+  \caption{Horizontales Magnetfeld gegen die Frequenz.}
+  \label{fig:rf}
 \end{figure}
+\FloatBarrier
+Um die Landé-Faktoren zu berechnen wird die Gleichung (\ref{eqn:mf}) wie folgt umgestellt:
+\begin{align*}
+  h\nu_\mathrm{0}&=g_\mathrm{F}\mu_\mathrm{B}B_\mathrm{0} \\
+  \Leftrightarrow \nu_\mathrm{0} &=\dfrac{g_\mathrm{F}\mu_\mathrm{B}B_\mathrm{0}}{h} \\
+  \Rightarrow a&=\dfrac{h}{g_\mathrm{F}\mu_\mathrm{B}} \\
+  \Leftrightarrow g_\mathrm{F}&=\dfrac{h}{a\mu_\mathrm{B}}
+\end{align*}
+Mit $h$ als Planckschem Wirkungsquantum und $a$ als Steigung der Geraden aus Abbildung (\ref{fig:rf}).
+Damit ergibt sich für die Landé-Faktoren:
+\begin{align*}
+  g_{\mathrm{F,85}} &= 0.457\pm0.021\\
+  g_{\mathrm{F,87}} &= 0.318\pm0.023
+\end{align*}
+Mit Gleichung \ref{eqn:lande} wird $g_\mathrm{J}$ berechnet.
+Mit $S=\dfrac{1}{2}$, $L=0$ und $J=\dfrac{1}{2}$ folgt $g_\mathrm{J} = 2.0023$.
+Für die Kernspins gilt
+\begin{equation}
+  I = \dfrac{g_\mathrm{J}}{2g_\mathrm{F}-\dfrac{1}{2}}
+\end{equation}
+Damit folgen
+\begin{align*}
+  I_\mathrm{87} &= 1.69\pm0.10 \\
+  I_\mathrm{85} &= 2.65\pm0.23
+\end{align*}
+
+\subsection{Isotopenverhältnis}
+In Abbildung (\ref{fig:signal}) ist das Signalbild für $\nu=\SI{100}{\kilo\hertz}$ dargestellt.
+Aus dem Amplitudenverhältnis der beiden beobachteten Transparenzminima wird das Isotopenverhältnis der untersuchten Probe bestimmt.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.5]{fig/signal.jpg}
+  \caption{Oszilloskopbild bei $\SI{100}{\kilo\hertz}$}
+  \label{fig:signal}
+\end{figure}
+Aus diesem Bild werden die Amplituden mit Hilfe von Paint \cite{paint} abgelesen, es ergibt sich für die jeweilige Amplitude:
+\begin{align*}
+  A_\mathrm{87} &= 77 \, \mathrm{px} \\
+  A_\mathrm{85} &= 175 \,\mathrm{px}
+\end{align*}
+Daraus ergibt sich für die Isotope ein Verhältnis von $^{87}\mathrm{Rb} \approx 31\%$ und $^{85}\mathrm{Rb} \approx 69\%$.
+\subsection{Quadratischer Zeeman-Effekt}
+Als letztes wird der Einfluss des quadratischen Zeeman-Effekte ausgewertet
+Nach Gleichung (\ref{eqn:mf}) für die lineare Näherung und dem quadratischen Teil von Gleichung (\ref{eqn:quadra}) für die quadratische Näherung folgt für die Seemannenergie jeweils:
+\begin{align*}
+  U_{\mathrm{HF,87,linear}}&= \SI{6.79 \pm 0.31 e-28}{\joule} \\
+  U_{\mathrm{HF,85,linear}}&= \SI{6.4 \pm 0.5 e-28}{\joule} \\
+  U_{\mathrm{HF,87,quad}}&= \SI{2.29 \pm 0.21 e-31}{\joule} \\
+  U_{\mathrm{HF,85,quad}}&= \SI{9.2 \pm 1.3 e-32}{\joule}
+\end{align*}

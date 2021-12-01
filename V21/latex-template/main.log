@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.20)  27 OCT 2021 15:53
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.20)  1 DEC 2021 16:39
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -475,12 +475,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            hyphenation	
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	
 (polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	 on input line 10
+(polyglossia)            lefthyphenmin	2 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -1403,12 +1403,12 @@ LaTeX Info: Redefining \rmfamily on input line 26.
 LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            hyphenation	
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	
 (polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	 on input line 26
+(polyglossia)            lefthyphenmin	2 on input line 26
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 26
 )
@@ -1630,107 +1630,67 @@ LaTeX Info: Redefining \ttfamily on input line 3.
 \openout4 = main.toc
  [2
 
-] (./content/zielsetzung.tex) (./content/theorie.tex
-<fig/leiter.png, id=61, 921.4425pt x 309.155pt>
-File: fig/leiter.png Graphic file (type png)
-<use fig/leiter.png>
-Package luatex.def Info: fig/leiter.png  used on input line 10.
-(luatex.def)             Requested size: 414.6453pt x 139.11845pt.
- [3<./fig/leiter.png>]
-<fig/band.png, id=77, 526.96875pt x 322.20375pt>
-File: fig/band.png Graphic file (type png)
-<use fig/band.png>
-Package luatex.def Info: fig/band.png  used on input line 26.
-(luatex.def)             Requested size: 368.8756pt x 225.54108pt.
- [4<./fig/band.png>] [5]
-<fig/brechung.png, id=113, 492.84125pt x 244.915pt>
-File: fig/brechung.png Graphic file (type png)
-<use fig/brechung.png>
-Package luatex.def Info: fig/brechung.png  used on input line 95.
-(luatex.def)             Requested size: 344.98651pt x 171.43932pt.
- [6<./fig/brechung.png>])
-(./content/durchfuehrung.tex [7]
-<fig/messapp.png, id=148, 643.40375pt x 418.56375pt>
-File: fig/messapp.png Graphic file (type png)
-<use fig/messapp.png>
-Package luatex.def Info: fig/messapp.png  used on input line 9.
-(luatex.def)             Requested size: 321.70108pt x 209.28136pt.
-<fig/glan.png, id=152, 592.2125pt x 257.96375pt>
-File: fig/glan.png Graphic file (type png)
-<use fig/glan.png>
-Package luatex.def Info: fig/glan.png  used on input line 16.
-(luatex.def)             Requested size: 296.10551pt x 128.98155pt.
-<fig/inter.png, id=157, 304.13625pt x 276.03125pt>
-File: fig/inter.png Graphic file (type png)
-<use fig/inter.png>
-Package luatex.def Info: fig/inter.png  used on input line 25.
-(luatex.def)             Requested size: 152.06775pt x 138.01527pt.
- [8<./fig/messapp.png><./fig/glan.png>]
-[9<./fig/inter.png>]) (./content/auswertung.tex [10]
-<fig/bfeld.png, id=187, 462.528pt x 346.896pt>
-File: fig/bfeld.png Graphic file (type png)
-<use fig/bfeld.png>
-Package luatex.def Info: fig/bfeld.png  used on input line 16.
+] (./content/zielsetzung.tex) (./content/theorie.tex [3]
+<fig/niveaus.png, id=72, 569.12625pt x 236.885pt>
+File: fig/niveaus.png Graphic file (type png)
+<use fig/niveaus.png>
+Package luatex.def Info: fig/niveaus.png  used on input line 64.
+(luatex.def)             Requested size: 284.56242pt x 118.4422pt.
+<fig/12.png, id=74, 545.03625pt x 268.00125pt>
+File: fig/12.png Graphic file (type png)
+<use fig/12.png>
+Package luatex.def Info: fig/12.png  used on input line 73.
+(luatex.def)             Requested size: 381.52278pt x 187.59958pt.
+
+[4<./fig/niveaus.png>] [5<./fig/12.png>]
+<fig/transpa.png, id=98, 618.31pt x 248.93pt>
+File: fig/transpa.png Graphic file (type png)
+<use fig/transpa.png>
+Package luatex.def Info: fig/transpa.png  used on input line 89.
+(luatex.def)             Requested size: 309.15424pt x 124.46469pt.
+) (./content/durchfuehrung.tex
+<fig/aufbauop.png, id=101, 775.89874pt x 421.575pt>
+File: fig/aufbauop.png Graphic file (type png)
+<use fig/aufbauop.png>
+Package luatex.def Info: fig/aufbauop.png  used on input line 8.
+(luatex.def)             Requested size: 426.74562pt x 231.86696pt.
+
+Overfull \hbox (8.49007pt too wide) in paragraph at lines 8--9
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./content/auswertung.tex [6<./fig/transpa.png>] [7<./fig/aufbauop.png>]
+<fig/plot1.pdf, id=125, 462.528pt x 346.896pt>
+File: fig/plot1.pdf Graphic file (type pdf)
+<use fig/plot1.pdf>
+Package luatex.def Info: fig/plot1.pdf  used on input line 45.
 (luatex.def)             Requested size: 323.76738pt x 242.82553pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11<./fig/bfeld.png>]
+[8]
+<fig/signal.jpg, id=139, 586.44093pt x 472.76625pt>
+File: fig/signal.jpg Graphic file (type jpg)
+<use fig/signal.jpg>
+Package luatex.def Info: fig/signal.jpg  used on input line 80.
+(luatex.def)             Requested size: 293.21974pt x 236.38254pt.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 70.
+(Font)              scaled to size 5.00053pt on input line 81.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 70.
- [12]
-<fig/undotiert.png, id=211, 462.528pt x 346.896pt>
-File: fig/undotiert.png Graphic file (type png)
-<use fig/undotiert.png>
-Package luatex.def Info: fig/undotiert.png  used on input line 92.
-(luatex.def)             Requested size: 323.76738pt x 242.82553pt.
- [13<./fig/undotiert.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<fig/deltaTheta.png, id=224, 462.528pt x 346.896pt>
-File: fig/deltaTheta.png Graphic file (type png)
-<use fig/deltaTheta.png>
-Package luatex.def Info: fig/deltaTheta.png  used on input line 178.
-(luatex.def)             Requested size: 323.76738pt x 242.82553pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./content/diskussion.tex [14
-
-] [15] [16<./fig/deltaTheta.png>])
-(./content/anhang.tex [17
-
-]
-<fig/mess1.jpg, id=261, 3003.22pt x 4015.0pt>
-File: fig/mess1.jpg Graphic file (type jpg)
-<use fig/mess1.jpg>
-Package luatex.def Info: fig/mess1.jpg  used on input line 6.
-(luatex.def)             Requested size: 390.43231pt x 521.96834pt.
-<fig/mess2.jpg, id=262, 3003.22pt x 4015.0pt>
-File: fig/mess2.jpg Graphic file (type jpg)
-<use fig/mess2.jpg>
-Package luatex.def Info: fig/mess2.jpg  used on input line 12.
-(luatex.def)             Requested size: 390.43231pt x 521.96834pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [18<./fig/mess1.jpg>]
+(Font)              scaled to size 4.99947pt on input line 81.
+ [9<./fig/plot1.pdf>]) (./content/diskussion.tex [10<./fig/signal.jpg>])
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [19<./fig/mess2.jpg>]
-Overfull \hbox (4.51476pt too wide) in paragraph at lines 25--25
-\TU/lmtt/m/n/10.95 wikipedia / commons / 6 / 6b / Glan - Thompson _ prism _ DE 
-. svg$[] \TU/lmr/m/n/10.95 (be-sucht am 27.10.2021). 
+
+Overfull \hbox (13.60623pt too wide) in paragraph at lines 25--25
+[]\TU/lmr/m/n/10.95 Mi-cro-soft. \TU/lmr/m/it/10.95 Paint\TU/lmr/m/n/10.95 . \T
+U/lmr/m/sc/10.95 url\TU/lmr/m/n/10.95 : []$\TU/lmtt/m/n/10.95 https : / / www . microsoft . com / de - de / p / paint / 9pcfs5b6t72h #
  []
 
 The property list \polyglossia@langsetup contains the pairs (without outer
@@ -1767,53 +1727,47 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[20] (./main.aux
+[11] (./main.aux
 LaTeX Info: Redefining \rmfamily on input line 26.
 LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 )
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 27481E5BCA34C20CCA53E5E798D595D8;21760.
+(rerunfilecheck)             Checksum: FFB11DEF32FA3101CFCC19413EF2BD3D;14640.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: B532886499565194A9EEDB95EC373162;2544.
+(rerunfilecheck)             Checksum: E2BCB28B26D2046FEE49AC2F8E426D32;2136.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 37632 strings out of 478092
+ 37487 strings out of 478092
  100000,1977958 words of node,token memory allocated
- 867 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 55 attribute, 78 glue_spec
-, 55 attribute_list, 1 write, 8 pdf_action nodes
-   avail lists: 1:1,2:1071,3:330,4:129,5:408,6:69,7:6466,8:95,9:800,10:18,11:795
-
- 56711 multiletter control sequences out of 65536+600000
+ 776 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 4 sub_mlist, 1 glyph, 38 attribute,
+ 77 glue_spec, 38 attribute_list, 1 write, 3 pdf_action nodes
+   avail lists: 1:1,2:678,3:232,4:106,5:373,6:55,7:5068,8:92,9:570,10:27,11:484
+ 56635 multiletter control sequences out of 65536+600000
  106 fonts using 39401095 bytes
- 113i,16n,118p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 113i,14n,118p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmmono10-re
 gular.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/l
 mromancaps10-regular.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opent
 ype/public/lm/lmroman10-italic.otf></home/felix/.local/texlive/2021/texmf-dist/f
-onts/opentype/public/lm/lmroman5-regular.otf></home/felix/.local/texlive/2021/te
-xmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/felix/.local/
-texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/fel
-ix/.local/texlive/2021/texmf-dist/fonts/opentype/public/xits/XITSMath-Regular.ot
-f></home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/lati
-nmodern-math.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/publ
-ic/lm-math/latinmodern-math.otf></home/felix/.local/texlive/2021/texmf-dist/font
-s/opentype/public/lm/lmroman10-bold.otf></home/felix/.local/texlive/2021/texmf-d
-ist/fonts/opentype/public/lm/lmroman10-regular.otf></home/felix/.local/texlive/2
-021/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/felix/.loca
-l/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/feli
-x/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></h
-ome/felix/.local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
-m10.pfb>
-Output written on main.pdf (20 pages, 1965359 bytes).
+onts/opentype/public/lm-math/latinmodern-math.otf></home/felix/.local/texlive/20
+21/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/felix/.local/te
+xlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/felix
+/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.o
+tf></home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman1
+0-regular.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/
+lm/lmroman12-regular.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opent
+ype/public/lm/lmsans10-bold.otf></home/felix/.local/texlive/2021/texmf-dist/font
+s/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (11 pages, 319296 bytes).
 
-PDF statistics: 455 PDF objects out of 1000 (max. 8388607)
- 358 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 131072)
- 153 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 362 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 131072)
+ 129 words of extra memory for PDF output out of 10000 (max. 100000000)
 
