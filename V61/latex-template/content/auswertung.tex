@@ -2,97 +2,285 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 In diesem Abschnitt werden die aufgenommenen Messdaten in Grafiken sowie Tabellen dargestellt und ausgewertet. Grafiken sowie dazugehörige Rechnungen sind mit Python \cite{python} erstellt bzw. berechnet worden.
-\subsection{Landé-Faktoren und Kernspins}
-\label{sec:kernspin}
-In Tabelle (\ref{tab:rf}) sind die aufgenommenen Frequenzen sowie Ströme der Horizontalspule und der Sweepspule für die jeweiligen Transparenzminima eingetragen.
-\begin{table}
-  \centering
-  \caption{RF-Frequenzen und Ströme der Horizonatalspule und Sweepspule.}
-  \label{tab:rf}
-  \begin{tabular}{c | c | c | c | c}
-    \toprule
-    $\nu_{RF}$/kHz & $I_{H,87}$/A & $I_{S,87}$/A& $I_{H,85}$/A& $I_{S,85}$/A \\
-    \midrule
-    100.0 & 0.0 & 0.384 & 0.0 & 0.504 \\
-    200.0 & 0.0 & 0.656 & 0.0 & 0.893 \\
-    300.0 & 0.012 & 0.467 & 0.012 & 0.896 \\
-    400.0 & 0.035 & 0.382 & 0.035 & 0.899 \\
-    500.0 & 0.076 & 0.210 & 0.076 & 0.823 \\
-    600.0 & 0.102 & 0.134 & 0.102 & 0.792 \\
-    700.0 & 0.124 & 0.145 & 0.168 & 0.834 \\
-    800.0 & 0.128 & 0.192 & 0.189 & 0.495 \\
-    900.0 & 0.146 & 0.220 & 0.197 & 0.401 \\
-    1000.0 & 0.169 & 0.200 & 0.231 & 0.262 \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-\FloatBarrier
-Aus den oben stehenden Strömen wird mit Gleichung (\ref{eqn:bfeld}) das Magnetfeld berechnet:
-\begin{equation}
-  \label{eqn:bfeld}
-  B=\mu_\mathrm{0}\dfrac{8\cdot IN}{\sqrt{125}\cdot R}
-\end{equation}
-Dabei ist $I$ der Spulenstrom und $\mu_\mathrm{0}$ die magnetische Feldkonstante.
-Für die Horizontalspule gilt $N=154$ und $R=\SI{15.69}{\centi\meter}$, für die Sweepspule gilt $N=11$ und $R\SI{16.39}{\centi\meter}$.
-Eine lineare Regression des Magnetfeldes der Form $B=a\nu+b$ gegen die eingestellte Frequenz liefert
-\begin{align*}
-  B_{87} &= \SI{0.156\pm0.007}{\micro\tesla\per\kilo\hertz}\cdot\nu + \SI{1\pm4}{\micro\tesla} \\
-  B_{85} &= \SI{0.225\pm0.016}{\micro\tesla\per\kilo\hertz}\cdot\nu + \SI{6\pm10}{\micro\tesla} \\
-\end{align*}
-Die Daten mit den zugehörigen oben genannten Geraden sind in Abbildung \ref{fig:rf} zu finden:
-\begin{figure}[h!]
+\subsection{Stabilitätsbedingung}
+\label{sec:stab}
+
+Der Laser ist stabil, wenn Gleichung (\ref{eqn:stabi}) mit den Stabilitätsparametern aus Gleichung (\ref{eqn:g-faktor}) erfüllt ist.
+Die theoretischen Kurven für die drei möglichen Spiegelanordnungen sind graphisch in Abbildung (\ref{fig:plot1}) dargestellt.
+Experimentell konnte nur die Stabilitätsbedingung für Anordnung 1 überprüft werden.
+Der maximal gemessene Abstand der Resonatorspiegel beträgt $L = \SI{134}{\centi\meter}$.
+
+\begin{figure}
   \centering
   \includegraphics[scale=0.7]{fig/plot1.pdf}
-  \caption{Horizontales Magnetfeld gegen die Frequenz.}
-  \label{fig:rf}
+  \caption{Theoretische Stabilitätsbedingungen für die drei Anordnungen.}
+  \label{fig:plot1}
 \end{figure}
+
 \FloatBarrier
-Um die Landé-Faktoren zu berechnen wird die Gleichung (\ref{eqn:mf}) wie folgt umgestellt:
-\begin{align*}
-  h\nu_\mathrm{0}&=g_\mathrm{F}\mu_\mathrm{B}B_\mathrm{0} \\
-  \Leftrightarrow \nu_\mathrm{0} &=\dfrac{g_\mathrm{F}\mu_\mathrm{B}B_\mathrm{0}}{h} \\
-  \Rightarrow a&=\dfrac{h}{g_\mathrm{F}\mu_\mathrm{B}} \\
-  \Leftrightarrow g_\mathrm{F}&=\dfrac{h}{a\mu_\mathrm{B}}
-\end{align*}
-Mit $h$ als Planckschem Wirkungsquantum und $a$ als Steigung der Geraden aus Abbildung (\ref{fig:rf}).
-Damit ergibt sich für die Landé-Faktoren:
-\begin{align*}
-  g_{\mathrm{F,85}} &= 0.457\pm0.021\\
-  g_{\mathrm{F,87}} &= 0.318\pm0.023
-\end{align*}
-Mit Gleichung \ref{eqn:lande} wird $g_\mathrm{J}$ berechnet.
-Mit $S=\dfrac{1}{2}$, $L=0$ und $J=\dfrac{1}{2}$ folgt $g_\mathrm{J} = 2.0023$.
-Für die Kernspins gilt
+\subsection{Moden}
+\label{sec:tem}
+
+\subsubsection{$\mathrm{TEM}_\mathrm{00}$-Mode}
+
+In Tabelle \ref{tab:T00} sind die aufgenommenen Messwerte der Grundmode $\mathrm{TEM}_\mathrm{00}$ zufinden. In Abbildung (\ref{fig:T00}) ist der Verlauf graphisch dargestellt.
+Es wird aufbauend auf Gleichung (\ref{eqn:grundmode}) eine Ausgleichsrechnung der Form
 \begin{equation}
-  I = \dfrac{g_\mathrm{J}}{2g_\mathrm{F}-\dfrac{1}{2}}
+  I(x) = I_\mathrm{0} \cdot \exp\left(-2\frac{(x-x_\mathrm{0})^2}{w^2}\right)
 \end{equation}
-Damit folgen
+durchgeführt.
+Daraus ergbit sich für die Grundmode die folgenden Werte:
 \begin{align*}
-  I_\mathrm{87} &= 1.69\pm0.10 \\
-  I_\mathrm{85} &= 2.65\pm0.23
+I_\mathrm{0} &= \SI{7.04(6)}{\micro\ampere}\\
+x_\mathrm{0} &= \SI{3.26(3)}{\milli\meter}\\
+w &= \SI{5.92(6)}{\milli\meter}
 \end{align*}
 
-\subsection{Isotopenverhältnis}
-In Abbildung (\ref{fig:signal}) ist das Signalbild für $\nu=\SI{100}{\kilo\hertz}$ dargestellt.
-Aus dem Amplitudenverhältnis der beiden beobachteten Transparenzminima wird das Isotopenverhältnis der untersuchten Probe bestimmt.
+ \begin{table}
+ 	\centering
+ 	\caption{Die gemessenen Stromstärken $I$ und die dazugehörigen Radien $r$ entlang der Horizontalen der $\mathrm{TEM}_\mathrm{00}$-Mode.}
+ 	\label{tab:T00}
+  \begin{tabular}{c c c c}
+    \toprule
+    $r$ in mm & $I(r)$ in \si{\micro\ampere} & $r$ in mm & $I(r)$ in \si{\micro\ampere} \\
+    \midrule
+    12 & 0,1  & 2  & 6,52 \\
+    11 & 0,27 & 1  & 5,49 \\
+    10 & 0,58 & 0  & 3,81 \\
+     9 & 1,08 & -1 & 2,36 \\
+     8 & 1,83 & -2 & 1,45 \\
+     7 & 3,17 & -3 & 0,76 \\
+     6 & 4,7  & -4 & 0,39 \\
+     5 & 5,93 & -5 & 0,16 \\
+     4 & 6,87 & -6 & 0,05 \\
+     3 & 6,75 & & \\
+    \bottomrule
+  \end{tabular}
+ \end{table}
+
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.5]{fig/signal.jpg}
-  \caption{Oszilloskopbild bei $\SI{100}{\kilo\hertz}$}
-  \label{fig:signal}
+  \includegraphics[scale=0.7]{fig/plot2.pdf}
+  \caption{Intensitätsverteilung der $\mathrm{TEM}_\mathrm{00}$-Mode.}
+  \label{fig:T00}
 \end{figure}
-Aus diesem Bild werden die Amplituden mit Hilfe von Paint \cite{paint} abgelesen, es ergibt sich für die jeweilige Amplitude:
+\FloatBarrier
+\subsubsection{$\mathrm{TEM}_\mathrm{01}$-Mode}
+
+Für die $\text{TEM}_{01}$-Mode wird die Ausgleichsfunktion mit Gleichung (\ref{eqn:01}) wie folgt abgewandelt:
+\begin{equation}
+  I(x) = I_\mathrm{0} \cdot \dfrac{4(x-x_\mathrm{0})^2}{w^2} \cdot \exp\left(-2\frac{(x-x_\mathrm{0})^2}{w^2}\right)
+\end{equation}
+Die aufgenommenen Messdaten sind in Tabelle (\ref{tab:T01}) aufgelistet.
+In Abbildung (\ref{fig:T01}) ist die gefittete Funktion zu sehen.
+Es ergeben sich die Parameter:
 \begin{align*}
-  A_\mathrm{87} &= 77 \, \mathrm{px} \\
-  A_\mathrm{85} &= 175 \,\mathrm{px}
+I_\mathrm{0} &= \SI{3.21(9)}{\micro\ampere}\\
+x_\mathrm{0} &= \SI{3.33(8)}{\milli\meter}\\
+w &= \SI{6.25(11)}{\milli\meter}
 \end{align*}
-Daraus ergibt sich für die Isotope ein Verhältnis von $^{87}\mathrm{Rb} \approx 31\%$ und $^{85}\mathrm{Rb} \approx 69\%$.
-\subsection{Quadratischer Zeeman-Effekt}
-Als letztes wird der Einfluss des quadratischen Zeeman-Effekte ausgewertet
-Nach Gleichung (\ref{eqn:mf}) für die lineare Näherung und dem quadratischen Teil von Gleichung (\ref{eqn:quadra}) für die quadratische Näherung folgt für die Seemannenergie jeweils:
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.7]{fig/plot3.pdf}
+  \caption{Intensitätsverteilung der $\mathrm{TEM}_\mathrm{01}$-Mode.}
+  \label{fig:T01}
+\end{figure}
+
+\begin{table}
+ \centering
+ \caption{Die gemessenen Stromstärken $I$ und die dazugehörigen Radien $r$ entlang der Horizontalen der $\mathrm{TEM}_\mathrm{01}$-Mode.}
+ \label{tab:T01}
+ \begin{tabular}{c c c c}
+   \toprule
+   $r$ in mm & $I(r)$ in \si{\micro\ampere} & $r$ in mm & $I(r)$ in \si{\micro\ampere} \\
+   \midrule
+   14 & 0,06 & 2  & 0,86 \\
+   13 & 0,13 & 1  & 1,45 \\
+   12 & 0,39 & 0  & 2,18 \\
+   11 & 0,87 & -1 & 2,39 \\
+   10 & 1,38 & -2 & 2,54 \\
+   9  & 1,72 & -3 & 1,98 \\
+   8  & 2,2  & -4 & 1,25 \\
+   7  & 2,1  & -5 & 0,7  \\
+   6  & 1,45 & -6 & 0,31 \\
+   5  & 0,67 & -7 & 0,18 \\
+   4  & 0,04 & -8 & 0,1  \\
+   3  & 0,21 & -9 & 0,05 \\
+   \bottomrule
+ \end{tabular}
+\end{table}
+\FloatBarrier
+\subsubsection{$\text{TEM}_{02}$-Mode}
+
+Zur Bestimmung der Intensitätsverteilung der $\mathrm{TEM}_\mathrm{02}$ wird die Ausgleichungsfunktion zum letzten Mal mit der Gleichung (\ref{eqn:02}) angepasst
+\begin{equation}
+  I(x) = I_\mathrm{0} \cdot \left(\frac{8(x-x_\mathrm{0})^2}{w^2}-2\right)^2 \cdot \exp\left(-2\frac{(x-x_\mathrm{0})^2}{w^2}\right)
+\end{equation}
+In Tabelle (\ref{tab:T02}) befinden sich die augenommenen Messdaten mit denen die Ausgleichsrechnung durchgeführt wird.
+Diese liefert die Parameter:
 \begin{align*}
-  U_{\mathrm{HF,87,linear}}&= \SI{6.79 \pm 0.31 e-28}{\joule} \\
-  U_{\mathrm{HF,85,linear}}&= \SI{6.4 \pm 0.5 e-28}{\joule} \\
-  U_{\mathrm{HF,87,quad}}&= \SI{2.29 \pm 0.21 e-31}{\joule} \\
-  U_{\mathrm{HF,85,quad}}&= \SI{9.2 \pm 1.3 e-32}{\joule}
+I_\mathrm{0} &= \SI{0.069(4)}{\micro\ampere}\\
+x_\mathrm{0} &= \SI{2.57(15)}{\milli\meter}\\
+w &= \SI{6.46(16)}{\milli\meter}
 \end{align*}
+In Abbildung (\ref{fig:T02}) ist die gefittete Funktion dargestellt.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.7]{fig/plot4.pdf}
+  \caption{Intensitätsverteilung der $\mathrm{TEM}_\mathrm{02}$-Mode.}
+  \label{fig:T02}
+\end{figure}
+
+\begin{table}
+ \centering
+ \caption{Die gemessenen Stromstärken $I$ und die dazugehörigen Radien $r$ entlang der Horizontalen der $\mathrm{TEM}_\mathrm{02}$-Mode.}
+ \label{tab:T02}
+ \begin{tabular}{c c c c}
+   \toprule
+   $r$ in mm & $I(r)$ in \si{\micro\ampere} & $r$ in mm & $I(r)$ in \si{\micro\ampere} \\
+   \midrule
+   14  & 0,04 & 1   & 0,12 \\
+   13  & 0,11 & 0   & 0,04 \\
+   12  & 0,16 & -1  & 0,018 \\
+   11  & 0,22 & -2  & 0,09 \\
+   10  & 0,27 & -3  & 0,35 \\
+   9   & 0,25 & -4  & 0,47 \\
+   8   & 0,18 & -5  & 0,45 \\
+   7   & 0,07 & -6  & 0,36 \\
+   6   & 0,01 & -7  & 0,29 \\
+   5   & 0,05 & -8  & 0,19 \\
+   4   & 0,16 & -9  & 0,09 \\
+   3   & 0,21 & -10 & 0,04 \\
+   2   & 0,19 & & \\
+   \bottomrule
+ \end{tabular}
+\end{table}
+\FloatBarrier
+\subsection{Polarisation}
+\label{sec:pol}
+
+In diesem Abschnitt wird nun die Polarisationsrichtung des Lasers untersucht. Wie in Abschnitt (\ref{sec:polari}) beschrieben werden die Messdaten aufgenommen.
+Die Daten sind in der Tabelle (\ref{tab:polarisation}) angegeben und in Abbildung (\ref{fig:polarisation}) visualisiert.
+Die gefittete Funktion hat die Form:
+\begin{equation}
+  I(\varphi) = I_0 \cos^2\left(\varphi+\varphi_0\right)
+\end{equation}
+durchgeführt.
+Die dazugehörigen gefitteten Parameter lauten:
+\begin{align*}
+I_0 &= \SI{149.42(212)}{\micro\ampere}\\
+\varphi_0 &= \SI{-78.33(1)}{\radian}\\
+\end{align*}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.7]{fig/plot5.pdf}
+  \caption{Gefittete Funktion zur Bestimmung der Polarisation des Lasers.}
+  \label{fig:polarisation}
+\end{figure}
+
+\begin{table}
+ \centering
+ \caption{Polarisationswinkel $\varphi$ und Stromstärke $I$.}
+ \label{tab:polarisation}
+ \begin{tabular}{c c c c}
+   \toprule
+   $\varphi$ in Grad & $I(\varphi)$ in \si{\micro\ampere} & $\varphi$ in Grad & $I(\varphi)$ in \si{\micro\ampere} \\
+   \midrule
+   0  & 138 & 100 & 18  \\
+   10 & 126 & 110 & 35  \\
+   20 & 104 & 120 & 63  \\
+   30 & 80  & 130 & 82  \\
+   40 & 59  & 140 & 120 \\
+   50 & 32  & 150 & 142 \\
+   60 & 14  & 160 & 163 \\
+   70 & 3   & 170 & 148 \\
+   80 & 0.3 & 180 & 140 \\
+   90 & 5   & & \\
+   \bottomrule
+ \end{tabular}
+\end{table}
+\FloatBarrier
+\begin{comment}
+\subsection{Multimodenuntersuchung}
+\label{sec:mul}
+
+Es werden die Frequenzen $f$ der longitudinalen Moden für verschiedene Resonatorlängen vermessen und die mittlere Frequenzdifferenz $\Delta f$ berechnet.
+Die Werte sind in Tabelle \ref{tab:longitudinal} eingetragen.
+Theoretisch ist folgender Zusammenhang zu erwarten mit der Lichtgeschwindigkeit im Vakuum $c_0$:
+\begin{equation}
+  \Delta\lambda = \frac{c_0}{\Delta f} = 2L
+\end{equation}
+Eine Ausgleichsrechnung der Form $\Delta\lambda(L) = a \cdot L$ liefert:
+\begin{equation*}
+  a = \num{2.016 \pm 0.003}
+\end{equation*}
+Die Abhängigkeit der Frequenzdifferenzen von der Resonatorlänge ist in Abbildung \ref{fig:longitudinal} dargestellt.
+
+\begin{table}
+ \centering
+ \caption{Die gemessenen Frequenzen und mittleren Frequenzdifferenzen für verschiedene Resonatorlängen.}
+ \label{tab:longitudinal}
+ \begin{tabular}{c c c c c c c c}
+   \toprule
+   $L$ in cm & \multicolumn{6}{c}{Frequenzen $f$ in MHz} & $\Delta f$ in MHz  \\
+   \midrule
+   87     & 173 & 341 & 510 & 683 & 851 & 1020 & 169 \\
+   91     & 165 & 326 & 491 & 653 & 818 & 979  & 163 \\
+   96.5   & 158 & 311 & 465 & 619 & 773 & 926  & 154 \\
+   105.7  & 143 & 281 & 424 & 563 & 705 & 844  & 140 \\
+   114    & 131 & 263 & 394 & 525 & 656 & 784  & 131 \\
+   121.3  & 124 & 248 & 371 & 495 & 615 & 739  & 123 \\
+   128    & 116 & 233 & 349 & 469 & 585 & 701  & 117 \\
+   134    & 113 & 225 & 334 & 446 & 555 & 668  & 111 \\
+   \bottomrule
+ \end{tabular}
+\end{table}
+
+\begin{figure}
+  \centering
+  \includegraphics{fig/plot6.pdf}
+  \caption{Die gemessenen Differenzen $\Delta\lambda$ in Abhängigkeit der Resonatorlänge $L$.}
+  \label{fig:longitudinal}
+\end{figure}
+
+Durch den Dopplereffekt kommt es zur Verbreiterung der Spektrallinien.
+Dieser Effekt wird Doppler-Verbreiterung genannt und durch die Halbwertsbreite $\delta f$ beschrieben.
+\begin{equation}
+  \delta f = \frac{f_0}{c} \sqrt{\frac{8 k_b T \ln(2)}{m}}
+\end{equation}
+Mit der Neonatommasse von $m=20,18$ u, einer Tempetatur von $T = 300$ K und für die rote Linie mit $\lambda = 632,8$ nm beträgt die Halbwertsbreite:
+\begin{equation*}
+  \delta f \approx \SI{1300}{MHz}
+\end{equation*}
+Der Laser läuft im Multimodenbetrieb, wenn die Halbwertsbreite $\delta f$ ein Vielfaches der Frequenzabstände $\Delta f$ zwischen den einzelnen Moden ist.
+\end{comment}
+\subsection{Wellenlänge}
+\label{sec:wel}
+
+Die Wellenlänge des Lasers kann mithilfe der Formel
+\begin{equation}
+  \lambda = \dfrac{\sin\left(\tan\left(\dfrac{d_n}{L}\right)\right)}{g \cdot n}
+\end{equation}
+bestimmt werden.
+Dabei ist $d_\mathrm{n}$ der Abstand des n-ten Nebenmaxima vom Hauptmaxima, $L$ der Abstand zwischen Gitter und Schirm und $g$ die Gitterkosntante.
+Die Messwerte und Ergebnisse sind in Tablle (\ref{tab:wel}) eingetragen.
+Für die Wellenlänge ergibt sich so ein Mittelwert von \SI{631.29(539)}{\nano\meter}.
+
+\begin{table}
+ \centering
+ \caption{Messdaten zur Messung der Wellenlänge.}
+ \label{tab:wel}
+ \begin{tabular}{c c c c c}
+   \toprule
+   Gitterkonstante $g$ & $L$ in \si{\centi\meter}  & Ordnung & Abstand $d_\mathrm{n}$ in \si{\centi\meter} & Wellenlänge $\lambda$ in \si{\nano\meter} \\
+   \midrule
+   100 Linien/mm & 88,5 & 1 & 5,55  & 627,53 \\
+   & & 1 & 5,6 & 633,19 \\
+   80 Linien/mm & 90 & 1 & 4,5  & 625,26 \\
+   & & 1 & 4,6 & 639,17\\
+   \bottomrule
+ \end{tabular}
+\end{table}

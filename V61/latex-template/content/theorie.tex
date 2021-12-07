@@ -40,7 +40,7 @@ In diesem Versuch wird ein Helium-Neon-Laser betrachet, dabei dient das Helium a
   \caption{Funktionsweise des Helium-Neon-Laser \cite{Anleitung5}}
   \label{fig:heliumneon}
 \end{figure}
-Wie in Abbildung (\ref{fig:heliumneon}) zu sehen, ist der Übergang von 5s nach 3p der Neonatome für die rote Linie, das heißt Wellenlänge $\lambda=\SI{632.8}{\nano\meter}$, verantwortlich.
+Wie in Abbildung (\ref{fig:heliumneon}) zu sehen, ist der Übergang von 3s nach 2p der Neonatome für die rote Linie, das heißt Wellenlänge $\lambda=\SI{632.8}{\nano\meter}$, verantwortlich.
 \subsection{Stabilitätsbedingung}
 Damit ein einfacher Resonator wie im Helium-Neon-Laser als stabil gilt muss die Stabilitätsbedingung gelten, diese lautet:
 \begin{equation}
@@ -54,16 +54,27 @@ Mit den sogenannten g-Faktoren:
 \end{equation}
 Dabei ist $L$ die Länge des Resonators und $R_\mathrm{i}$ die Krümmungsradien der Resonatorspiegel. Es gibt vier Grenzfälle, diese sind konfokale Resonatoren ($g_\mathrm{i}=0$), hemisphärische Resonatoren ($g_\mathrm{1}=0$, $g_\mathrm{2}=1$), konzentrische Resonatoren ($g_\mathrm{i}=-1$) und den sogenannten Fabry-Pérot-Resonator ($g_\mathrm{i}=1$).
 \subsection{Moden}
+\label{sec:modee}
 Da die Resonatorlänge $L$ im  Vergleich zur Wellenlänge $\lambda$ sehr gro0 ist, erfüllen mehrere Moden die Stabilitätsbedingung. Die Moden werden $\mathrm{TEM}_\mathrm{lpq}$ berezeichnet. Dabei sind die Indize l und p die transversalen Knotenpunkte
 in x- bzw. y-Richtung und q die longitudinale Mode. Die Mode $\mathrm{TEM}_\mathrm{00}$ heißt Grundmode und besitzt den größten Anteil am Modenspektrum ihre Intensität ist gegeben durch:
 \begin{equation}
   \label{eqn:grundmode}
-  I_\mathrm{00}(x)=I_\mathrm{0}\exp(\dfrac{-2(x-x_\mathrm{0})^2}{w^2})
+  I_\mathrm{00}(x)=I_\mathrm{0}\exp\left(\dfrac{-2(x-x_\mathrm{0})^2}{w^2}\right)
 \end{equation}
 Im Auswertungsteil werden ebenfalls noch die Intensitäten für die Moden $\mathrm{TEM}_\mathrm{01}$ (siehe Gleichung (\ref{eqn:01})) und $\mathrm{TEM}_\mathrm{02}$ (siehe Gleichung (\ref{eqn:02})) verwendet:
 \begin{align}
   \label{eqn:01}
-  I_\mathrm{01}(x)&=I_\mathrm{0}\dfrac{4(x-x_\mathrm{0})^2}{w^2}\exp(\dfrac{-2(x-x_\mathrm{0})^2}{w^2}) \\
+  I_\mathrm{01}(x)&=I_\mathrm{0}\dfrac{4(x-x_\mathrm{0})^2}{w^2}\exp\left(\dfrac{-2(x-x_\mathrm{0})^2}{w^2}\right) \\
   \label{eqn:02}
-  I_\mathrm{02}(x)&=I_\mathrm{0}\left(\dfrac{8(x-x_\mathrm{0})^2}{w^2}-2\right)^2\exp(\dfrac{-2(x-x_\mathrm{0})^2}{w^2})
+  I_\mathrm{02}(x)&=I_\mathrm{0}\left(\dfrac{8(x-x_\mathrm{0})^2}{w^2}-2\right)^2\exp\left(\dfrac{-2(x-x_\mathrm{0})^2}{w^2}\right)
 \end{align}
+\subsection{Brewsterfenster}
+\label{sec:brews}
+Damit das Licht möglichst verlustfrei austreten kann ist das Laserrohr mit Brewsterfenstern abgeschlossen, sie stehen dabei im sogenannten Brewster-Winkel zum Strahlengang. Durch die Brewsterfenster wird somit Licht, dass parallel
+zur Einfallsebene polarisiert ist wesentlich verlustfreier durchgelassen als anders polarisiertes Licht. Dadurch wird die Polarisationsrichtung des emittierten Lichts festgelegt. In Abbildung (\ref{fig:brew}) ist dies dargestellt.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.5]{fig/brew.png}
+  \caption{Strahlengang am Brewsterfenster \cite{Anleitung6}}
+  \label{fig:brew}
+\end{figure}

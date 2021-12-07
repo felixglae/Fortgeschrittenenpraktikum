@@ -31,36 +31,6 @@
       \strng{authorbibnamehash}{0380260e97c77dff168ba171b245f2e2}
       \strng{authornamehash}{0380260e97c77dff168ba171b245f2e2}
       \strng{authorfullhash}{0380260e97c77dff168ba171b245f2e2}
-      \field{extraname}{1}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Laser}
-      \field{urlday}{15}
-      \field{urlmonth}{12}
-      \field{urlyear}{2021}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb http://www.chemgapedia.de/vsengine/vlu/vsc/de/ch/13/vlu/spektroskopie/spektrometer/laser.vlu/Page/vsc/de/ch/13/pc/spektroskopie/spektrometer/laser/laser3.vscml.html
-      \endverb
-      \verb{url}
-      \verb http://www.chemgapedia.de/vsengine/vlu/vsc/de/ch/13/vlu/spektroskopie/spektrometer/laser.vlu/Page/vsc/de/ch/13/pc/spektroskopie/spektrometer/laser/laser3.vscml.html
-      \endverb
-    \endentry
-    \entry{Anleitung5}{manual}{}
-      \name{author}{1}{}{%
-        {{hash=0380260e97c77dff168ba171b245f2e2}{%
-           family={Chemgapedia},
-           familyi={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{0380260e97c77dff168ba171b245f2e2}
-      \strng{fullhash}{0380260e97c77dff168ba171b245f2e2}
-      \strng{bibnamehash}{0380260e97c77dff168ba171b245f2e2}
-      \strng{authorbibnamehash}{0380260e97c77dff168ba171b245f2e2}
-      \strng{authornamehash}{0380260e97c77dff168ba171b245f2e2}
-      \strng{authorfullhash}{0380260e97c77dff168ba171b245f2e2}
-      \field{extraname}{2}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -95,16 +65,74 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Anleitung zu V21 - Optisches Pumpen}
+      \field{title}{Anleitung zu V61 - Der HeNe-Laser}
       \field{urlday}{1}
       \field{urlmonth}{12}
       \field{urlyear}{2021}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732524/mod_resource/content/2/V21.pdf
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732531/mod_resource/content/2/V61.pdf
       \endverb
       \verb{url}
-      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732524/mod_resource/content/2/V21.pdf
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732531/mod_resource/content/2/V61.pdf
+      \endverb
+    \endentry
+    \entry{Anleitung6}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=db93486668123222bba6283ad51a5454}{%
+           family={Göttingen},
+           familyi={G\bibinitperiod},
+           given={Universität},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{db93486668123222bba6283ad51a5454}
+      \strng{fullhash}{db93486668123222bba6283ad51a5454}
+      \strng{bibnamehash}{db93486668123222bba6283ad51a5454}
+      \strng{authorbibnamehash}{db93486668123222bba6283ad51a5454}
+      \strng{authornamehash}{db93486668123222bba6283ad51a5454}
+      \strng{authorfullhash}{db93486668123222bba6283ad51a5454}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Der Helium-Neon-Laser}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://lp.uni-goettingen.de/get/text/1804
+      \endverb
+      \verb{url}
+      \verb https://lp.uni-goettingen.de/get/text/1804
+      \endverb
+    \endentry
+    \entry{Anleitung5}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=d7c98c8c33c0aa0cc6d3a3ab4aa642af}{%
+           family={Homemade-Electronics},
+           familyi={H\bibinithyphendelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d7c98c8c33c0aa0cc6d3a3ab4aa642af}
+      \strng{fullhash}{d7c98c8c33c0aa0cc6d3a3ab4aa642af}
+      \strng{bibnamehash}{d7c98c8c33c0aa0cc6d3a3ab4aa642af}
+      \strng{authorbibnamehash}{d7c98c8c33c0aa0cc6d3a3ab4aa642af}
+      \strng{authornamehash}{d7c98c8c33c0aa0cc6d3a3ab4aa642af}
+      \strng{authorfullhash}{d7c98c8c33c0aa0cc6d3a3ab4aa642af}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{HeNe Laser}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://homemade-electronics.com/index.php?s=HeNe%20Laser
+      \endverb
+      \verb{url}
+      \verb http://homemade-electronics.com/index.php?s=HeNe%20Laser
       \endverb
     \endentry
     \entry{Anleitung3}{manual}{}
@@ -133,34 +161,6 @@
       \endverb
       \verb{url}
       \verb https://www.internetchemie.info/chemische-elemente/rubidium-isotope.php
-      \endverb
-    \endentry
-    \entry{paint}{manual}{}
-      \name{author}{1}{}{%
-        {{hash=140864078aeca1c7c35b4beb33c53c34}{%
-           family={Microsoft},
-           familyi={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
-      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
-      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
-      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
-      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
-      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Paint}
-      \field{urlday}{1}
-      \field{urlmonth}{12}
-      \field{urlyear}{2021}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.microsoft.com/de-de/p/paint/9pcfs5b6t72h#activetab=pivot:overviewtab
-      \endverb
-      \verb{url}
-      \verb https://www.microsoft.com/de-de/p/paint/9pcfs5b6t72h#activetab=pivot:overviewtab
       \endverb
     \endentry
     \entry{python}{manual}{}
