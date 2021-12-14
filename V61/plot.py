@@ -16,11 +16,11 @@ def stab_inf(L, r1):
 L = np.linspace(-0.5,3.0,100)
 
 r1, r2 = 1.4, 1.4
-plt.plot(L, stab(L, r1, r2), label=r"Anordnung 1 ($r_1 = 1,4$ $r_2 = 1,4$)")
+plt.plot(L, stab(L, r1, r2), 'r-', label=r"Anordnung 1 ($r_1 = 1,4$ $r_2 = 1,4$)")
 r1, r2 = 1, 1.4
-plt.plot(L, stab(L, r1, r2), label=r"Anordnung 2 ($r_1 = 1$ $r_2 = 1,4$)")
+plt.plot(L, stab(L, r1, r2), 'b-', label=r"Anordnung 2 ($r_1 = 1$ $r_2 = 1,4$)")
 r1  = 1.4
-plt.plot(L, stab_inf(L, r1), label=r"Anordnung 3 ($r_1 = 1,4$ $r_2 = \infty$)")
+plt.plot(L, stab_inf(L, r1), 'k-', label=r"Anordnung 3 ($r_1 = 1,4$ $r_2 = \infty$)")
 
 
 plt.grid()
@@ -81,8 +81,8 @@ xplot00 = np.linspace(-7,13.0,100)
 xplot01 = np.linspace(-11,15,100)
 xplot02 = np.linspace(-11,15.0,100)
 
-plt.plot(x00, I00, "k.", label="Messdaten")
-plt.plot(xplot00, tem00(xplot00, *var00), label="Fit")
+plt.plot(x00, I00, "kx", label="Messdaten")
+plt.plot(xplot00, tem00(xplot00, *var00), 'r-', label="Fit")
 plt.grid()
 plt.legend()
 plt.xlabel(r"x-Richtung /mm")
@@ -91,8 +91,8 @@ plt.xlim(-7, 13)
 plt.savefig('plot2.pdf')
 plt.clf()
 
-plt.plot(x01, I01, "k.", label="Messdaten")
-plt.plot(xplot01, tem01(xplot01, *var01), label="Fit")
+plt.plot(x01, I01, "kx", label="Messdaten")
+plt.plot(xplot01, tem01(xplot01, *var01), 'r-', label="Fit")
 plt.grid()
 plt.legend()
 plt.xlabel(r"x-Richtung /mm")
@@ -101,8 +101,8 @@ plt.xlim(-11, 15)
 plt.savefig('plot3.pdf')
 plt.clf()
 
-plt.plot(x02, I02, "k.", label="Messdaten")
-plt.plot(xplot02, tem02(xplot02, *var02), label="Fit")
+plt.plot(x02, I02, "kx", label="Messdaten")
+plt.plot(xplot02, tem02(xplot02, *var02), 'r-', label="Fit")
 plt.grid()
 plt.legend()
 plt.xlabel(r"x-Richtung /mm")
@@ -130,8 +130,8 @@ print()
 
 wplot = np.linspace(-0.5,3.5,100)
 
-plt.plot(w, I, "k.", label="Messdaten")
-plt.plot(wplot, cosi(wplot, *var_p), label="Fit")
+plt.plot(w, I, "kx", label="Messdaten")
+plt.plot(wplot, cosi(wplot, *var_p), 'r-', label="Fit")
 plt.grid()
 plt.legend()
 plt.xlabel(r"Polarisationswinkel/rad")
@@ -171,8 +171,8 @@ print()
 
 Lmultiplot = np.linspace(0.8,1.4,100)
 
-plt.plot(Lmulti, p_average, "k.", label="Messdaten")
-plt.plot(Lmultiplot, lin(Lmultiplot, *var_m), label="Fit")
+plt.plot(Lmulti, p_average, "kx", label="Messdaten")
+plt.plot(Lmultiplot, lin(Lmultiplot, *var_m), 'r-', label="Fit")
 plt.grid()
 plt.legend()
 plt.xlabel(r"Resonatorlänge $L$/m")
