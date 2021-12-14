@@ -63,9 +63,13 @@ print(var00[0], "\\pm", errs00[0])
 print(var00[1], "\\pm", errs00[1])
 print(var00[2], "\\pm", errs00[2])
 
+print()
+
 print(var01[0], "\\pm", errs01[0])
 print(var01[1], "\\pm", errs01[1])
 print(var01[2], "\\pm", errs01[2])
+
+print()
 
 print(var02[0], "\\pm", errs02[0])
 print(var02[1], "\\pm", errs02[1])
