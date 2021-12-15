@@ -51,7 +51,7 @@ def tem02(x, a, b, c):
 var00, cov00 = curve_fit(tem00, x00, I00)
 errs00 = np.sqrt(np.diag(cov00))
 
-var01, cov01 = curve_fit(tem01, x01, I01, [0.3, 2.2, 1.5])
+var01, cov01 = curve_fit(tem01, x01, I01)
 errs01 = np.sqrt(np.diag(cov01))
 
 var02, cov02 = curve_fit(tem02, x02, I02, [0.5, 4, 7])
@@ -77,7 +77,7 @@ print(var02[2], "\\pm", errs02[2])
 
 print()
 
-xplot00 = np.linspace(-7,13.0,100)
+xplot00 = np.linspace(-12,17,100)
 xplot01 = np.linspace(-11,15,100)
 xplot02 = np.linspace(-11,15.0,100)
 
@@ -85,9 +85,9 @@ plt.plot(x00, I00, "kx", label="Messdaten")
 plt.plot(xplot00, tem00(xplot00, *var00), 'r-', label="Fit")
 plt.grid()
 plt.legend()
-plt.xlabel(r"x-Richtung /mm")
+plt.xlabel(r"x-Richtung / mm")
 plt.ylabel(r"$\mathrm{I}\,/\,\mu$A")
-plt.xlim(-7, 13)
+plt.xlim(-12, 17)
 plt.savefig('plot2.pdf')
 plt.clf()
 
@@ -95,7 +95,7 @@ plt.plot(x01, I01, "kx", label="Messdaten")
 plt.plot(xplot01, tem01(xplot01, *var01), 'r-', label="Fit")
 plt.grid()
 plt.legend()
-plt.xlabel(r"x-Richtung /mm")
+plt.xlabel(r"x-Richtung / mm")
 plt.ylabel(r"$\mathrm{I}\,/\,\mu$A")
 plt.xlim(-11, 15)
 plt.savefig('plot3.pdf')
@@ -182,7 +182,7 @@ plt.savefig('plot6.pdf')
 plt.clf()
 
 ### Wellenlänge
-wel = np.array([627.53, 633.19, 625.26, 639.17])
+wel = np.array([631.49, 641.21, 631.34, 631.34])
 
 print("wellenlänge")
 print(wel.mean())
