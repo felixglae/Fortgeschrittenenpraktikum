@@ -1,0 +1,109 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Anleitung1}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{%
+           family={Dortmund},
+           familyi={D\bibinitperiod},
+           given={TU},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Anleitung zu V61 - Der HeNe-Laser}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732531/mod_resource/content/2/V61.pdf
+      \endverb
+      \verb{url}
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732531/mod_resource/content/2/V61.pdf
+      \endverb
+    \endentry
+    \entry{python}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=a7f5f35426b927411fc9231b56382173}{%
+           family={Python},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7f5f35426b927411fc9231b56382173}
+      \strng{fullhash}{a7f5f35426b927411fc9231b56382173}
+      \strng{bibnamehash}{a7f5f35426b927411fc9231b56382173}
+      \strng{authorbibnamehash}{a7f5f35426b927411fc9231b56382173}
+      \strng{authornamehash}{a7f5f35426b927411fc9231b56382173}
+      \strng{authorfullhash}{a7f5f35426b927411fc9231b56382173}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.python.org
+      \endverb
+      \verb{url}
+      \verb https://www.python.org
+      \endverb
+    \endentry
+    \entry{Anleitung7}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Boltzmannkonstante}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Boltzmann-Konstante
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Boltzmann-Konstante
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
