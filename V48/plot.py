@@ -9,7 +9,7 @@ from scipy.integrate import quad, trapz
 
 # to run code 6
 
-I1, T1 = np.genfromtxt("data/temp1.txt", unpack=True)
+I1, T1 = np.genfromtxt("data/temp3.txt", unpack=True)
 I2, T2 = np.genfromtxt("data/temp2.txt", unpack=True)
 
 T1 = constants.convert_temperature(T1, 'Celsius', 'Kelvin')
@@ -30,8 +30,8 @@ for T, I, selection, offset_selection, p0, name, ff in [
         [
             T1,
             I1,
-            ((T1 > 230) & (T1 < 236) | (T1 > 280)),
-            (T1 > 230) & (T1 < 290),
+            ((T1 > 200) & (T1 < 245) | (T1 > 275)) & (T1 < 285),
+            (T1 > 246) & (T1 < 270),
             None,
             'set1',
             linear_fit,
@@ -56,16 +56,16 @@ for T, I, selection, offset_selection, p0, name, ff in [
     print(var[0], errs[0])
     print(var[1], errs[1])
 
-    xs = np.linspace(220, 320)
+    xs = np.linspace(200, 300)
 
     plt.plot(T[selection],I[selection], 'b.', label='verwendete Daten')
     plt.plot(T[~selection],I[~selection], 'g.', label='ignorierte Daten')
     plt.plot(xs, ff(xs, *var), label='fit')
     plt.plot(T, I_cleaned + I_min, 'r.', label='bereinigte Daten')
     plt.plot(xs, [I_min] * len(xs), label='Offset') # Liste mit Eintrag I_min, Anzahl len(xs)
-    plt.xlim(220, 320)
+    plt.xlim(200, 300)
     if name == 'set1':
-        plt.ylim(-1.5, 15)
+        plt.ylim(-4.5, 45)
         I1_cleaned = I_cleaned
     else:
         plt.ylim(-3, 21)
@@ -90,8 +90,8 @@ for T, I, selection1, selection2, name in [
         [
             T1,
             I1_cleaned,
-            (T1 > 236) & (T1 < 255),
-            (T1 > 228) & (T1 < 262),
+            (T1 > 250) & (T1 < 264),
+            (T1 > 244) & (T1 < 275),
             'set1',
         ],
         [
@@ -115,9 +115,9 @@ for T, I, selection1, selection2, name in [
     print("C:", val[0], errs[0])
     Ws['approx'][name] = W
 
-    xs = np.linspace(0.0037, 0.0045, 100)
+    xs = np.linspace(0.0037, 0.0041, 100)
     #plt.ylim(-2, 5)
-    plt.xlim(0.0038, 0.0044)
+    plt.xlim(0.0037, 0.0041)
     plt.grid()
     plt.plot(xs, j_aprox(xs, C=val[0], W=val[1]), 'r-', label='Fit')
     plt.plot(T_sel2, I_sel2, 'b.', label='bereinigte Daten\n(nicht verwendet)')
@@ -151,8 +151,8 @@ for T, I, selection, selection2, name in [
         [
             T1,
             I1_cleaned,
-            (T1 > 240) & (T1 < 265),
-            (T1 > 235) & (T1 < 275),
+            (T1 > 246) & (T1 < 270),
+            (T1 < 246) & (T1 > 270),
             'set1',
         ],
         [
@@ -203,6 +203,7 @@ for T, I, selection, selection2, name in [
     plt.xlabel(r'$T^{-1}$ / $K^{-1}$')
     plt.ylabel(r'$\ln\left(\int_{T}^{T*} i(T) \mathrm{d}\,T \:/\: i(T) \cdot b \right)$')
     plt.legend(loc='best')
+
     if name == 'set1':
         plt.savefig('plot5.pdf')
     else:
@@ -225,7 +226,7 @@ def find_maxT(array1,array2):
 
 for T, I, name in [[T1, I1, "set1"], [T2, I2, "set2"]]:
 
-    time = np.linspace(0,0.5*(len(T)-1), len(T))
+    time = np.linspace(0,(len(T)-1), len(T))
     steigung = []
     new_time = []
     i = 0
