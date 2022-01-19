@@ -1,48 +1,28 @@
 \section{Aufbau und Durchführung}
 \label{sec:Durchführung}
-In diesem Abschnitt wird zunächst der Aufbau und die Einstellung der verwendeten Messapparatur beschrieben und anschließend die Durchführung des Experimentes dokumentiert.
-\subsection{Aufbau der Messapparatur}
-In Abbildung \ref{fig:aufbauhene} ist der Versuchsaufbau zu sehen:
+In diesem Abschnitt werden Aufbau und Durchführung des Experimentes beschrieben.
+\subsection{Aufbau}
+\label{sec:durchff1}
+In Abbildung (\ref{fig:aufbau48}) ist der Aufbau des Versuches und die verwendeten Bauteile zu sehen:
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.55]{fig/aufbauhene.png}
-  \caption{Der verwendete Versuchsaufbau \cite{Anleitung1}}
-  \label{fig:aufbauhene}
+  \includegraphics[scale=0.5]{fig/aufbauv48.png}
+  \caption{Versuchsaufbau mit beschrifteten Bauteilen \cite[2]{Anleitung1}}
+  \label{fig:aufbau48}
 \end{figure}
-Der Versuchsaufbau besteht wie in Abbildung (\ref{fig:aufbauhene}) zu sehen aus einer optischen Schiene auf der ein Laserrohr, zwei Spiegel, Blenden sowie ein Laser zum Justieren der Apparatur befestigt sind. Die geometrischen Daten
-des mit einem Helium-Neon-Gasgemisch gefüllten Laserrohr sind gegeben durch die Länge $L=\SI{408}{\milli\meter}$ sowie den Durchmesser $d_\mathrm{HeNe}=\SI{1.1}{\milli\meter}$. Das Laserrohr ist außerdem mit Elektroden versehen die durch Entladung die Besetzungsinversion auslösen. Desweiteren ist das Laserrohr mit den in Abschnitt (\ref{sec:brews}) beschriebenen Brewsterfenstern abgeschlossen. In Tabelle (\ref{tab:spiegel}) sind die verfügbaren Spiegel aufgelistet.
-\begin{table}
+Innerhalb des Rezipienten befindet sich für diesen Versuch als Probe ein Kaliumbromidkristall der mit Strontium dotiert ist. Diese Probe befindet sicht zwischen einer Metallplatte
+und dem Boden des Behälters, so entsteht ein Plattenkondensator in dem die Probe als Dielektrikum wirkt. Da der verwendet Kristall hygroskopisch ist wird mithilfe einer Pumpe ein
+Vakuum im Rezipienten erzeugt. Dennoch sind einige Wassermoleküle im Rezipienten vorhanden wie später in Abschnitt (\ref{sec:Auswertung}) zu erkennen ist. \\
+Im Dewar, der sich unter dem Rezipienten befindet, befindet sich flüssiger Stickstoff, der für die Abkühlung der Probe gebraucht wird. Zum Aufheizen der Probe ist eine Heizspule
+im Boden des Behälters verbaut. Gemessen wird die Temperatur der Probe mit einem Thermoelement. in Abbildung (\ref{fig:schema48}) ist dies schematisch dargestellt.
+\begin{figure}[h!]
   \centering
-  \caption{Die Daten der verfügbaren Spiegel}
-  \label{tab:spiegel}
-  \begin{tabular}{c | c | c}
-    \toprule
-    Spiegel & Bezeichnung & Oberflächenbeschaffenheit \\
-    \midrule
-    plan & flat/flat & HR (high reflectivity) $R \geq 99\%$ \\
-    konkav & $r=\SI{1000}{\milli\meter}$/flat & HR (high reflectivity) $R \geq 99\%$ \\
-    konkav & $r=\SI{1400}{\milli\meter}$/flat & HR (high reflectivity) $R \geq 99\%$ \\
-    konkav & $r=\SI{1400}{\milli\meter}$/flat & OC (out coupling) $T=1.5-1.8\%$ \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-Damit der HeNe-Laser justiert werden kann befindet sich der Justier-Laser auf der optischen Schiene mit der Wellenlänge $\lambda=\SI{532}{\nano\meter}$, der maximalen Leistung $P_\mathrm{max}=\SI{1}{\milli\watt}$ sowie der für die Justage verwendeten reduzierten Leistung $P_\mathrm{grün}=\SI{0.2}{\milli\watt}$.
+  \includegraphics[scale=0.5]{fig/schemav48.png}
+  \caption{Schematische Darstellung der Bauteile des Versuches \cite[3]{Anleitung1}}
+  \label{fig:schema48}
+\end{figure}
 \subsection{Durchführung}
-\label{sec:durchff}
-Die Messungen wurden in der folgenden Reihenfolge durchgeführt. Für die Messungen der $\mathrm{TEM}$-Moden, der Polarisation des Lasers und der Bestimmung der Wellenlänge wurden die Spiegel 3 und 4 aus Tabelle (\ref{tab:spiegel}) benutzt. Dies entspricht Anordnung 1 aus Abbildung (\ref{fig:plot1}).
-Die Spiegel befanden sich dabei im Abstand von $L=\SI{72}{\centi\meter}$, da so die Intensitätsschwankungen am Geringsten waren.
-\subsubsection{Justierung des He-Ne-Lasers}
-Für die Justage des He-Ne-Lasers werden mithilfe des Justierungslasers die Resonatorspiegel und das Laserrohr so eingestellt, dass der Laserstrahl mittig auf die Justierblende fällt, dafür wird ein Fadenkreuz verwendet.
-Nach dieser Justage kann der Versuch beginnen. Während des eigentlichen Experimentes ist der Justierungslaser ausgeschaltet.
-\subsubsection{Überprüfung der Stabilitätsbedingung}
-Nach der Justage wird nun als erstes die Stabilitätsbedingung überprüft, dafür wird zunächst der Laser auf maximale Leistung eingestellt und anschließend wird eine Messreihe der Intensität des Laserstrahls in Abhängigkeit von
-der Resonatorlänge aufgenommen. Dabei ist eine Nachjustierung der Leistung bei Verschiebung der Resonatorspiegel notwendig. Die Messung wird für einen konkav-konkav und einen plan-konkav Resonator durchgeführt.
-\subsubsection{TEM-Moden}
-Zur Untersuchung der transversalen Moden $\mathrm{TEM}_\mathrm{00}$ und $\mathrm{TEM}_\mathrm{01}$ wird mithilfe einer Streulinse der Laserstrahl aufgefächert und anschließend auf eine Photodiode geleitet.
-Die Intensitätsverteilung wird direkt von dieser mit einer Skala versehenen Diode abgelesen. Da die Grundmode $\mathrm{TEM}_\mathrm{00}$ wie in Abschnitt (\ref{sec:modee}) beschrieben den größten Anteil am Modenspektrum besitzt kann
-diese ohne weiteres Justieren der Apparatur vermessen werden. Damit die Mode $\mathrm{TEM}_\mathrm{01}$ sichtbar wird, wird das Laserrohr leicht justiert.
-\subsubsection{Polarisation des Lasers}
-\label{sec:polari}
-Um die Polarisation des Lasers zu bestimmen wird eine Messreihe mit einem Polarisationsfilter aufgenommen. Dafür wird dieser von $\SI{0}{\degree}$ bis $\SI{180}{\degree}$ im Strahlengang variiert und die Intensität in Abhängigkeit von der Polarisation des Filter wieder mithilfe einer Photodiode gemessen.
-\subsubsection{Wellenlänge des Lasers}
-Im letzten Teil der Durchführung soll nun mithilfe eines Gitters die Wellenlänge des Lasers bestimmt werden. Dafür wird ein Schirm auf den der Laserstrahl projeziert wird in einem hinreichend großen Abstand hinter das Gitter gestellt, sodass nulltes und die beiden ersten Maxima zu sehen sind. Dann werden die Abstände zwischen nulltem und ersten Maxima, Gitterkonstante sowie der Abstand zwischen Gitter und Schirm aufgeschrieben.
+\label{sec:durchff2}
+Als erstes wird die Probe mithilfe des Plattenkondensators mit einer Spannung von $\SI{950}{\volt}$ etwa 15 Minuten polarisiert, das bedeutet die Dipole werden ausgerichtet. Daraufhin wird die Probe durch den flüssigen Stickstoff im Dewar auf ungefähr $T=\SI{200}{\kelvin}$ abgekühlt und der Kondensator wird zusätzlich einige Minuten kurzgeschlossen, damit die restliche Ladung abfließen kann. \\
+Jetzt wird die Probe durch die Heizspule konstant aufgeheizt und die Temperatur um $\Delta T=\SI{100}{\kelvin}$ erhöht, dabei wird pro Minute ein Messwert genommen. Anschließend wird der gesamte Vorgang mit einer
+anderen Heizrate wiederholt. Die verwendeten Heizraten sollen für den ersten Durchlauf $\SI{2}{\kelvin\per\minute}$ und für den zweiten Durchlauf $\SI{1.5}{\kelvin\per\minute}$ sein.

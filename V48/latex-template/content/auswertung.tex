@@ -2,294 +2,114 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 In diesem Abschnitt werden die aufgenommenen Messdaten in Grafiken sowie Tabellen dargestellt und ausgewertet. Grafiken sowie dazugehörige Rechnungen sind mit Python \cite{python} erstellt bzw. berechnet worden.
-\subsection{Stabilitätsbedingung}
-\label{sec:stab}
-
-Der Laser ist stabil, wenn Gleichung (\ref{eqn:stabi}) mit den Stabilitätsparametern aus Gleichung (\ref{eqn:g-faktor}) erfüllt ist.
-Die theoretischen Kurven für die drei möglichen Spiegelanordnungen sind graphisch in Abbildung (\ref{fig:plot1}) dargestellt.
-Experimentell konnte nur die Stabilitätsbedingung für Anordnung 1 und Anordnung 3 überprüft werden.
-Der maximal gemessene Abstand der Resonatorspiegel beträgt für Anordnung 1 $L_\mathrm{1} = \SI{126}{\centi\meter}$ und für Anordnung 3 $L_\mathrm{3} = \SI{123}{\centi\meter}$.
-Für Anordnung 3 gilt, da der zweite Spiegel flach ist und somit der Krümmungsradius $R_\mathrm{2}\rightarrow\infty$ geht, mit der maximalen Länge $L_\mathrm{3} = \SI{123}{\centi\meter}$ für die Stabilitätsbedingung:
-\begin{align*}
-  0\leq1-\dfrac{L}{R_\mathrm{1}}\leq1
-\end{align*}
-Eingesetzt ergibt sich:
-\begin{align*}
-  1-\dfrac{L}{R_\mathrm{1}}=0.486
-\end{align*}
-Dies liegt im erlaubten Bereich der Stabilitätsbedingung.
-Wie in Abschnitt (\ref{sec:durchff}) beschrieben, wurden die folgenden Messungen mit Anordnung 1 und $L=\SI{72}{\centi\meter}$ durchgeführt damit ergibt sich für die Stabilitätsbedingung:
-\begin{align*}
-  g_\mathrm{1}g_\mathrm{2}&=1-L\left(\dfrac{1}{R_\mathrm{1}}+\dfrac{1}{R_\mathrm{2}}-\dfrac{L}{R_\mathrm{1}R_\mathrm{2}}\right) \\
-  g_\mathrm{1}g_\mathrm{2}&=0.236
-\end{align*}
-Damit liegt der Wert innerhalb des durch die Stabilitätsbedingung erlaubtem Bereich von $0\leq g_\mathrm{1}g_\mathrm{2}\leq1$.
-\begin{figure}
+\subsection{Bestimmung des Untergrundes}
+\label{sec:unter}
+Um den Untergrund zu bestimmen wird die Gaußglocke aus den aufgenommenen Daten ausgeschlossen und es wird eine Ausgleichsrechnung der Form
+\begin{equation*}
+  I(T)=a\cdot T+b
+\end{equation*}
+durchgeführt. Ein exponentieller Fit ließ sich leider nicht durchführen. In Abbildung (\ref{fig:1}) sind die Daten für die erste Heizrate von $\SI{1.99(32)}{\kelvin\per\minute}$ und in Abbildung (\ref{fig:2}) für die zweite Heizrate von $\SI{1.48(31)}{\kelvin\per\minute}$ dargestellt. Die Heizraten sind aus dem Mittelwert der mittleren Änderungsraten zwischen zwei Messdaten bestimmt.
+\begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.7]{fig/plot1.pdf}
-  \caption{Theoretische Stabilitätsbedingungen für die drei Anordnungen.}
-  \label{fig:plot1}
+  \includegraphics[scale=0.8]{fig/plot1.pdf}
+  \caption{Depolarisationsstrom aufgetragen gegen die Temperatur für eine Heizrate von $\SI{1.99(32)}{\kelvin\per\minute}$}
+  \label{fig:1}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.8]{fig/plot2.pdf}
+  \caption{Depolarisationsstrom aufgetragen gegen die Temperatur für eine Heizrate von $\SI{1.48(31)}{\kelvin\per\minute}$}
+  \label{fig:2}
 \end{figure}
 \FloatBarrier
-\subsection{Moden}
-\label{sec:tem}
-\subsubsection{$\mathrm{TEM}_\mathrm{00}$-Mode}
-In Tabelle (\ref{tab:T00}) sind die aufgenommenen Messwerte der Grundmode $\mathrm{TEM}_\mathrm{00}$ zufinden. In Abbildung (\ref{fig:T00}) ist der Verlauf graphisch dargestellt.
-Es wird aufbauend auf Gleichung (\ref{eqn:grundmode}) eine Ausgleichsrechnung der Form
+Die Parameter ergeben sich für die erste Heizrate zu:
+\begin{align*}
+    a_\mathrm{1} &= \SI{0.159(5)e-12}{\ampere\per\kelvin} \\
+    b_\mathrm{1} &= \SI{-35(1)e-12}{\ampere}.
+\end{align*}
+und für die zweite Heizrate zu:
+\begin{align*}
+    a_\mathrm{2} &= \SI{0.101(2)e-12}{\ampere\per\kelvin} \\
+    b_\mathrm{2} &= \SI{-21.9(7)e-12}{\ampere}.
+\end{align*}
+\subsection{Berechnung der Aktivierungsenergie}
+In diesem Abschnitt wird die Aktivierungsenergie mithilfe der zwei verschiedenen Ansätzen aus dem Abschnitt (\ref{sec:akti}) bestimmt.
+\subsubsection{Polarisationsansatz}
+In den Abbildungen (\ref{fig:3}) und (\ref{fig:4}) sind die verwendeten Daten für die Berechnung der Aktivierungsenergie $W$ für die zwei verschiedenen Heizraten dargestellt.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.8]{fig/plot3.pdf}
+  \caption{Halblogarithmische Darstellung des Polarisationsstroms gegen den Kehrwert der Temperatur für eine Heizrate von $\SI{1.99(32)}{\kelvin\per\minute}$}
+  \label{fig:3}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.8]{fig/plot4.pdf}
+  \caption{Halblogarithmische Darstellung des Polarisationsstroms gegen den Kehrwert der Temperatur für eine Heizrate von $\SI{1.48(31)}{\kelvin\per\minute}$}
+  \label{fig:4}
+\end{figure}
+\FloatBarrier
+Es wird wie aus Abschnitt (\ref{sec:polaris}) folgt eine Ausgleichsrechnung der Form
 \begin{equation}
-  I(x) = I_\mathrm{0} \cdot \exp\left(-2\frac{(x-x_\mathrm{0})^2}{w^2}\right)
+    \label{eqn:lin}
+    \ln\left(\dfrac{I(T)}{\SI{1e-11}{\ampere}}\right) = -\dfrac{W}{k_\mathrm{B} T} + c,
 \end{equation}
 durchgeführt.
-Daraus ergeben sich für die Grundmode die folgenden Werte:
+Daraus ergeben sich die Parameter zu:
 \begin{align*}
-I_\mathrm{0} &= \SI{0.51(2)}{\micro\ampere}\\
-x_\mathrm{0} &= \SI{2.89(29)}{\milli\meter}\\
-w &= \SI{12.5(6)}{\milli\meter}
+    W_\mathrm{1} &= \SI{0.88(5)}{\electronvolt} \\
+    W_\mathrm{2} &= \SI{0.83(5)}{\electronvolt} \\
+    c_\mathrm{1} &= \num{14(2)} \\
+    c_\mathrm{2} &= \num{12(2)}
 \end{align*}
-
- \begin{table}
- 	\centering
- 	\caption{Die gemessenen Stromstärken $I$ und die dazugehörigen Radien $r$ entlang der Horizontalen der $\mathrm{TEM}_\mathrm{00}$-Mode.}
- 	\label{tab:T00}
-  \begin{tabular}{c c c c}
-    \toprule
-    $r$ in mm & $I(r)$ in \si{\micro\ampere} & $r$ in mm & $I(r)$ in \si{\micro\ampere} \\
-    \midrule
-     -10 & 0,071 & 4 & 0,497 \\
-     -8 & 0,101 & 6 & 0,391 \\
-     -6 & 0,206 & 8 & 0,334 \\
-     -4 & 0,248 & 10 & 0,283 \\
-     -2 & 0,308 & 12 & 0,209 \\
-     0 & 0,510 & 14 & 0,108 \\
-     2 & 0,549 & 16 & 0,054 \\
-    \bottomrule
-  \end{tabular}
- \end{table}
-
+\subsubsection{Berechung über die Stromdichte}
+In diesem Abschnitt wird die Methode aus Abschnitt (\ref{sec:strom1}) verwendet um die Aktivierungsenergie zu bestimmen. Die Messdaten sind in Abbildung (\ref{fig:5}) für die erste Heizrate und in Abbildung (\ref{fig:6}) dargestellt.
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.7]{fig/plot2.pdf}
-  \caption{Intensitätsverteilung der $\mathrm{TEM}_\mathrm{00}$-Mode.}
-  \label{fig:T00}
+  \includegraphics[scale=0.8]{fig/plot5.pdf}
+  \caption{Integrierter Polarisationsstrom gegen den Kehrwert der Temperatur für eine Heizrate von $\SI{1.99(32)}{\kelvin\per\minute}$}
+  \label{fig:5}
 \end{figure}
-\FloatBarrier
-\subsubsection{$\mathrm{TEM}_\mathrm{01}$-Mode}
-Für die $\text{TEM}_{01}$-Mode wird die Ausgleichsfunktion mit Gleichung (\ref{eqn:01}) wie folgt abgewandelt:
-\begin{equation}
-  I(x) = I_\mathrm{0} \cdot \dfrac{4(x-x_\mathrm{0})^2}{w^2} \cdot \exp\left(-2\frac{(x-x_\mathrm{0})^2}{w^2}\right)
-\end{equation}
-Die aufgenommenen Messdaten sind in Tabelle (\ref{tab:T01}) aufgelistet.
-In Abbildung (\ref{fig:T01}) ist die gefittete Funktion zu sehen.
-Es ergeben sich die Parameter:
-\begin{align*}
-I_\mathrm{0} &= \SI{0.327(9)}{\micro\ampere}\\
-x_\mathrm{0} &= \SI{0.705(77)}{\milli\meter}\\
-w &= \SI{6.22(11)}{\milli\meter}
-\end{align*}
-
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.7]{fig/plot3.pdf}
-  \caption{Intensitätsverteilung der $\mathrm{TEM}_\mathrm{01}$-Mode.}
-  \label{fig:T01}
+  \includegraphics[scale=0.8]{fig/plot6.pdf}
+  \caption{Integrierter Polarisationsstrom gegen den Kehrwert der Temperatur für eine Heizrate von $\SI{1.48(31)}{\kelvin\per\minute}$}
+  \label{fig:6}
 \end{figure}
-
-\begin{table}
- \centering
- \caption{Die gemessenen Stromstärken $I$ und die dazugehörigen Radien $r$ entlang der Horizontalen der $\mathrm{TEM}_\mathrm{01}$-Mode.}
- \label{tab:T01}
- \begin{tabular}{c c c c}
-   \toprule
-   $r$ in mm & $I(r)$ in \si{\micro\ampere} & $r$ in mm & $I(r)$ in \si{\micro\ampere} \\
-   \midrule
-   -10 & 0,005 & 2 & 0,088 \\
-   -9 & 0,012 & 3 & 0,143 \\
-   -8 & 0,037 & 4 & 0,219 \\
-   -7 & 0,089 & 5 & 0,239 \\
-   -6 & 0,132 & 6 & 0,254 \\
-   -5 & 0,174 & 7 & 0,201 \\
-   -4 & 0,229  & 8 & 0,131 \\
-   -3 & 0,215  & 9 & 0,069  \\
-   -2 & 0,163 & 10 & 0,032 \\
-   -1 & 0,065 & 11 & 0,017 \\
-   0 & 0,003 & 12 & 0,009  \\
-   1 & 0,023 &  &  \\
-   \bottomrule
- \end{tabular}
-\end{table}
 \FloatBarrier
-\begin{comment}
-\subsubsection{$\text{TEM}_{02}$-Mode}
-
-Zur Bestimmung der Intensitätsverteilung der $\mathrm{TEM}_\mathrm{02}$ wird die Ausgleichungsfunktion zum letzten Mal mit der Gleichung (\ref{eqn:02}) angepasst
-\begin{equation}
-  I(x) = I_\mathrm{0} \cdot \left(\frac{8(x-x_\mathrm{0})^2}{w^2}-2\right)^2 \cdot \exp\left(-2\frac{(x-x_\mathrm{0})^2}{w^2}\right)
-\end{equation}
-In Tabelle (\ref{tab:T02}) befinden sich die augenommenen Messdaten mit denen die Ausgleichsrechnung durchgeführt wird.
-Diese liefert die Parameter:
+Für die Berechnung wird der Ausdruck
 \begin{align*}
-I_\mathrm{0} &= \SI{0.069(4)}{\micro\ampere}\\
-x_\mathrm{0} &= \SI{2.57(15)}{\milli\meter}\\
-w &= \SI{6.46(16)}{\milli\meter}
+      \int_T^{T^*} I(T') \symup{d}\,T'
 \end{align*}
-In Abbildung (\ref{fig:T02}) ist die gefittete Funktion dargestellt.
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.7]{fig/plot4.pdf}
-  \caption{Intensitätsverteilung der $\mathrm{TEM}_\mathrm{02}$-Mode.}
-  \label{fig:T02}
-\end{figure}
-
-\begin{table}
- \centering
- \caption{Die gemessenen Stromstärken $I$ und die dazugehörigen Radien $r$ entlang der Horizontalen der $\mathrm{TEM}_\mathrm{02}$-Mode.}
- \label{tab:T02}
- \begin{tabular}{c c c c}
-   \toprule
-   $r$ in mm & $I(r)$ in \si{\micro\ampere} & $r$ in mm & $I(r)$ in \si{\micro\ampere} \\
-   \midrule
-   14  & 0,04 & 1   & 0,12 \\
-   13  & 0,11 & 0   & 0,04 \\
-   12  & 0,16 & -1  & 0,018 \\
-   11  & 0,22 & -2  & 0,09 \\
-   10  & 0,27 & -3  & 0,35 \\
-   9   & 0,25 & -4  & 0,47 \\
-   8   & 0,18 & -5  & 0,45 \\
-   7   & 0,07 & -6  & 0,36 \\
-   6   & 0,01 & -7  & 0,29 \\
-   5   & 0,05 & -8  & 0,19 \\
-   4   & 0,16 & -9  & 0,09 \\
-   3   & 0,21 & -10 & 0,04 \\
-   2   & 0,19 & & \\
-   \bottomrule
- \end{tabular}
-\end{table}
-\FloatBarrier
-\end{comment}
-\subsection{Polarisation}
-\label{sec:pol}
-
-In diesem Abschnitt wird nun die Polarisationsrichtung des Lasers untersucht. Wie in Abschnitt (\ref{sec:polari}) beschrieben werden die Messdaten aufgenommen.
-Die Daten sind in der Tabelle (\ref{tab:polarisation}) angegeben und in Abbildung (\ref{fig:polarisation}) visualisiert.
-Die gefittete Funktion hat die Form:
-\begin{equation}
-  I(\varphi) = I_0 \cos^2\left(\varphi+\varphi_0\right)
-\end{equation}
-durchgeführt.
-Die dazugehörigen gefitteten Parameter lauten:
+numerisch integriert. Es soll gelten $I(T^*)\approx\SI{0}{\ampere}$. Daraus folgt für die erste Heizrate $T^*=\SI{275.95}{\kelvin}$ und für die zweite Heizrate $T^*=\SI{271.85}{\kelvin}$.
+Der Ausdruck
 \begin{align*}
-I_0 &= \SI{810.543(176)}{\nano\ampere}\\
-\varphi_0 &= \SI{1.48(19)}{\radian}\\
+   \ln\left(\frac{\int_T^{T^*} I(T') \symup{d}\,T'}{a_i \cdot I(T)}\right)
 \end{align*}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.7]{fig/plot5.pdf}
-  \caption{Gefittete Funktion zur Bestimmung der Polarisation des Lasers.}
-  \label{fig:polarisation}
-\end{figure}
-
-\begin{table}
- \centering
- \caption{Polarisationswinkel $\varphi$ und Stromstärke $I$.}
- \label{tab:polarisation}
- \begin{tabular}{c c c c}
-   \toprule
-   $\varphi$ in Grad & $I(\varphi)$ in \si{\nano\ampere} & $\varphi$ in Grad & $I(\varphi)$ in \si{\nano\ampere} \\
-   \midrule
-   0  & 23 & 100 & 877  \\
-   10 & 15 & 110 & 712 \\
-   20 & 27 & 120 & 635 \\
-   30 & 94  & 130 & 462  \\
-   40 & 237  & 140 & 371 \\
-   50 & 368 & 150 & 260 \\
-   60 & 541  & 160 & 161 \\
-   70 & 675   & 170 & 68 \\
-   80 & 776 & 180 & 19\\
-   90 & 918   & & \\
-   \bottomrule
- \end{tabular}
-\end{table}
-\FloatBarrier
-\begin{comment}
-\subsection{Multimodenuntersuchung}
-\label{sec:mul}
-
-Es werden die Frequenzen $f$ der longitudinalen Moden für verschiedene Resonatorlängen vermessen und die mittlere Frequenzdifferenz $\Delta f$ berechnet.
-Die Werte sind in Tabelle \ref{tab:longitudinal} eingetragen.
-Theoretisch ist folgender Zusammenhang zu erwarten mit der Lichtgeschwindigkeit im Vakuum $c_0$:
-\begin{equation}
-  \Delta\lambda = \frac{c_0}{\Delta f} = 2L
-\end{equation}
-Eine Ausgleichsrechnung der Form $\Delta\lambda(L) = a \cdot L$ liefert:
+wird gegen den Kehrwert der Temperatur aufgetragen und es wird wieder eine lineare Ausgleichsrechnung der Form
 \begin{equation*}
-  a = \num{2.016 \pm 0.003}
+  \ln\left(\frac{\int_T^{T^*} I(T') \symup{d}\,T'}{a_i \cdot I(T)}\right)=\dfrac{W}{k_\mathrm{b}T}+d
 \end{equation*}
-Die Abhängigkeit der Frequenzdifferenzen von der Resonatorlänge ist in Abbildung \ref{fig:longitudinal} dargestellt.
-
-\begin{table}
- \centering
- \caption{Die gemessenen Frequenzen und mittleren Frequenzdifferenzen für verschiedene Resonatorlängen.}
- \label{tab:longitudinal}
- \begin{tabular}{c c c c c c c c}
-   \toprule
-   $L$ in cm & \multicolumn{6}{c}{Frequenzen $f$ in MHz} & $\Delta f$ in MHz  \\
-   \midrule
-   87     & 173 & 341 & 510 & 683 & 851 & 1020 & 169 \\
-   91     & 165 & 326 & 491 & 653 & 818 & 979  & 163 \\
-   96.5   & 158 & 311 & 465 & 619 & 773 & 926  & 154 \\
-   105.7  & 143 & 281 & 424 & 563 & 705 & 844  & 140 \\
-   114    & 131 & 263 & 394 & 525 & 656 & 784  & 131 \\
-   121.3  & 124 & 248 & 371 & 495 & 615 & 739  & 123 \\
-   128    & 116 & 233 & 349 & 469 & 585 & 701  & 117 \\
-   134    & 113 & 225 & 334 & 446 & 555 & 668  & 111 \\
-   \bottomrule
- \end{tabular}
-\end{table}
-
-\begin{figure}
-  \centering
-  \includegraphics{fig/plot6.pdf}
-  \caption{Die gemessenen Differenzen $\Delta\lambda$ in Abhängigkeit der Resonatorlänge $L$.}
-  \label{fig:longitudinal}
-\end{figure}
-
-Durch den Dopplereffekt kommt es zur Verbreiterung der Spektrallinien.
-Dieser Effekt wird Doppler-Verbreiterung genannt und durch die Halbwertsbreite $\delta f$ beschrieben.
+durchgeführt. Damit ergeben sich folgende Werte:
+\begin{align*}
+    W_\mathrm{1} &= \SI{1.23(7)}{\electronvolt} \\
+    W_\mathrm{2} &= \SI{1.27(3)}{\electronvolt} \\
+    d_\mathrm{1} &= \num{-54(3)} \\
+    d_\mathrm{2} &= \num{-56(1)}
+\end{align*}
+\subsection{Relaxationszeit}
+\label{sec:88}
+Die charakteristische Relaxationszeit lässt sich aus dem Maximum bestimmen mit:
 \begin{equation}
-  \delta f = \frac{f_0}{c} \sqrt{\frac{8 k_b T \ln(2)}{m}}
+  \tau_\mathrm{0}=\dfrac{\symup{k_B}T_\mathrm{max}^2}{W \cdot b} \exp\left(-\dfrac{W}{\symup{k_B}T_\mathrm{max}} \right)
 \end{equation}
-Mit der Neonatommasse von $m=20,18$ u, einer Tempetatur von $T = 300$ K und für die rote Linie mit $\lambda = 632,8$ nm beträgt die Halbwertsbreite:
-\begin{equation*}
-  \delta f \approx \SI{1300}{MHz}
-\end{equation*}
-Der Laser läuft im Multimodenbetrieb, wenn die Halbwertsbreite $\delta f$ ein Vielfaches der Frequenzabstände $\Delta f$ zwischen den einzelnen Moden ist.
-\end{comment}
-\subsection{Wellenlänge}
-\label{sec:wel}
-
-Die Wellenlänge des Lasers kann mithilfe der Formel
-\begin{equation}
-  \lambda = \dfrac{\sin\left(\tan\left(\dfrac{d_n}{L}\right)\right)}{g \cdot n}
-\end{equation}
-bestimmt werden.
-Dabei ist $d_\mathrm{n}$ der Abstand des n-ten Nebenmaxima vom Hauptmaxima, $L$ der Abstand zwischen Gitter und Schirm und $g$ die Gitterkosntante.
-Die Messwerte und Ergebnisse sind in Tablle (\ref{tab:wel}) eingetragen.
-Für die Wellenlänge ergibt sich so ein Mittelwert von \SI{633.845(425)}{\nano\meter}.
-
-\begin{table}
- \centering
- \caption{Messdaten zur Messung der Wellenlänge.}
- \label{tab:wel}
- \begin{tabular}{c c c c c}
-   \toprule
-   Gitterkonstante $g$ & $L$ in \si{\centi\meter}  & Ordnung & Abstand $d_\mathrm{n}$ in \si{\centi\meter} & Wellenlänge $\lambda$ in \si{\nano\meter} \\
-   \midrule
-   100 Linien/mm & 103 & 1 & 6,5  & 631,49 \\
-   100 Linien/mm & 103 & 1 & 6,6 & 641,21 \\
-   80 Linien/mm & 103 & 1 & 5,2  & 631,34 \\
-   80 Linien/mm & 103 & 1 & 5,2 & 631,34 \\
-   \bottomrule
- \end{tabular}
-\end{table}
+Die Relaxationszeiten ergeben sich demnach für die erste Heizrate zu
+\begin{align*}
+  \tau_\mathrm{0}(\mathrm{Polarisation})&= \SI{4(9)e-17}{\second} \\
+  \tau_\mathrm{0}(\mathrm{Stromdichte})&= \SI{1(2)e-23}{\second}
+\end{align*}
+und für die zweite Heizrate zu
+\begin{align*}
+  \tau_\mathrm{0}(\mathrm{Polarisation})&= \SI{4(9)e-16}{\second} \\
+  \tau_\mathrm{0}(\mathrm{Stromdichte})&= \SI{4(6)e-25}{\second}
+\end{align*}

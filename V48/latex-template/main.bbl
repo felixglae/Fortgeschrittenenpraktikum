@@ -37,16 +37,16 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Anleitung zu V61 - Der HeNe-Laser}
-      \field{urlday}{15}
-      \field{urlmonth}{12}
-      \field{urlyear}{2021}
+      \field{title}{Anleitung zu V48 - Dipolrelaxation in Ionenkrisallen}
+      \field{urlday}{19}
+      \field{urlmonth}{1}
+      \field{urlyear}{2022}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732531/mod_resource/content/2/V61.pdf
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732529/mod_resource/content/5/V48.pdf
       \endverb
       \verb{url}
-      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732531/mod_resource/content/2/V61.pdf
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1732529/mod_resource/content/5/V48.pdf
       \endverb
     \endentry
     \entry{python}{manual}{}

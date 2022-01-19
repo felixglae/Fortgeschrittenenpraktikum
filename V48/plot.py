@@ -10,7 +10,7 @@ from scipy.integrate import quad, trapz
 # to run code 6
 
 I1, T1 = np.genfromtxt("data/temp3.txt", unpack=True)
-I2, T2 = np.genfromtxt("data/temp2.txt", unpack=True)
+I2, T2 = np.genfromtxt("data/temp4.txt", unpack=True)
 
 T1 = constants.convert_temperature(T1, 'Celsius', 'Kelvin')
 T2 = constants.convert_temperature(T2, 'Celsius', 'Kelvin')
@@ -30,8 +30,8 @@ for T, I, selection, offset_selection, p0, name, ff in [
         [
             T1,
             I1,
-            ((T1 > 200) & (T1 < 245) | (T1 > 275)) & (T1 < 285),
-            (T1 > 246) & (T1 < 270),
+            ((T1 > 220) & (T1 < 245) | (T1 > 275)) & (T1 < 285),
+            (T1 > 246) & (T1 < 300),
             None,
             'set1',
             linear_fit,
@@ -39,7 +39,7 @@ for T, I, selection, offset_selection, p0, name, ff in [
         [
             T2,
             I2,
-            ((T2 > 230) & (T2 < 240) | (T2 > 285)),
+            ((T2 > 210) & (T2 < 240) | (T2 > 270)) & (T2 < 280),
             (T2 > 230) & (T2 < 290),
             None,
             'set2',
@@ -59,7 +59,7 @@ for T, I, selection, offset_selection, p0, name, ff in [
     xs = np.linspace(200, 300)
 
     plt.plot(T[selection],I[selection], 'b.', label='verwendete Daten')
-    plt.plot(T[~selection],I[~selection], 'g.', label='ignorierte Daten')
+    plt.plot(T[~selection],I[~selection], 'k.', label='ignorierte Daten')
     plt.plot(xs, ff(xs, *var), label='fit')
     plt.plot(T, I_cleaned + I_min, 'r.', label='bereinigte Daten')
     plt.plot(xs, [I_min] * len(xs), label='Offset') # Liste mit Eintrag I_min, Anzahl len(xs)
@@ -71,7 +71,7 @@ for T, I, selection, offset_selection, p0, name, ff in [
         plt.ylim(-3, 21)
         I2_cleaned = I_cleaned
     plt.xlabel(r'$T$ / K')
-    plt.ylabel(r'$i$ / pA')
+    plt.ylabel(r'$I$ / pA')
     plt.grid()
     plt.legend(loc='best')
     if name == 'set1':
@@ -90,15 +90,15 @@ for T, I, selection1, selection2, name in [
         [
             T1,
             I1_cleaned,
-            (T1 > 250) & (T1 < 264),
-            (T1 > 244) & (T1 < 275),
+            (T1 > 240) & (T1 < 260),
+            (T1 > 220) & (T1 < 275),
             'set1',
         ],
         [
             T2,
             I2_cleaned,
-            (T2 > 236) & (T2 < 255),
-            (T2 > 228) & (T2 < 262),
+            (T2 > 240) & (T2 < 258),
+            (T2 > 200) & (T2 < 288),
             'set2',
         ]]:
     print(name)
@@ -115,15 +115,15 @@ for T, I, selection1, selection2, name in [
     print("C:", val[0], errs[0])
     Ws['approx'][name] = W
 
-    xs = np.linspace(0.0037, 0.0041, 100)
+    xs = np.linspace(0.0035, 0.0043, 100)
     #plt.ylim(-2, 5)
-    plt.xlim(0.0037, 0.0041)
+    plt.xlim(0.0035, 0.0043)
     plt.grid()
     plt.plot(xs, j_aprox(xs, C=val[0], W=val[1]), 'r-', label='Fit')
-    plt.plot(T_sel2, I_sel2, 'b.', label='bereinigte Daten\n(nicht verwendet)')
-    plt.plot(T_sel1, I_sel1, 'g.', label='bereinigte Daten\n(für Fit verwendet)')
+    plt.plot(T_sel2, I_sel2, 'k.', label='bereinigte Daten\n(nicht verwendet)')
+    plt.plot(T_sel1, I_sel1, 'b.', label='bereinigte Daten\n(für Fit verwendet)')
     plt.xlabel(r'$T^{-1}$ / $K^{-1}$')
-    plt.ylabel(r'$\ln(i)$ / pA')
+    plt.ylabel(r'$\ln(I)$ / pA')
     plt.legend(loc='best')
     if name == 'set1':
         plt.savefig('plot3.pdf')
@@ -152,13 +152,13 @@ for T, I, selection, selection2, name in [
             T1,
             I1_cleaned,
             (T1 > 246) & (T1 < 270),
-            (T1 < 246) & (T1 > 270),
+            (T1 > 220) & (T1 < 290),
             'set1',
         ],
         [
             T2,
             I2_cleaned,
-            (T2 > 240) & (T2 < 276),
+            (T2 > 240) & (T2 < 266),
             (T2 > 235) & (T2 < 280),
             'set2',
         ]]:
@@ -189,19 +189,19 @@ for T, I, selection, selection2, name in [
     print("C:", var[1], errs[1])
     Ws['integrated'][name] = W
 
-    xs = np.linspace(0.0035, 0.0043, 100)
+    xs = np.linspace(0.0035, 0.0044, 100)
     #plt.ylim(-2, 5)
     if name == "set1":
-        plt.xlim(0.0037, 0.0042)
+        plt.xlim(0.0037, 0.0041)
     else:
-        plt.xlim(0.0036, 0.0042)
+        plt.xlim(0.0038, 0.0042)
     plt.grid()
     plt.plot(xs, linear_fit(xs, A=var[0], B=var[1]), 'r-', label='Fit')
     #plt.plot(1/T_ignored, logstuff_ignored, 'b.', label='bereinigte Daten\n(nicht verwendet)')
 
-    plt.plot(1/T, logstuff, 'g.', label='bereinigte Daten \n(für Fit verwendet)')
+    plt.plot(1/T, logstuff, 'b.', label='bereinigte Daten \n(für Fit verwendet)')
     plt.xlabel(r'$T^{-1}$ / $K^{-1}$')
-    plt.ylabel(r'$\ln\left(\int_{T}^{T*} i(T) \mathrm{d}\,T \:/\: i(T) \cdot b \right)$')
+    plt.ylabel(r'$\ln\left(\int_{T}^{T*} I(T) \mathrm{d}\,T \:/\: I(T) \cdot a \right)$')
     plt.legend(loc='best')
 
     if name == 'set1':

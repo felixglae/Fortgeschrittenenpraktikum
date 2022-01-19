@@ -58,7 +58,7 @@ Betrachtet man nun den Differenzquotienten $\dfrac{\mathrm{d} N}{\mathrm{d} t}$ 
   \label{eqn:einset}
   \Leftrightarrow N&=N_\mathrm{0}\exp\left(-\dfrac{1}{a}\int_{T_0}^T\dfrac{\mathrm{d} T'}{\tau(T')}\right)
 \end{align}
-Dabei gibt $N_\mathrm{0}$ die Anzahl der Dipole pro Volumeneinheit die beim Beginn des Heizvorgangs bereits orientiert sind. Setzt man dies in Gleichung (\ref{eqn:stromdi}) ein ergibt sich insgesamt für den Strom $I(T)$:
+Dabei gibt $N_\mathrm{0}$ die Anzahl der Dipole pro Volumeneinheit die beim Beginn des Heizvorgangs bereits orientiert sind. Setzt man dies in Gleichung (\ref{eqn:stromdi2}) ein ergibt sich insgesamt für den Strom $I(T)$:
 \begin{equation}
   \label{eqn:stromdi3}
   I(T) = \dfrac{p^2 E}{3k_\mathrm{B}T_\mathrm{P}}\dfrac{N_\mathrm{0}}{\tau_\mathrm{0}} \exp{\left(-\dfrac{1}{a\tau_\mathrm{0}}\int_{T_0}^T\exp{\left(-\dfrac{W}{k_\mathrm{B}T'}\right)\mathrm{d}T'}\right)}\exp{\left(-\dfrac{W}{ k_\mathrm{B}T}\right)}
@@ -67,6 +67,7 @@ Dabei gibt $N_\mathrm{0}$ die Anzahl der Dipole pro Volumeneinheit die beim Begi
 \label{sec:akti}
 In diesem Abschnitt werden zwei Verfahren zur Berechnung der Aktivierungsenergie $W$ vorgestellt.
 \subsubsection{Polarisationsansatz}
+\label{sec:polaris}
 Es wird angenommen, dass die Aktivierungsenergie $W$ groß im Vergleich zur thermischen Energie $k_\mathrm{b} T$ ist. Für eine kleine Temperaturdifferenz $T-T_\mathrm{0}$ wird das Integral in Gleichung (\ref{eqn:stromdi3}) zu:
 \begin{align*}
   \int_{T_0}^T\exp{\left(-\dfrac{W}{k_\mathrm{B}T'}\right)\mathrm{d}T'}\approx0
@@ -78,3 +79,21 @@ Damit folgt für den Strom $I(T)$:
 \end{equation}
 Durch eine halblogarithmische Darstellung kann nun die Aktivierungsenergie $W$ ermittelt werden.
 \subsubsection{Herleitung über die Stromdichte}
+\label{sec:strom1}
+Bei dieser Berechnungart wird über die gesamte Kurve integriert und mithilfe der Ableitung der Polarisation $P$ wird die Aktivierungsenergie bestimmt. Für die Ableitung gilt zunächst:
+\begin{equation*}
+  \dfrac{\mathrm{d}P}{\mathrm{d}t}=-\dfrac{P(t)}{\tau(T(t))}
+\end{equation*}
+Weiter gilt, dass die Polarisation einen Strom induziert
+\begin{equation*}
+  \dfrac{\mathrm{d}P}{\mathrm{d}t}=\dfrac{I(t)}{F}
+\end{equation*}
+Dabei ist $F$ der Probenquerschnitt. Da eine konstante Heizrate angenommen wird ist $T(t)$ eine lineare Funktion, daraus folgt:
+\begin{equation*}
+  \tau(T) = \frac{\int_{T}^\infty \gamma(T') \mathrm{d}T' }{ a \gamma(T) }
+\end{equation*}
+Setzt man nun $\tau(T)$ aus Gleichung (\ref{eqn:relax}) ein ergibt sich für die Berechnung der Aktivierungsenergie:
+\begin{equation}
+  \label{eqn:integrate}
+  \dfrac{ W }{ k_\mathrm{B} T } = \ln{ \left( \frac{ \int_{T}^\infty I(T') \mathrm{d}T' }{ a I(T) \tau_\mathrm{0} } \right) }
+\end{equation}
