@@ -21,8 +21,8 @@ def linear_fit(T, A, B):
     return A*T + B
 
 
-def exp_fit(T, A, B, T0, I0):
-    return A * np.exp(B * (T - T0)) + I0
+def exp_fit(T, A, B):
+    return A * np.exp(B * T)
 
 
 # this loop runs twice for T1/j1 and a second time for T2/j2
@@ -30,24 +30,24 @@ for T, I, selection, offset_selection, p0, name, ff in [
         [
             T1,
             I1,
-            ((T1 > 220) & (T1 < 245) | (T1 > 275)) & (T1 < 285),
-            (T1 > 246) & (T1 < 300),
+            ((T1 > 220) & (T1 < 245) | (T1 > 275)),
+            (T1 > 200) & (T1 < 300),
             None,
             'set1',
-            linear_fit,
+            exp_fit,
         ],
         [
             T2,
             I2,
-            ((T2 > 210) & (T2 < 240) | (T2 > 270)) & (T2 < 280),
+            ((T2 > 210) & (T2 < 240) | (T2 > 270)) ,
             (T2 > 230) & (T2 < 290),
             None,
             'set2',
-            linear_fit,
+            exp_fit,
         ]]:
 
     # I_cleaned will be coorected by Offset
-    var, cov = curve_fit(ff, T[selection],I[selection], p0=p0)
+    var, cov = curve_fit(ff, T[selection],I[selection], p0=(6.5, .03))
     errs = np.sqrt(np.diag(cov))
     I_cleaned = I - ff(T, *var)
     I_min = np.min(I_cleaned[offset_selection])
@@ -60,9 +60,9 @@ for T, I, selection, offset_selection, p0, name, ff in [
 
     plt.plot(T[selection],I[selection], 'b.', label='verwendete Daten')
     plt.plot(T[~selection],I[~selection], 'k.', label='ignorierte Daten')
-    plt.plot(xs, ff(xs, *var), label='fit')
+    plt.plot(xs, ff(xs, *var), label='Fit')
     plt.plot(T, I_cleaned + I_min, 'r.', label='bereinigte Daten')
-    plt.plot(xs, [I_min] * len(xs), label='Offset') # Liste mit Eintrag I_min, Anzahl len(xs)
+    plt.plot(xs, [I_min] * len(xs), label='Versatz der Daten') # Liste mit Eintrag I_min, Anzahl len(xs)
     plt.xlim(200, 300)
     if name == 'set1':
         plt.ylim(-4.5, 45)
@@ -81,6 +81,8 @@ for T, I, selection, offset_selection, p0, name, ff in [
     plt.clf()
 
 print("#############################")
+
+# computation w/ polarisation method
 
 def j_aprox(T, C, W):
     return W*T + C
@@ -133,6 +135,8 @@ for T, I, selection1, selection2, name in [
 
 
 print("######################################")
+
+# computation w/ integration method
 
 def better_fit(T, i_T, Tstar):
     integral = np.array(

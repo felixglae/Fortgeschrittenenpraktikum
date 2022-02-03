@@ -19,6 +19,32 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Anleitung9}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8bd31ed4642c9aceb7d81ca0b0a5f202}{%
+           family={Achim\bibnamedelima Marx},
+           familyi={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Rudolf\bibnamedelima Gross},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           prefix={und},
+           prefixi={u\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Walter De Gruyter GmbH}%
+      }
+      \strng{namehash}{8bd31ed4642c9aceb7d81ca0b0a5f202}
+      \strng{fullhash}{8bd31ed4642c9aceb7d81ca0b0a5f202}
+      \strng{bibnamehash}{8bd31ed4642c9aceb7d81ca0b0a5f202}
+      \strng{authorbibnamehash}{8bd31ed4642c9aceb7d81ca0b0a5f202}
+      \strng{authornamehash}{8bd31ed4642c9aceb7d81ca0b0a5f202}
+      \strng{authorfullhash}{8bd31ed4642c9aceb7d81ca0b0a5f202}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Festkörperphysik}
+      \field{year}{2014}
+    \endentry
     \entry{Anleitung1}{manual}{}
       \name{author}{1}{}{%
         {{hash=2821a70f99517ac7757c95300d43e95c}{%
@@ -49,6 +75,64 @@
       \verb https://moodle.tu-dortmund.de/pluginfile.php/1732529/mod_resource/content/5/V48.pdf
       \endverb
     \endentry
+    \entry{Anleitung6}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=bb9dfa4e9156684fc534eb544cf194db}{%
+           family={Internetchemie},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb9dfa4e9156684fc534eb544cf194db}
+      \strng{fullhash}{bb9dfa4e9156684fc534eb544cf194db}
+      \strng{bibnamehash}{bb9dfa4e9156684fc534eb544cf194db}
+      \strng{authorbibnamehash}{bb9dfa4e9156684fc534eb544cf194db}
+      \strng{authornamehash}{bb9dfa4e9156684fc534eb544cf194db}
+      \strng{authorfullhash}{bb9dfa4e9156684fc534eb544cf194db}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ionisierungsenergie}
+      \field{urlday}{3}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.internetchemie.info/chemie-lexikon/daten/i/ionisierungsenergie.php
+      \endverb
+      \verb{url}
+      \verb https://www.internetchemie.info/chemie-lexikon/daten/i/ionisierungsenergie.php
+      \endverb
+    \endentry
+    \entry{Anleitung8}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=45b502f0d96e857ac091a8c265ea63a2}{%
+           family={Leipzig},
+           familyi={L\bibinitperiod},
+           given={HTWK},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{45b502f0d96e857ac091a8c265ea63a2}
+      \strng{fullhash}{45b502f0d96e857ac091a8c265ea63a2}
+      \strng{bibnamehash}{45b502f0d96e857ac091a8c265ea63a2}
+      \strng{authorbibnamehash}{45b502f0d96e857ac091a8c265ea63a2}
+      \strng{authornamehash}{45b502f0d96e857ac091a8c265ea63a2}
+      \strng{authorfullhash}{45b502f0d96e857ac091a8c265ea63a2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Der Festkörper}
+      \field{urlday}{3}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.imn.htwk-leipzig.de/~lueders/informatik/lehrinhalte/b12_festkoerper.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.imn.htwk-leipzig.de/~lueders/informatik/lehrinhalte/b12_festkoerper.pdf
+      \endverb
+    \endentry
     \entry{python}{manual}{}
       \name{author}{1}{}{%
         {{hash=a7f5f35426b927411fc9231b56382173}{%
@@ -64,8 +148,8 @@
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
-      \field{urlday}{15}
-      \field{urlmonth}{12}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
       \field{urlyear}{2021}
       \field{urldateera}{ce}
       \verb{urlraw}
@@ -77,30 +161,60 @@
     \endentry
     \entry{Anleitung7}{manual}{}
       \name{author}{1}{}{%
-        {{hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
+        {{hash=2d44349af1a57cb92ea97ac880ad86a7}{%
+           family={Spektrum},
+           familyi={S\bibinitperiod}}}%
       }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \strng{namehash}{2d44349af1a57cb92ea97ac880ad86a7}
+      \strng{fullhash}{2d44349af1a57cb92ea97ac880ad86a7}
+      \strng{bibnamehash}{2d44349af1a57cb92ea97ac880ad86a7}
+      \strng{authorbibnamehash}{2d44349af1a57cb92ea97ac880ad86a7}
+      \strng{authornamehash}{2d44349af1a57cb92ea97ac880ad86a7}
+      \strng{authorfullhash}{2d44349af1a57cb92ea97ac880ad86a7}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Boltzmannkonstante}
-      \field{urlday}{12}
-      \field{urlmonth}{1}
+      \field{title}{Boltzmann-Konstante}
+      \field{urlday}{3}
+      \field{urlmonth}{2}
       \field{urlyear}{2022}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://de.wikipedia.org/wiki/Boltzmann-Konstante
+      \verb https://www.spektrum.de/lexikon/physik/boltzmann-konstante/1844
       \endverb
       \verb{url}
-      \verb https://de.wikipedia.org/wiki/Boltzmann-Konstante
+      \verb https://www.spektrum.de/lexikon/physik/boltzmann-konstante/1844
+      \endverb
+    \endentry
+    \entry{Anleitung5}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=2d44349af1a57cb92ea97ac880ad86a7}{%
+           family={Spektrum},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d44349af1a57cb92ea97ac880ad86a7}
+      \strng{fullhash}{2d44349af1a57cb92ea97ac880ad86a7}
+      \strng{bibnamehash}{2d44349af1a57cb92ea97ac880ad86a7}
+      \strng{authorbibnamehash}{2d44349af1a57cb92ea97ac880ad86a7}
+      \strng{authornamehash}{2d44349af1a57cb92ea97ac880ad86a7}
+      \strng{authorfullhash}{2d44349af1a57cb92ea97ac880ad86a7}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Elektronenaffinität}
+      \field{urlday}{3}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.spektrum.de/lexikon/physik/elektronenaffinitaet/4071
+      \endverb
+      \verb{url}
+      \verb https://www.spektrum.de/lexikon/physik/elektronenaffinitaet/4071
       \endverb
     \endentry
   \enddatalist

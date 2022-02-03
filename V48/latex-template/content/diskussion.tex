@@ -1,6 +1,29 @@
 \section{Diskussion}
 \label{sec:Diskussion}
-Die bestimmten Daten für die Aktivierungsenergie $W$ liegen sowohl beim Polarisationsansatz als auch bei der Berechnung über die Stromdichte im Bereich von $\SI{1}{\electronvolt}$. Allerdings ist es auffällig, dass bei
-beiden Heizraten die Aktivierungsenergien für die jeweilige Methode eng beieinander liegen, zwischen den beiden Methoden aber Unterschiede um mehrere Standardabweichungen vorliegen. Das deutet auf einen systematischen Fehler bei den verschiedenen Berechnungsarten hin.\\ Ein weiterer Grund für diese Abweichungen ist, dass für die Messung des Untergrundes kein exponentieller sondern ein linearer Fit verwendet worden ist. Wie in den
-Abbildungen (\ref{fig:1}) und (\ref{fig:2}) zu sehen, sind die bereinigten Daten für besonders niedrige und besonders hohe Temperaturen eher schlecht bereinigt und es ergibt sich nicht der Verlauf aus Abbildung (\ref{fig:stromdi}).\\
-Wie im letzten Abschnitt (\ref{sec:88}) zu sehen liegen die berechneten Relaxationszeiten um sechs bzw. neun Größenordnungen auseinander. Die Ergebnisse für die Relaxationszeiten sind somit nicht verwertbar, da diese hochsensibel von den Aktivierungsenergien abhängig sind und somit sehr schnell Unterschiede von mehreren Größenordnungen auftreten. 
+Die bestimmten Daten für die Aktivierungsenergie $W$ liegen sowohl beim Polarisationsansatz als auch bei der Berechnung über die Stromdichte im Bereich von $\SI{1}{\electronvolt}$. Der theoretische Wert bestimmt sich
+aus der Ionisierungsenergie von Kalium \cite{Anleitung6} und der Elektronenaffinität von Brom \cite{Anleitung5}. Diese sind gegeben durch:
+\begin{align*}
+  E_\mathrm{Kalium}=\SI{4.3406633}{\electronvolt}
+\end{align*}
+und
+\begin{align*}
+  E_\mathrm{Brom}=\SI{3.36}{\electronvolt}
+\end{align*}
+Die Differenz bestimmt den Theoriewert \cite[4]{Anleitung8} zu:
+\begin{align*}
+  W_\mathrm{theo.}\approx\SI{0.981}{\electronvolt}
+\end{align*}
+Im Vergleich mit den im Versuch bestimmten Daten ergeben sich damit für die erste Heizrate die folgenden Abweichungen:
+\begin{align*}
+ \mathrm{Abweichung Polarisationsansatz}&=27\% \\
+ \mathrm{Abweichung Stromdichte}&=18\%
+\end{align*}
+und für die zweite Heizrate:
+\begin{align*}
+ \mathrm{Abweichung Polarisationsansatz}&=43\% \\
+ \mathrm{Abweichung Stromdichte}&=10\%
+\end{align*}
+Die Integrationsmethode mithilfe der Stromdichte hat demnach geringere Abweichungen vom Theoriewert als der Polarisationsansatz.
+Allerdings ist es auffällig, dass bei
+beiden Heizraten die Aktivierungsenergien für die jeweilige Methode eng beieinander liegen, zwischen den beiden Methoden aber Unterschiede um mehrere Standardabweichungen vorliegen. Das deutet auf einen systematischen Fehler bei den verschiedenen Berechnungsarten hin.\\
+Wie im letzten Abschnitt (\ref{sec:88}) zu sehen liegen die berechneten Relaxationszeiten um acht bzw. zehn Größenordnungen auseinander. Die Ergebnisse für die Relaxationszeiten sind somit nicht verwertbar. Diese hängen hochsensibel von den Aktivierungsenergien ab, wie durch den exponentiellen Zusammenhang in Gleichung (\ref{eqn:fertig}) ersichtlich ist. Somit treten sehr schnell Unterschiede von mehreren Größenordnungen auf.

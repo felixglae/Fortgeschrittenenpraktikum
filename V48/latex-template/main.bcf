@@ -2346,11 +2346,15 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">Anleitung7</bcf:citekey>
-    <bcf:citekey order="2">Anleitung1</bcf:citekey>
+    <bcf:citekey order="2">Anleitung9</bcf:citekey>
     <bcf:citekey order="3">Anleitung1</bcf:citekey>
     <bcf:citekey order="4">Anleitung1</bcf:citekey>
     <bcf:citekey order="5">Anleitung1</bcf:citekey>
-    <bcf:citekey order="6">python</bcf:citekey>
+    <bcf:citekey order="6">Anleitung1</bcf:citekey>
+    <bcf:citekey order="7">python</bcf:citekey>
+    <bcf:citekey order="8">Anleitung6</bcf:citekey>
+    <bcf:citekey order="9">Anleitung5</bcf:citekey>
+    <bcf:citekey order="10">Anleitung8</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -34,7 +34,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3}Relaxationszeit}{15}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Diskussion}{15}{section.5}%
+\contentsline {section}{\numberline {5}Diskussion}{16}{section.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Anhang}{17}{section.6}%
 \defcounter {refsection}{0}\relax 

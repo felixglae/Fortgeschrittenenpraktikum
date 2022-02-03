@@ -9,11 +9,11 @@ Dipol entsteht. Dies geschieht dadurch, dass um die Ladungsneutralität nach au�
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.5]{fig/Dipol.png}
-  \caption{Dipolbildung innerhalb eines Cäsiumkristalls.}
+  \caption{Dipolbildung innerhalb eines Cäsiumiodidkristalls.}
   \label{fig:doti}
 \end{figure}
 Wie in Abbildung (\ref{fig:doti}) zu sehen, wird in diesem Beispiel ein zweifach geladenes Strontium genutzt um die Leerstelle zu bilden, dabei ist $\vec{P}$ das Dipolmoment. Der Abstand zwischen Ion und Leerstelle gibt somit
-die Richtung des Dipols an. Daraus folgt, dasss aufgrund der Gitterstruktur nur bestimmte Dipolrichtungen im Kristall erlaubt sind. \\ Eine Richtungsänderung der Dipole zu erzwingen ist für $T<\SI{500}{\degreeCelsius}$ nur per Leerstellendiffusion möglich. Diese tritt bei der spezifischen Aktivierungsenergie $W$ auf. Auf diese wird in Abschnitt (\ref{sec:akti}) näher eingegangen. Mithilfe der Boltzmannstatistik, die den Anteil der Dipole angibt, der die nötige
+die Richtung des Dipols an. Daraus folgt, dass aufgrund der Gitterstruktur nur bestimmte Dipolrichtungen im Kristall erlaubt sind. \\ Eine Richtungsänderung der Dipole zu erzwingen ist für $T<\SI{500}{\degreeCelsius}$ nur per Leerstellendiffusion möglich. Diese tritt ab der spezifischen Aktivierungsenergie $W$ auf. Auf diese wird in Abschnitt (\ref{sec:akti}) näher eingegangen. Mithilfe der Boltzmannstatistik, die den Anteil der Dipole angibt, der die nötige
 Energie aufbringen kann, ist es nun möglich eine Gleichung für die Relaxationszeit eines Dipols anzugeben:
 \begin{equation}
   \label{eqn:relax}
@@ -33,8 +33,17 @@ anschließend wird die Probe mit konstanter Heizrate $a$ erhitzt.
 \begin{equation}
   a\coloneqq\dfrac{\mathrm{d} T}{\mathrm{d} t}= \mathrm{const.}
 \end{equation}
-Der Relaxationsvorgang beginnt, das statistische Gleichgewicht stellt sich langsam ein. Ein Depolarisationsstrom $I(T)$ wird dadurch induziert.
-Dieser wird wie folgt beschrieben:
+Der Relaxationsvorgang beginnt, das statistische Gleichgewicht stellt sich langsam ein. Die Depolarisationsstromdichte aus Gleichung (\ref{eqn:anteil}) führt auf eine Polarisation $P$, diese gibt das Dipolmoment pro Volumeneinheit an.
+Diese wird wie folgt beschrieben:
+\begin{equation}
+  \label{eqn:pola}
+  P=\gamma(T)\cdot p
+\end{equation}
+$N(t)$ íst nun die Anzahl der relaxierenden Dipole, also genau die Dipole die zum induzierten Polarisationsstrom beitragen damit ergibt sich:
+\begin{align*}
+  I(T)=P\cdot\dfrac{\mathrm{d} N}{\mathrm{d} t}
+\end{align*}
+und weiter:
 \begin{equation}
   \label{eqn:stromdichte}
   I(T)=\gamma(T_\mathrm{p})p\dfrac{\mathrm{d} N}{\mathrm{d} t}
@@ -68,7 +77,7 @@ Dabei gibt $N_\mathrm{0}$ die Anzahl der Dipole pro Volumeneinheit die beim Begi
 In diesem Abschnitt werden zwei Verfahren zur Berechnung der Aktivierungsenergie $W$ vorgestellt.
 \subsubsection{Polarisationsansatz}
 \label{sec:polaris}
-Es wird angenommen, dass die Aktivierungsenergie $W$ groß im Vergleich zur thermischen Energie $k_\mathrm{b} T$ ist. Für eine kleine Temperaturdifferenz $T-T_\mathrm{0}$ wird das Integral in Gleichung (\ref{eqn:stromdi3}) zu:
+Es wird angenommen, dass die Aktivierungsenergie $W$ groß im Vergleich zur thermischen Energie $k_\mathrm{b} T$ ist \cite[585,586]{Anleitung9}. Für eine kleine Temperaturdifferenz $T-T_\mathrm{0}$ wird das Integral in Gleichung (\ref{eqn:stromdi3}) zu:
 \begin{align*}
   \int_{T_0}^T\exp{\left(-\dfrac{W}{k_\mathrm{B}T'}\right)\mathrm{d}T'}\approx0
 \end{align*}
@@ -92,7 +101,7 @@ Dabei ist $F$ der Probenquerschnitt. Da eine konstante Heizrate angenommen wird 
 \begin{equation*}
   \tau(T) = \frac{\int_{T}^\infty \gamma(T') \mathrm{d}T' }{ a \gamma(T) }
 \end{equation*}
-Setzt man nun $\tau(T)$ aus Gleichung (\ref{eqn:relax}) ein ergibt sich für die Berechnung der Aktivierungsenergie:
+Setzt man nun $\tau(T)$ aus Gleichung (\ref{eqn:relax}) ein, ergibt sich für die Berechnung der Aktivierungsenergie:
 \begin{equation}
   \label{eqn:integrate}
   \dfrac{ W }{ k_\mathrm{B} T } = \ln{ \left( \frac{ \int_{T}^\infty I(T') \mathrm{d}T' }{ a I(T) \tau_\mathrm{0} } \right) }
