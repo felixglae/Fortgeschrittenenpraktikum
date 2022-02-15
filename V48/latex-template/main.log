@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.20)  3 FEB 2022 11:12
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.20)  15 FEB 2022 12:15
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -483,11 +483,11 @@ braces):
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
 (polyglossia)            hyphenation	
+(polyglossia)            synonyms	
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	 on input line 10
+(polyglossia)            loader	loadhyph-de-1901.tex on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -1411,11 +1411,11 @@ LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Module polyglossia Info: Language data for ngerman
 (polyglossia)            hyphenation	
+(polyglossia)            synonyms	
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	 on input line 26
+(polyglossia)            loader	loadhyph-de-1996.tex on input line 26
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 26
 )
@@ -1585,6 +1585,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
+
+! I can't write on file `main.pdf'.
+Please type another file name for output: main.pdf
 LaTeX Info: Redefining \rmfamily on input line 11.
 LaTeX Info: Redefining \sffamily on input line 11.
 LaTeX Info: Redefining \ttfamily on input line 11.
@@ -1610,7 +1613,6 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 9.99893pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 6.99925pt on input line 14.
-
 (/home/felix/.local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
@@ -1643,23 +1645,19 @@ File: fig/Dipol.png Graphic file (type png)
 <use fig/Dipol.png>
 Package luatex.def Info: fig/Dipol.png  used on input line 11.
 (luatex.def)             Requested size: 292.84334pt x 207.77574pt.
- [3<./fig/Dipol.png>]
-<fig/stromver.png, id=77, 521.95pt x 353.32pt>
+ [3<./fig/Dipol.png>] [4]
+<fig/stromver.png, id=91, 521.95pt x 353.32pt>
 File: fig/stromver.png Graphic file (type png)
 <use fig/stromver.png>
-Package luatex.def Info: fig/stromver.png  used on input line 55.
+Package luatex.def Info: fig/stromver.png  used on input line 72.
 (luatex.def)             Requested size: 260.97435pt x 176.65956pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4] [5<./fig/stromver.png>]) (./content/durchfuehrung.tex
-<fig/aufbauv48.png, id=108, 616.3025pt x 539.01375pt>
+ [5<./fig/stromver.png>]) (./content/durchfuehrung.tex
+<fig/aufbauv48.png, id=107, 616.3025pt x 539.01375pt>
 File: fig/aufbauv48.png Graphic file (type png)
 <use fig/aufbauv48.png>
 Package luatex.def Info: fig/aufbauv48.png  used on input line 9.
 (luatex.def)             Requested size: 308.1505pt x 269.50621pt.
-<fig/schemav48.png, id=113, 684.5575pt x 388.45125pt>
+<fig/schemav48.png, id=112, 684.5575pt x 388.45125pt>
 File: fig/schemav48.png Graphic file (type png)
 <use fig/schemav48.png>
 Package luatex.def Info: fig/schemav48.png  used on input line 20.
@@ -1733,12 +1731,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (./content/diskussion.tex [15
 
 ]) (./content/anhang.tex [16]
-<fig/mess1.jpeg, id=539, 903.375pt x 1606.0pt>
+<fig/mess1.jpeg, id=536, 903.375pt x 1606.0pt>
 File: fig/mess1.jpeg Graphic file (type jpg)
 <use fig/mess1.jpeg>
 Package luatex.def Info: fig/mess1.jpeg  used on input line 6.
 (luatex.def)             Requested size: 271.01459pt x 481.80373pt.
-<fig/mess2.jpeg, id=540, 1003.75pt x 1606.0pt>
+<fig/mess2.jpeg, id=537, 1003.75pt x 1606.0pt>
 File: fig/mess2.jpeg Graphic file (type jpg)
 <use fig/mess2.jpeg>
 Package luatex.def Info: fig/mess2.jpeg  used on input line 12.
@@ -1753,11 +1751,6 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [18<./fig/mess2.jpeg>]
-Overfull \hbox (15.1472pt too wide) in paragraph at lines 25--25
-\TU/lmtt/m/n/10.95 ~lueders / informatik / lehrinhalte / b12 _ festkoerper . pdf
-$[] \TU/lmr/m/n/10.95 (be-sucht am 03.02.2022). 
- []
-
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1792,29 +1785,29 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[19] (./main.aux
+ [19] (./main.aux
 LaTeX Info: Redefining \rmfamily on input line 26.
 LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 )
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: ABDAE13A105C52A39E833F7C193CD089;19082.
+(rerunfilecheck)             Checksum: 9AB4C5DD637C27FEABA7FB2E1FFB9055;18886.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: D336FEDEDE838A3CE0BCEE8EA9EC19C7;2492.
+(rerunfilecheck)             Checksum: 439F092A6917B275B0DB46448E13FE08;2492.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 37652 strings out of 478092
+ 37648 strings out of 478092
  100000,1977958 words of node,token memory allocated
- 777 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 37 attribute, 78 glue_spec
-, 37 attribute_list, 1 write, 5 pdf_action nodes
-   avail lists: 1:1,2:687,3:275,4:127,5:413,6:66,7:5392,8:89,9:667,10:20,11:566
- 56731 multiletter control sequences out of 65536+600000
- 106 fonts using 39401259 bytes
+ 757 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 35 attribute, 78 glue_spec
+, 35 attribute_list, 1 write, 3 pdf_action nodes
+   avail lists: 1:1,2:691,3:275,4:126,5:402,6:64,7:5490,8:91,9:655,10:20,11:695
+ 56727 multiletter control sequences out of 65536+600000
+ 106 fonts using 39400931 bytes
  113i,13n,118p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmmono10-re
 gular.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/l
@@ -1830,10 +1823,10 @@ lic/lm/lmroman10-regular.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/o
 pentype/public/lm/lmroman12-regular.otf></home/felix/.local/texlive/2021/texmf-d
 ist/fonts/opentype/public/lm/lmsans10-bold.otf></home/felix/.local/texlive/2021/
 texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (19 pages, 1066549 bytes).
+Output written on main.pdf (19 pages, 1065916 bytes).
 
-PDF statistics: 711 PDF objects out of 1000 (max. 8388607)
- 398 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 131072)
+PDF statistics: 705 PDF objects out of 1000 (max. 8388607)
+ 392 compressed objects within 4 object streams
+ 70 named destinations out of 1000 (max. 131072)
  153 words of extra memory for PDF output out of 10000 (max. 100000000)
 

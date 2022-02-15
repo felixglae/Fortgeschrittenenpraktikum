@@ -39,24 +39,18 @@ Diese wird wie folgt beschrieben:
   \label{eqn:pola}
   P=\gamma(T)\cdot p
 \end{equation}
-$N(t)$ íst nun die Anzahl der relaxierenden Dipole, also genau die Dipole die zum induzierten Polarisationsstrom beitragen damit ergibt sich:
+$N(t)$ íst nun die Anzahl der relaxierenden Dipole, also genau die Dipole die zur induzierten Polarisationsstromdichte $j(T)$ beitragen damit ergibt sich:
 \begin{align*}
-  I(T)=P\cdot\dfrac{\mathrm{d} N}{\mathrm{d} t}
+  j(T)=P\cdot\dfrac{\mathrm{d} N}{\mathrm{d} t}
 \end{align*}
 und weiter:
 \begin{equation}
   \label{eqn:stromdichte}
-  I(T)=\gamma(T_\mathrm{p})p\dfrac{\mathrm{d} N}{\mathrm{d} t}
+  j(T)=\gamma(T_\mathrm{p})p\dfrac{\mathrm{d} N}{\mathrm{d} t}
 \end{equation}
 Dabei gibt $\gamma(T_\mathrm{p})$ den Anteil der Dipole an bei der Polarisationstemperatur $T_\mathrm{0}$ an, der Differenzquotient $\dfrac{\mathrm{d} N}{\mathrm{d} t}$ gibt die Anzahl der pro Zeit und Volumen relaxierenden Dipole an und
-$p$ das Dipolmoment. In Abbildung (\ref{fig:stromdi}) ist der Verlauf des Polarisationsstrom dargestellt.
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.5]{fig/stromver.png}
-  \caption{Der Polarisationsstrom aufgetragen gegen die Temperatur.}
-  \label{fig:stromdi}
-\end{figure}
-Mit Gleichung (\ref{eqn:anteil}) lässt sich der erste Teil Gleichung für den Strom wie folgt ausdrücken:
+$p$ das Dipolmoment.
+Mit Gleichung (\ref{eqn:anteil}) lässt sich der erste Teil Gleichung für die Stromdichte wie folgt ausdrücken:
 \begin{equation}
   \label{eqn:stromdi2}
   \gamma(T_\mathrm{p})p=\dfrac{p^2E}{3 k_\mathrm{b} T_\mathrm{P}}
@@ -67,11 +61,18 @@ Betrachtet man nun den Differenzquotienten $\dfrac{\mathrm{d} N}{\mathrm{d} t}$ 
   \label{eqn:einset}
   \Leftrightarrow N&=N_\mathrm{0}\exp\left(-\dfrac{1}{a}\int_{T_0}^T\dfrac{\mathrm{d} T'}{\tau(T')}\right)
 \end{align}
-Dabei gibt $N_\mathrm{0}$ die Anzahl der Dipole pro Volumeneinheit die beim Beginn des Heizvorgangs bereits orientiert sind. Setzt man dies in Gleichung (\ref{eqn:stromdi2}) ein ergibt sich insgesamt für den Strom $I(T)$:
+Dabei gibt $N_\mathrm{0}$ die Anzahl der Dipole pro Volumeneinheit die beim Beginn des Heizvorgangs bereits orientiert sind. Setzt man dies in Gleichung (\ref{eqn:stromdi2}) ein, ergibt sich für die Stromdichte:
 \begin{equation}
   \label{eqn:stromdi3}
-  I(T) = \dfrac{p^2 E}{3k_\mathrm{B}T_\mathrm{P}}\dfrac{N_\mathrm{0}}{\tau_\mathrm{0}} \exp{\left(-\dfrac{1}{a\tau_\mathrm{0}}\int_{T_0}^T\exp{\left(-\dfrac{W}{k_\mathrm{B}T'}\right)\mathrm{d}T'}\right)}\exp{\left(-\dfrac{W}{ k_\mathrm{B}T}\right)}
+  j(T) = \dfrac{p^2 E}{3k_\mathrm{B}T_\mathrm{P}}\dfrac{N_\mathrm{0}}{\tau_\mathrm{0}} \exp{\left(-\dfrac{1}{a\tau_\mathrm{0}}\int_{T_0}^T\exp{\left(-\dfrac{W}{k_\mathrm{B}T'}\right)\mathrm{d}T'}\right)}\exp{\left(-\dfrac{W}{ k_\mathrm{B}T}\right)}
 \end{equation}
+In Abbildung (\ref{fig:stromdi}) ist der Verlauf des Polarisationsstrom dargestellt.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.5]{fig/stromver.png}
+  \caption{Der Polarisationsstrom aufgetragen gegen die Temperatur.}
+  \label{fig:stromdi}
+\end{figure}
 \subsection{Aktivierungsenergie}
 \label{sec:akti}
 In diesem Abschnitt werden zwei Verfahren zur Berechnung der Aktivierungsenergie $W$ vorgestellt.
@@ -81,11 +82,12 @@ Es wird angenommen, dass die Aktivierungsenergie $W$ groß im Vergleich zur ther
 \begin{align*}
   \int_{T_0}^T\exp{\left(-\dfrac{W}{k_\mathrm{B}T'}\right)\mathrm{d}T'}\approx0
 \end{align*}
-Damit folgt für den Strom $I(T)$:
+Damit folgt für die Stromdichte $j(T)$:
 \begin{equation}
   \label{eqn:polarime}
-  I(T)\approx \dfrac{p^2 E}{3k_\mathrm{B}T_\mathrm{P}}\dfrac{N_\mathrm{0}}{\tau_\mathrm{0}}\exp\left(-\dfrac{W}{k_\mathrm{B}T}\right)
+  j(T)\approx \dfrac{p^2 E}{3k_\mathrm{B}T_\mathrm{P}}\dfrac{N_\mathrm{0}}{\tau_\mathrm{0}}\exp\left(-\dfrac{W}{k_\mathrm{B}T}\right)
 \end{equation}
+Die Stromdichte ist hierbei bis auf einen konstanten Faktor proportional zum Strom $I(T)$.
 Durch eine halblogarithmische Darstellung kann nun die Aktivierungsenergie $W$ ermittelt werden.
 \subsubsection{Herleitung über die Stromdichte}
 \label{sec:strom1}
@@ -99,7 +101,7 @@ Weiter gilt, dass die Polarisation einen Strom induziert
 \end{equation*}
 Dabei ist $F$ der Probenquerschnitt. Da eine konstante Heizrate angenommen wird ist $T(t)$ eine lineare Funktion, daraus folgt:
 \begin{equation*}
-  \tau(T) = \frac{\int_{T}^\infty \gamma(T') \mathrm{d}T' }{ a \gamma(T) }
+  \tau(T) = \frac{\int_{T}^\infty I(T') \mathrm{d}T' }{ a I(T) }
 \end{equation*}
 Setzt man nun $\tau(T)$ aus Gleichung (\ref{eqn:relax}) ein, ergibt sich für die Berechnung der Aktivierungsenergie:
 \begin{equation}

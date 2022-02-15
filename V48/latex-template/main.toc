@@ -12,13 +12,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Aktivierungsenergie}{5}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.1}Polarisationsansatz}{5}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1}Polarisationsansatz}{6}{subsubsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.2}Herleitung über die Stromdichte}{6}{subsubsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Aufbau und Durchführung}{6}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Aufbau}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Aufbau}{7}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Durchführung}{7}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 

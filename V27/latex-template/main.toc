@@ -1,0 +1,51 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{german}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Drehimpuls und magnetisches Moment eines Elektrons}{3}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Wechselwirkungen der Drehimpulse und der magnetischen Momente}{4}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Aufspaltung der Energieniveaus eines Atoms im homogenen Magnetfeld}{5}{subsection.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Auswahlregeln für Übergänge zwischen aufgespaltenen Energieniveaus}{5}{subsection.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}Der Zeeman-Effekt}{6}{subsection.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.1}Der normale Zeeman-Effekt}{6}{subsubsection.2.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.2}Der anomale Zeeman-Effekt}{7}{subsubsection.2.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Vorbereitung}{8}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Die rote Linie der Cd-Lampe}{8}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Die blaue Linie der Cd-Lampe}{9}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Zusammenfassung der Ergebnisse}{10}{subsection.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Aufbau und Durchführung}{11}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Aufbau}{11}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Versuchsurchführung}{12}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Auswertung}{13}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Bestimmung des Magnetfeldes}{13}{subsection.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Messung der Landé-Faktoren}{15}{subsection.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Diskussion}{22}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Diskussion}{22}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Anhang}{23}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Literatur}{23}{section*.30}%
+\defcounter {refsection}{0}\relax 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
