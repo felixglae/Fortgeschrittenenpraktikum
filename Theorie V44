@@ -1,0 +1,9 @@
+\section{Theorie}
+\label{sec:Theorie}
+\subsection{Brechungsindex und Reflexion}
+\label{sec:Brechungsindex}
+Beim Auftreffen von Röntgenstrahlung vom Vakuum auf ein Medium, dessen Brechungsindex von eins abweicht, ist gegeben durch:
+\begin{equation}
+  \label{eqn:Brechungsindex}
+  \mathrm{n}=\1\minus\delta\plus\mathrm{i}/mathrm{beta}
+\end{equation}
