@@ -126,11 +126,11 @@ z1 = 0.
 k = 2 * np.pi / lambda_
 
 # Werte durch Anpassung, sodass R_G und R_parr gut passen
-delta2 = 1 * 10 ** (-6)
-delta3 = 3 * 10 ** (-6)
-sigma1 = 8.0 * 10 ** (-10)  # m
+delta2 = 0.55 * 10 ** (-6)
+delta3 = 6.6 * 10 ** (-6)
+sigma1 = 7.5 * 10 ** (-10)  # m
 sigma2 = 6.3 * 10 ** (-10)  # m
-z2 = 8.55 * 10 ** (-8)  # m
+z2 = 8.6 * 10 ** (-8)  # m
 
 
 def parrat_rau(a_i, delta2, delta3, sigma1, sigma2, z2):
@@ -190,7 +190,7 @@ plt.yscale('log')
 plt.legend(loc='upper right', prop={'size': 8})
 plt.tight_layout(pad=0.15, h_pad=1.08, w_pad=1.08)
 plt.savefig('plot_messung.pdf')
-# plt.show()
+plt.show()
 plt.clf()
 
 ##########
