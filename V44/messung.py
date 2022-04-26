@@ -31,9 +31,9 @@ if not 'Messung' in Ergebnisse:
     Ergebnisse['Messung'] = dict()
 
 # Reflektivitätsscan:
-a_refl, I_refl = np.genfromtxt('data/Omega2ThetaScan1.UXD', unpack=True)
+a_refl, I_refl = np.genfromtxt('data/omega2thetascan.UXD', unpack=True)
 # Diffuser Scan
-a_diff, I_diff = np.genfromtxt('data/Omega2ThetaScan2.UXD', unpack=True)
+a_diff, I_diff = np.genfromtxt('data/diffusscan.UXD', unpack=True)
 
 if (a_refl != a_diff).any():
     print('Der Diffuse Scan und der Reflektivitätsscan passen nicht zueinander!')
@@ -43,7 +43,7 @@ a = a_refl
 
 # Anfang und Ende abschneiden
 a_min = 0.01
-a_max = 1.6
+a_max = 1.7
 mask = (a >= a_min) & (a <= a_max)
 a = a[mask]
 I_refl = I_refl[mask]
@@ -126,8 +126,8 @@ z1 = 0.
 k = 2 * np.pi / lambda_
 
 # Werte durch Anpassung, sodass R_G und R_parr gut passen
-delta2 = 0.5 * 10 ** (-6)
-delta3 = 6.75 * 10 ** (-6)
+delta2 = 1 * 10 ** (-6)
+delta3 = 3 * 10 ** (-6)
 sigma1 = 8.0 * 10 ** (-10)  # m
 sigma2 = 6.3 * 10 ** (-10)  # m
 z2 = 8.55 * 10 ** (-8)  # m
@@ -176,11 +176,11 @@ mpl.rcParams['lines.linewidth'] = 0.9
 mpl.rcParams['axes.grid.which'] = 'major'
 plt.axvline(a_c2, linewidth=0.6, linestyle='dashed', color='blue', label=r'$\alpha_\mathrm{c,PS},\alpha_\mathrm{c,Si}$')
 plt.axvline(a_c3, linewidth=0.6, linestyle='dashed', color='blue')
-plt.plot(a, R_refl / 10, '-', label='Reflektivitätsscan / 10')
-plt.plot(a, R_diff / 10, '-', label='Diffuser Scan / 10')
-plt.plot(a, R / 10, '-', label='Reflektivitätsscan - Diffuser Scan / 10')
+plt.plot(a, R_refl, '-', color='black', label='Reflektivitätsscan')
+plt.plot(a, R_diff, '-', label='Diffuser Scan')
+plt.plot(a, R, '-', label='Reflektivitätsscan - Diffuser Scan')
 plt.plot(a, R_ideal, '-', color='pink', label='Fresnelreflektivität von Si')
-plt.plot(a, R_parr, '-', label='Theoriekurve (manueller Fit)')
+plt.plot(a, R_parr, '-', label='Theoriekurve ')
 plt.plot(a, R_G, '-', label=r'(Reflektivitätsscan - Diffuser Scan)$\cdot G$')
 plt.plot(a[i_peaks], R_G[i_peaks], 'kx', label='Oszillationsminima', alpha=0.8)
 # plt.plot(a[peaks_mask],R_fit, '--', label='Peaks Curve Fit')

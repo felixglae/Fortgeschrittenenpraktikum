@@ -1,29 +1,29 @@
 {
     "Detektorscan": {
         "Ausgleichsrechnung": {
-            "a": "( 1.892+/-0.038)e+05",
-            "b": "( 4.0+/-1.2)e+04",
-            "sigma[degree]": " 0.04671+/-0.00083",
-            "mu[degree]": " 0.04603+/-0.00068"
+            "a": "( 1.980+/-0.028)e+05",
+            "b": "( 1.78+/-0.54)e+04",
+            "sigma[degree]": " 0.05132+/-0.00077",
+            "mu[degree]": "-0.00018+/-0.00072"
         },
-        "I_max_gemessen": " 1.6435e+06",
-        "I_max_gauss": " 1.6561e+06",
-        "Halbwertsbreite[degree]": " 1.1197e-01",
-        "Halbwertsbreite_gauss[degree]": " 1.1000e-01"
+        "I_max_gemessen": " 1.5408e+06",
+        "I_max_gauss": " 1.5568e+06",
+        "Halbwertsbreite[degree]": " 1.2185e-01",
+        "Halbwertsbreite_gauss[degree]": " 1.2084e-01"
     },
     "Z-Scan": {
-        "d_0[mm]": 0.22000000000000003
+        "d_0[mm]": 0.19999999999999996
     },
     "Rockingscan": {
-        "alpha_g_l[degree]": -0.65,
-        "alpha_g_r[degree]": 0.75,
-        "alpha_g[degree]": 0.7,
-        "alpha_g_berechnet[degree]": 0.6302662854497765
+        "alpha_g_l[degree]": -0.5,
+        "alpha_g_r[degree]": 0.5,
+        "alpha_g[degree]": 0.5,
+        "alpha_g_berechnet[degree]": 0.5729673448571526
     },
     "Messung": {
-        "delta_a_mean[degree]": "0.000873+/-0.000031",
-        "d[m]": "(8.82+/-0.31)e-08",
-        "a_c2[degree]": 0.057295779513082325,
-        "a_c3[degree]": 0.21051813633309255
+        "delta_a_mean[degree]": "0.000878+/-0.000026",
+        "d[m]": "(8.77+/-0.26)e-08",
+        "a_c2[degree]": 0.08102846845413955,
+        "a_c3[degree]": 0.14034542422206173
     }
 }

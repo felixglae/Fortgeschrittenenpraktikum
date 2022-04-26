@@ -25,7 +25,7 @@ except FileNotFoundError as err:
 ## Detektor Scan Halbwertsbreite und maximale Intensität
 ########################################################
 print('Plot: Detektor-Scan...')
-angle, intensity = np.genfromtxt('data/Detektorscan1.UXD', unpack=True)
+angle, intensity = np.genfromtxt('data/detektor1scan.UXD', unpack=True)
 
 # Gaußfunktion als Ausgleichskurve
 def gauss(x,a,b,sigma,mu):
@@ -63,8 +63,8 @@ Ergebnisse['Detektorscan']['Halbwertsbreite_gauss[degree]'] = f'{params[2]*(2*np
 
 # Detektor Scan Plotten
 plt.plot(angle_linspace, intensity_gauss, 'k-', label='Ausgleichskurve')
-plt.plot([left_FWHM, right_FWHM], [I_max/2, I_max/2], 'b--', label='Halbwertsbreite')
-plt.plot(angle, intensity, 'ro', label='Messdaten')
+plt.plot([left_FWHM, right_FWHM], [I_max/2, I_max/2], 'g--', label='Halbwertsbreite')
+plt.plot(angle, intensity, 'bo', label='Messdaten')
 plt.xlabel(r'$\alpha \:/\: °$')
 plt.ticklabel_format(axis='y',style='sci',scilimits=(0,0))
 plt.ylabel(r'$I \:/\:$ Hits pro Sekunde')
@@ -72,15 +72,19 @@ plt.legend()
 plt.tight_layout(pad=0.15, h_pad=1.08, w_pad=1.08)
 plt.savefig('plot_detektorscan.pdf')
 plt.clf()
+print(left_FWHM)
+print(right_FWHM)
+print(FWHM)
+print(I_max)
 
 ############
 ## Z-Scan 1
 ############
 print('Plot: Z-Scan...')
-z, intensity = np.genfromtxt('data/ZScan1.UXD', unpack=True)
+z, intensity = np.genfromtxt('data/z1scan.UXD', unpack=True)
 
 # Strahlbreite Ablesen
-i_d = [28,-12]
+i_d = [12,-25]
 d0 = np.abs(z[i_d[0]]-z[i_d[1]]) # mm
 
 if not 'Z-Scan' in Ergebnisse:
@@ -88,9 +92,9 @@ if not 'Z-Scan' in Ergebnisse:
 Ergebnisse['Z-Scan']['d_0[mm]'] = d0
 
 # Z Scan Plotten
-plt.axvline(z[i_d[0]],color='blue',linestyle='dashed',label='Strahlgrenzen')
-plt.axvline(z[i_d[1]],color='blue',linestyle='dashed')
-plt.plot(z, intensity, 'ro', label='Messdaten')
+plt.axvline(z[i_d[0]],color='green',linestyle='dashed',label='Strahlgrenzen')
+plt.axvline(z[i_d[1]],color='green',linestyle='dashed')
+plt.plot(z, intensity, 'bo', label='Messdaten')
 plt.xlabel(r'$z \:/\: mm$')
 plt.ylabel(r'$I \:/\:$ Hits pro Sekunde')
 plt.ticklabel_format(axis='y',style='sci',scilimits=(0,0))
@@ -104,10 +108,10 @@ plt.clf()
 ## Rocking-Scan 1
 ##################
 print('Plot: Rocking-Scan...')
-angle, intensity = np.genfromtxt('data/RockingScan1.UXD', unpack=True)
+angle, intensity = np.genfromtxt('data/rocking1scan.UXD', unpack=True)
 
 # Geometriewinkel ablesen
-i_g = [7,-6]
+i_g = [0,-1]
 a_g = np.mean(np.abs(angle[i_g]))
 
 D = 20 #mm
@@ -124,10 +128,10 @@ Ergebnisse['Rockingscan']['alpha_g_berechnet[degree]'] = a_g_berechnet
 
 
 # Rocking Scan Plotten
-plt.axvline(angle[i_g[0]],color='blue',linestyle='dashed',label='Geometriewinkel')
-plt.axvline(angle[i_g[1]],color='blue',linestyle='dashed')
-plt.plot(angle, intensity, 'ro', label='Messdaten')
-plt.xlabel(r'$\alpha \:/\: °')
+plt.axvline(angle[i_g[0]],color='green',linestyle='dashed',label='Geometriewinkel')
+plt.axvline(angle[i_g[1]],color='green',linestyle='dashed')
+plt.plot(angle, intensity, 'bo', label='Messdaten')
+plt.xlabel(r'$\alpha \:/\: °$')
 plt.ylabel(r'$I \:/\:$ Hits pro Sekunde')
 plt.ticklabel_format(axis='y',style='sci',scilimits=(0,0))
 plt.legend()
