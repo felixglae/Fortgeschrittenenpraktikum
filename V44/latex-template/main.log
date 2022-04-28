@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.20)  26 APR 2022 15:26
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.20)  28 APR 2022 11:39
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -475,12 +475,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            synonyms	
-(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            patterns	hyph-de-1901.pat.txt on input line 10
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -1403,18 +1403,14 @@ LaTeX Info: Redefining \rmfamily on input line 26.
 LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            synonyms	
-(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            patterns	hyph-de-1996.pat.txt on input line 26
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	 on input line 26
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 26
-
-
-LaTeX Warning: Label `sec:Brechungsindex' multiply defined.
-
 )
 \openout1 = main.aux
 
@@ -1582,6 +1578,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
+
+! I can't write on file `main.pdf'.
+Please type another file name for output: main
 LaTeX Info: Redefining \rmfamily on input line 11.
 LaTeX Info: Redefining \sffamily on input line 11.
 LaTeX Info: Redefining \ttfamily on input line 11.
@@ -1607,7 +1606,6 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 9.99893pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 6.99925pt on input line 14.
-
 (/home/felix/.local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
@@ -1635,7 +1633,7 @@ LaTeX Info: Redefining \ttfamily on input line 3.
  [2
 
 ] (./content/zielsetzung.tex) (./content/theorie.tex
-<fig/kiessing.png, id=56, 803.0pt x 482.80376pt>
+<fig/kiessing.png, id=62, 803.0pt x 482.80376pt>
 File: fig/kiessing.png Graphic file (type png)
 <use fig/kiessing.png>
 Package luatex.def Info: fig/kiessing.png  used on input line 35.
@@ -1644,12 +1642,7 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 5.00053pt on input line 36.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 36.
- [3
-Missing character: There is no 𝛽 (U+1D6FD) in font [lmroman10-regular]:+tlig;
-!
-Missing character: There is no 𝛿 (U+1D6FF) in font [lmroman10-regular]:+tlig;
-!
-]
+ [3]
 [4<./fig/kiessing.png>]
 Missing character: There is no 𝛼 (U+1D6FC) in font [lmroman10-regular]:+tlig;
 !
@@ -1657,57 +1650,109 @@ Missing character: There is no 𝛼 (U+1D6FC) in font [lmroman8-regular]:+tlig;!
 Missing character: There is no 𝛼 (U+1D6FC) in font [lmroman10-regular]:+tlig;
 !
 Missing character: There is no 𝛼 (U+1D6FC) in font [lmroman8-regular]:+tlig;!
-) (./content/durchfuehrung.tex [5])
-(./content/auswertung.tex [6]
-<fig/plot_detektorscan.pdf, id=101, 462.528pt x 346.896pt>
+) (./content/durchfuehrung.tex [5]
+<fig/zscan.png, id=100, 668.4975pt x 322.20375pt>
+File: fig/zscan.png Graphic file (type png)
+<use fig/zscan.png>
+Package luatex.def Info: fig/zscan.png  used on input line 7.
+(luatex.def)             Requested size: 401.1016pt x 193.32373pt.
+<fig/beispiel.png, id=103, 598.235pt x 446.66875pt>
+File: fig/beispiel.png Graphic file (type png)
+<use fig/beispiel.png>
+Package luatex.def Info: fig/beispiel.png  used on input line 16.
+(luatex.def)             Requested size: 418.76164pt x 312.66599pt.
+
+Overfull \hbox (0.50609pt too wide) in paragraph at lines 16--17
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6<./fig/zscan.png>]
+<fig/zscan015.png, id=115, 312.16624pt x 273.02pt>
+File: fig/zscan015.png Graphic file (type png)
+<use fig/zscan015.png>
+Package luatex.def Info: fig/zscan015.png  used on input line 24.
+(luatex.def)             Requested size: 312.16548pt x 273.01933pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7<./fig/beispiel.png>]) (./content/auswertung.tex [8<./fig/zscan015.png>]
+<fig/plot_detektorscan.pdf, id=135, 462.528pt x 346.896pt>
 File: fig/plot_detektorscan.pdf Graphic file (type pdf)
 <use fig/plot_detektorscan.pdf>
 Package luatex.def Info: fig/plot_detektorscan.pdf  used on input line 11.
 (luatex.def)             Requested size: 323.76738pt x 242.82553pt.
- [7<./fig/plot_detektorscan.pdf>]
-<fig/plot_zscan.pdf, id=161, 462.528pt x 346.896pt>
+
+[9<./fig/plot_detektorscan.pdf>]
+<fig/plot_zscan.pdf, id=196, 462.528pt x 346.896pt>
 File: fig/plot_zscan.pdf Graphic file (type pdf)
 <use fig/plot_zscan.pdf>
 Package luatex.def Info: fig/plot_zscan.pdf  used on input line 36.
 (luatex.def)             Requested size: 323.76738pt x 242.82553pt.
-<fig/plot_rockingscan.pdf, id=163, 462.528pt x 346.896pt>
+<fig/plot_rockingscan.pdf, id=198, 462.528pt x 346.896pt>
 File: fig/plot_rockingscan.pdf Graphic file (type pdf)
 <use fig/plot_rockingscan.pdf>
-Package luatex.def Info: fig/plot_rockingscan.pdf  used on input line 49.
+Package luatex.def Info: fig/plot_rockingscan.pdf  used on input line 50.
 (luatex.def)             Requested size: 323.76738pt x 242.82553pt.
- [8<./fig/plot_zscan.pdf>]
-<fig/plot_messung.pdf, id=230, 462.528pt x 346.896pt>
+ [10<./fig/plot_zscan.pdf>]
+<fig/plot_messung.pdf, id=256, 462.528pt x 346.896pt>
 File: fig/plot_messung.pdf Graphic file (type pdf)
 <use fig/plot_messung.pdf>
-Package luatex.def Info: fig/plot_messung.pdf  used on input line 68.
+Package luatex.def Info: fig/plot_messung.pdf  used on input line 70.
 (luatex.def)             Requested size: 323.76738pt x 242.82553pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[11<./fig/plot_rockingscan.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
+
+ []
+
+[12<./fig/plot_messung.pdf>]) (./content/diskussion.tex [13]
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 24--28
 
  []
 
-[9<./fig/plot_rockingscan.pdf>] [10<./fig/plot_messung.pdf>])
-(./content/diskussion.tex
 
-LaTeX Warning: Reference `abb:delta' on page 11 undefined on input line 3.
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
+
+ []
+
+) (./content/anhang.tex [15]
+<fig/parrat1.png, id=416, 535.2497pt x 424.58624pt>
+File: fig/parrat1.png Graphic file (type png)
+<use fig/parrat1.png>
+Package luatex.def Info: fig/parrat1.png  used on input line 6.
+(luatex.def)             Requested size: 374.67223pt x 297.20834pt.
+<fig/parrat2.png, id=417, 646.66594pt x 474.27188pt>
+File: fig/parrat2.png Graphic file (type png)
+<use fig/parrat2.png>
+Package luatex.def Info: fig/parrat2.png  used on input line 12.
+(luatex.def)             Requested size: 323.33217pt x 237.13536pt.
 
 
-LaTeX Warning: Reference `abb:delta' on page 11 undefined on input line 4.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `sec:effektive_masse' on page 11 undefined on input li
-ne 5.
-
-[11])
+) [16<./fig/parrat1.png>]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -1746,40 +1791,30 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [12] (./main.aux
+ [17<./fig/parrat2.png>] (./main.aux
 LaTeX Info: Redefining \rmfamily on input line 26.
 LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 )
-
-Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 469FDEC89466B57D31B1C895A8AA26B0;14061
-(rerunfilecheck)             After:  021FFE39890BD420832ED9F4FF2E5F9C;13975.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: EDB7C03AD1A8CECDBB9B136ECAA66149;17246.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 482392B8232EAE142E61847EC2E85DF6;2240.
+(rerunfilecheck)             Checksum: C61A206BD19DA512B94FDB990E648794;2547.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 37499 strings out of 478092
+ 37580 strings out of 478092
  100000,1977958 words of node,token memory allocated
- 755 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 36 attribute, 78 glue_spec
-, 36 attribute_list, 1 write, 2 pdf_action nodes
-   avail lists: 1:1,2:611,3:248,4:109,5:476,6:57,7:5670,8:101,9:533,10:23,11:600
+ 739 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 32 attribute, 78 glue_spec
+, 32 attribute_list, 1 write, 2 pdf_action nodes
+   avail lists: 1:1,2:737,3:287,4:132,5:431,6:66,7:5038,8:103,9:506,10:16,11:523
 
- 56640 multiletter control sequences out of 65536+600000
- 106 fonts using 39401587 bytes
+ 56679 multiletter control sequences out of 65536+600000
+ 106 fonts using 39400931 bytes
  113i,12n,118p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmmono10-re
 gular.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/l
@@ -1795,10 +1830,10 @@ m/lmroman10-regular.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/openty
 pe/public/lm/lmroman12-regular.otf></home/felix/.local/texlive/2021/texmf-dist/f
 onts/opentype/public/lm/lmsans10-bold.otf></home/felix/.local/texlive/2021/texmf
 -dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (12 pages, 201053 bytes).
+Output written on main.pdf (17 pages, 397847 bytes).
 
-PDF statistics: 526 PDF objects out of 1000 (max. 8388607)
- 311 compressed objects within 4 object streams
- 70 named destinations out of 1000 (max. 131072)
- 137 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 583 PDF objects out of 1000 (max. 8388607)
+ 350 compressed objects within 4 object streams
+ 71 named destinations out of 1000 (max. 131072)
+ 161 words of extra memory for PDF output out of 10000 (max. 100000000)
 

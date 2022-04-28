@@ -2347,9 +2347,15 @@
   <bcf:section number="0">
     <bcf:citekey order="1">Anleitung3</bcf:citekey>
     <bcf:citekey order="2">Anleitung3</bcf:citekey>
-    <bcf:citekey order="3">python</bcf:citekey>
-    <bcf:citekey order="4">Anleitung3</bcf:citekey>
-    <bcf:citekey order="5">Bild6</bcf:citekey>
+    <bcf:citekey order="3">Anleitung4</bcf:citekey>
+    <bcf:citekey order="4">Anleitung4</bcf:citekey>
+    <bcf:citekey order="5">Anleitung4</bcf:citekey>
+    <bcf:citekey order="6">Anleitung4</bcf:citekey>
+    <bcf:citekey order="7">Anleitung4</bcf:citekey>
+    <bcf:citekey order="8">Anleitung4</bcf:citekey>
+    <bcf:citekey order="9">python</bcf:citekey>
+    <bcf:citekey order="10">Anleitung3</bcf:citekey>
+    <bcf:citekey order="11">Anleitung3</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

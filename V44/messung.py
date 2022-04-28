@@ -83,7 +83,7 @@ R_ideal = (a_c_Si / (2 * a)) ** 4
 
 ## Peaks finden
 # Curve Fit für find_peaks
-peaks_mask = (a >= 0.3) & (a <= 1.19)
+peaks_mask = (a >= 0.3) & (a <= 1.2)
 
 
 def f(x, b, c):
@@ -108,24 +108,24 @@ d = lambda_ / (2 * delta_a_mean)
 Ergebnisse['Messung']['delta_a_mean[degree]'] = f'{delta_a_mean:.2u}'
 Ergebnisse['Messung']['d[m]'] = f'{d:.2u}'
 
-## Parrat Algorithmus
+## Parrat algorithm
 
-# Speichere R_G und a_i für den interaktiven Plot
+# save R_G und a_i for interactive plot
 np.savetxt('R_G.csv', list(zip(a, R_G)), header='a_i,R_G', fmt='%.4f,%.10e')
 
-# a_i Einfallswinkel
-# n sind Brechungsindizes
-# n1 Luft, n2 Schicht, n3 Substrat
-# sigma sind Raugigkeiten
-# sigma1 Schicht, sigma2 Substrat
-# z1=0, z2 Schichtdicke
-# k=2pi/lambda Betrag des Wellenwektors
-# Konstanten:
+# a_i angle of incidence
+# n refractive index
+# n1 air, n2 nano-film, n3 substrat
+# sigma roughness
+# sigma1 nano-film, sigma2 substrat
+# z1=0, z2 layer thickness
+# k=2pi/lambda value of wave vector
+# constants:
 n1 = 1.
 z1 = 0.
 k = 2 * np.pi / lambda_
 
-# Werte durch Anpassung, sodass R_G und R_parr gut passen
+# parameters to adjust R_parr to RG
 delta2 = 0.55 * 10 ** (-6)
 delta3 = 6.6 * 10 ** (-6)
 sigma1 = 7.5 * 10 ** (-10)  # m
@@ -157,7 +157,7 @@ params = [delta2, delta3, sigma1, sigma2, z2]
 
 R_parr = parrat_rau(a, *params)
 
-# Kritischer Winkel
+# critical angle
 a_c2 = np.rad2deg(np.sqrt(2 * delta2))
 a_c3 = np.rad2deg(np.sqrt(2 * delta3))
 
@@ -180,7 +180,7 @@ plt.plot(a, R_refl, '-', color='black', label='Reflektivitätsscan')
 plt.plot(a, R_diff, '-', label='Diffuser Scan')
 plt.plot(a, R, '-', label='Reflektivitätsscan - Diffuser Scan')
 plt.plot(a, R_ideal, '-', color='pink', label='Fresnelreflektivität von Si')
-plt.plot(a, R_parr, '-', label='Theoriekurve ')
+plt.plot(a, R_parr, '-', label='Theoriekurve')
 plt.plot(a, R_G, '-', label=r'(Reflektivitätsscan - Diffuser Scan)$\cdot G$')
 plt.plot(a[i_peaks], R_G[i_peaks], 'kx', label='Oszillationsminima', alpha=0.8)
 # plt.plot(a[peaks_mask],R_fit, '--', label='Peaks Curve Fit')

@@ -19,6 +19,34 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Anleitung4}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=6d77c529a16a06330c9d02017203f915}{%
+           family={TU-Dortmund},
+           familyi={T\bibinithyphendelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d77c529a16a06330c9d02017203f915}
+      \strng{fullhash}{6d77c529a16a06330c9d02017203f915}
+      \strng{bibnamehash}{6d77c529a16a06330c9d02017203f915}
+      \strng{authorbibnamehash}{6d77c529a16a06330c9d02017203f915}
+      \strng{authornamehash}{6d77c529a16a06330c9d02017203f915}
+      \strng{authorfullhash}{6d77c529a16a06330c9d02017203f915}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Anleitung zu V44 Röntgenreflektometrie}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1893660/mod_resource/content/2/V44.pdf
+      \endverb
+      \verb{url}
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1893660/mod_resource/content/2/V44.pdf
+      \endverb
+    \endentry
     \entry{Anleitung3}{manual}{}
       \name{author}{1}{}{%
         {{hash=2821a70f99517ac7757c95300d43e95c}{%
@@ -49,22 +77,6 @@
       \verb https://www.e1.physik.tu-dortmund.de/cms/Medienpool/Downloads/Roentgenreflektometrie_Versuch.pdf
       \endverb
     \endentry
-    \entry{Bild6}{manual}{}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{labeltitlesource}{title}
-      \field{title}{Effektive Masse}
-      \field{urlday}{27}
-      \field{urlmonth}{10}
-      \field{urlyear}{2021}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://link.springer.com/content/pdf/bbm%3A978-3-662-07579-1%2F1.pdf
-      \endverb
-      \verb{url}
-      \verb https://link.springer.com/content/pdf/bbm%3A978-3-662-07579-1%2F1.pdf
-      \endverb
-    \endentry
     \entry{python}{manual}{}
       \name{author}{1}{}{%
         {{hash=a7f5f35426b927411fc9231b56382173}{%
@@ -81,8 +93,8 @@
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
       \field{urlday}{27}
-      \field{urlmonth}{10}
-      \field{urlyear}{2021}
+      \field{urlmonth}{4}
+      \field{urlyear}{2022}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.python.org

@@ -1,21 +1,50 @@
 \section{Diskussion}
 \label{sec:Diskussion}
-In Abbildung \ref{abb:delta} ist der normierte Rotationswinkel $\vartheta_\mathrm{norm}$ gegen das Quadrat der Wellenlänge $\lambda^2$. Der Theorie nach sollte sich zwischen
-diesen beiden Größen ein linearer Zusammenhang zeigen, dies bestätigt Abbildung \ref{abb:delta}. Allerdings weichen die einzelnen Messwerte oft von der Ausgleichsgerade ab, dennoch ist damit die Vermutung aus der Theorie im Experiment bestätigt worden.
-Das Prinzip der klassischen Betrachtung mit Hilfe der Einführung der effektiven Masse aus Abschnitt \ref{sec:effektive_masse} ist ergo möglich und
-eignet sich dafür die Leitungselektronen in Halbleitern zu beschreiben. \\
-Für die effektive Masse $m^*$ im Verhältnis zu Elektronenmasse $m_\mathrm{e}$ ergab sich für die verschieden dotierten Proben der jeweilige Wert zu:
+Die durchgeführten Scans zur Justierung aus den Abbildungen (\ref{fig:detekscan}), (\ref{fig:zscan}) und (\ref{fig:rockscan}) entsprechen den erwarteten
+Plots aus Abbildung (\ref{fig:beispiele}), daher lässt sich sagen, dass die Justage
+erfolgreich durchgeführt werden konnte, allerdings wären die Ergebnisse vermutlich etwas genauer wären bei Detektor- und Z-Scan mehr Datenpunkte vorhanden. Dies wirkt sich beispielsweise auf den Geometriewinkel aus, denn die Strahlbreite, aus der der Geometriewinkel berechnet wird, kann nur relativ ungenau
+aus Abbildung (\ref{fig:zscan}) ermittelt werden. Der gemessene Geometriewinkel $\alpha_\mathrm{g,Messung}$ weicht vom berechneten Geometriewinkel $\alpha_\mathrm{g,Theorie}$ ab mit:
 \begin{align*}
-  \dfrac{m^*_{\mathrm{leicht}}}{m_\mathrm{e}} &= 0.074668 \pm 0.000005 \\
-  \dfrac{m^*_{\mathrm{hoch}}}{m_\mathrm{e}} &= 0.086827 \pm 0.000006
+  \alpha_\mathrm{g,Messung}&= \SI{0.5}{\degree} \\
+  \alpha_\mathrm{g,Theorie}&= \SI{0.573}{\degree}
 \end{align*}
-Im Vergleich dazu ist der Literaturwert \cite[1]{Bild6} gegeben durch:
-\begin{equation*}
-  \dfrac{m^*_{\mathrm{Lit}}}{m_\mathrm{e}}=0.067
-\end{equation*}
-Daraus ergibt sich eine Abweichung von etwa 11.4\% für die leichtdotierte Probe und bei der hochdotierten Probe eine Abweichung von etwa 29.6\%.
-Daraus folgt, dass die Messung mit der leichtdotierten Probe die effektive Masse genauer bestimmen konnte, als die mit der hochdotierten Probe. Zu der relativ großen Abweichung kommt es
-vermutlich durch das fehleranfällige Messverfahren. Unter Anderem war es schwer möglich ein exakt genaues Spannungsminimum am Oszilloskop zu finden, sodass die Winkel nicht immer genau bestimmt
-werden konnten und eher aus einem Bereich von einigen Grad bzw. Minuten stammen. Eine weitere Fehlerquelle könnte das nicht ganz homogene Magnetfeld sein, denn dieses wird durch die
-strominduzierte Wärme in den Spulen beeinflusst. Desweiteren gibt es trotz des Selektivverstärkers Rauscheffekte, wenn diese in der Größenordnung der jeweils betrachteten Frequenzen liegen.\\
-Zusammenfassend lässt sich sagen, dass trotz der etwas fehleranfälligen Apparatur der verwendete Versuchsaufbau dafür geeignet ist die effekive Masse von Leitungselektronen zu bestimmen.
+Daraus ergibt sich eine Abweichung von ca. 12.7\%. \\
+
+\noindent Der in Abbildung (\ref{fig:messungr}) zu sehende korrigierte Reflektivitätsscan liegt zwar in der selben Größenordnung, aber dennoch
+über das ganze betrachtete Intervall unter dem Wert der Fresnelreflektivität von Silizium. Die erwarteten Kiessing-Oszillationen sind gut zu erkennen und auch die Näherung an
+die Kurve mit Hilfe des Parrat-Algorithmus ist für $\alpha_\mathrm{i}>\SI{0.5}{\degree}$ gut gelungen. Allerdings sind die Parameter dafür manuell angepasst worden. Im Folgenden
+sind die eingestellten Parameter mit den Literaturwerten \cite[5]{Anleitung3} verglichen. Zunächst wird die Dispersion sowie die Schichtdicke betrachet:
+\begin{align*}
+  \delta_\mathrm{PS,Parrat}&= \SI{0.55 e-6}{} \\
+  \delta_\mathrm{PS,Literatur}&= \SI{3.5 e-6}{} \\
+  \delta_\mathrm{Si,Parrat}&= \SI{6.6 e-6}{} \\
+  \delta_\mathrm{Si,Literatur}&= \SI{7.6 e-6}{} \\
+  d_\mathrm{PS,Messung}&=\SI{8.7 e-8}{\meter} \\
+  d_\mathrm{PS,Parrat}&=\SI{8.6 e-8}{\meter}
+\end{align*}
+Während für Silizium die Dispersion relativ gut übereinstimmt mit einer Abweichung von ca. 13\%, ist die Abweichung beim Polystyrol deutlich höher mit ca. 84\%.
+Die Schichtdicken, die einerseits aus dem Abstand der Minima der Kiessig-Oszillation und andererseits mit Hilfe des Parrat-Algorithmus berechnet wurden, stimmen fast exakt überein und sollten
+daher eine gute Einschätzung für die tatsächlichen Dicke der Probe geben können. \\
+
+\noindent Jetzt werden noch die kritischen Winkel betrachtet:
+\begin{align*}
+  \alpha_\mathrm{c,PS,Messung}&=\SI{0.060}{\degree} \\
+  \alpha_\mathrm{c,PS,Literatur}&=\SI{0.153}{\degree} \\
+  \alpha_\mathrm{c,Si,Messung}&=\SI{0.208}{\degree} \\
+  \alpha_\mathrm{c,Si,Literatur}&=\SI{0.223}{\degree} \\
+\end{align*}
+Da die Winkel direkt aus den Dispersionen bestimmt wurden mit Gleichung (\ref{eqn:Totalreflexion}), hat auch hier wieder der Wert für Silizium die wesentlich geringere Abweichung.
+In Abbildung (\ref{fig:messungr}) ist zu erkennen, dass die kritischen Winkel sehr gut mit den Intensitätseinbrüchen der jeweiligen Kurven übereinander liegen. \\
+
+\noindent Die letzten beiden Parameter, die für den Parrat-Algorithmus verwendet wurden sind die Rauigkeiten, diese lauten:
+\begin{align*}
+  \sigma_\mathrm{1} &=\SI{7.5 e-10}{\meter} \\
+  \sigma_\mathrm{2} &=\SI{6.3 e-10}{\meter} \\
+\end{align*}
+Dabei ist $\sigma_\mathrm{1}$ die Rauigkeit zwischen Luft und Polystyrol und $\sigma_\mathrm{2}$ die Rauigkeit zwischen Polystyrol und Silizium. Für diese Parameter liegen
+keine Literaturwerte vor. Allerdings hat $\sigma_\mathrm{2}$ einen großen Einfluss auf den Verlauf der Kurve des Parrat-Algorithmus, daher ist anzunehmen, dass die
+Rauigkeit $\sigma_\mathrm{2}$ relativ genau bestimmt wurde.\\
+
+Insgesamt lässt sich sagen, dass über den Parrat-Algorithmus als auch über die Abstände der Minima ein gutes Ergebnis für die Schichtdicke erzielt wurde. Allerdings
+war die Anpassung des Parrat-Algorithmus sehr subjektiv und es ist möglich, dass mit anderen Parametern eine bessere Annäherung an die Messung erzielt werden kann.
+Weitere Gründe für Abweichungen können eine nicht optimale Justage der Apparatur oder nicht genügend Datenpunkte wie oben beschrieben.

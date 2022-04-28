@@ -8,7 +8,7 @@ Beim Auftreffen von Röntgenstrahlung vom Vakuum auf ein Medium, dessen Brechung
   \label{eqn:Brechungsindex}
   n=1-\delta+ i\cdot \beta
 \end{equation}
-\beta ist dabei die Absorption und \delta ist ein Korektur. Bei Röntgenstrahlung ist bei diesem Übergang eine Totalreflexion möglich, da der Brechungsindex in Materie kleiner als eins ist. Im allgemeinen Fall trifft die elektromagnetische Welle in einem Winkel $\alpha_\mathrm{e}$ auf eine unendlich dicke, homogene, glatte Materialschicht. Ein Teil wird dann im Winkel $\alpha_\mathrm{e}=\alpha_\mathrm{r}$ reflektiert. Der restliche Teil wird unter dem Winkel $\alpha_\mathrm{t}$ gebrochen und transmittiert. Die Totalreflexion tritt hierbei unter dem kritischen Winkel $\alpha_\mathrm{c}$ auf. Dies bedeutet, dass keine Transmission auftritt. Dieser Kritische Winkel beim Auftreffen von Röntgenstrahlung vom Vakuum auf ein Medium, dessen Brechungsindex von eins abweicht, ist gegeben durch:
+$\beta$ ist dabei die Absorption und $\delta$ ist ein Korrektur. Bei Röntgenstrahlung ist bei diesem Übergang eine Totalreflexion möglich, da der Brechungsindex in Materie kleiner als Eins ist. Im allgemeinen Fall trifft die elektromagnetische Welle in einem Winkel $\alpha_\mathrm{e}$ auf eine unendlich dicke, homogene, glatte Materialschicht. Ein Teil wird dann im Winkel $\alpha_\mathrm{e}=\alpha_\mathrm{r}$ reflektiert. Der restliche Teil wird unter dem Winkel $\alpha_\mathrm{t}$ gebrochen und transmittiert. Die Totalreflexion tritt hierbei unter dem kritischen Winkel $\alpha_\mathrm{c}$ auf. Dies bedeutet, dass keine Transmission auftritt. Dieser Kritische Winkel beim Auftreffen von Röntgenstrahlung vom Vakuum auf ein Medium, dessen Brechungsindex von eins abweicht, ist gegeben durch:
 \begin{align}
   \label{eqn:Totalreflexion}
   a_\mathrm{c} &= \sqrt{2 \delta} \\
@@ -20,7 +20,7 @@ Die Fresnelschen-Gleichungen beschrieben die Reflexion und Transmission an ebene
   t &= \dfrac{2\cdot n_\mathrm{1} \sin(\alpha_\mathrm{e}) }{n_\mathrm{1} \sin(\alpha_\mathrm{e})+ n_\mathrm{2} \sin(\alpha_\mathrm{c})}\\
   r &= \dfrac{n_\mathrm{1} \sin(\alpha_\mathrm{e})-n_\mathrm{2}\sin(\alpha_\mathrm{c})}{n_\mathrm{1}\sin(\alpha_\mathrm{e})+n_\mathrm{2} \sin(\alpha_\mathrm{c})}
 \end{align}
-r und t beschrieben dabei die Fresnel`schen Reflexions- und Transmissionskoeffizienten. Diese beschreiben die Amplitudenverhältnisse. Die Intensitätsverhältnisse können über die Fresnel`sche Reflektivität mit der Annahme, dass $\alpha_\mathrm{e} >3 \alpha_\mathrm{c}$ als:
+$r$ und $t$ beschrieben dabei die Fresnel`schen Reflexions- und Transmissionskoeffizienten. Diese beschreiben die Amplitudenverhältnisse. Die Intensitätsverhältnisse können über die Fresnel`sche Reflektivität mit der Annahme, dass $\alpha_\mathrm{e} >3 \alpha_\mathrm{c}$ als:
 \begin{equation}
   \label{eqn:Fresnelref}
  R_\mathrm{F} =|r|^2 =\left(\dfrac{\alpha_\mathrm{c}}{2\alpha_\mathrm{e}}\right)^4
@@ -35,7 +35,8 @@ Die Systeme  sind in der Realität bestehen meist nicht aus nur einer Schicht un
   \includegraphics[scale=0.4]{fig/kiessing.png}
   \caption{Reflektivität eines Siliziumwafers mit einer $\SI{80}{\nano\meter}$ dicken Polystyrolschicht \cite[8]{Anleitung3}}
 \end{figure}
-Die theoretische Fresenelreflektivität wird dabei als gestrichelte Linie dargstellt. In der Realität oszilliert die Reflektivität, dies wird als Kiessig-Oszillation bezeichnet. Diese entstehen durch Interferenzen an den Grenzschichten, die je nach Phasendifferenz konstruktiv oder destruktiv sind. Die Minima entstehen bei einem Gangunterschied vpn $N\cdot\dfrac{\lambda}{2}$, wobei N eine ungerade Zahl ist. Bei den kritischen Winkel $a_\mathrm{c}$ sind Einbrüche im Plot zu finden, wodurch diese bestimmt werden können. Die Schichtdicke kann über die Ozillation und die Wellenlänge $\lambda$ bestimmt werden als:
+\FloatBarrier
+\noindent Die theoretische Fresenelreflektivität wird dabei als gestrichelte Linie dargstellt. In der Realität oszilliert die Reflektivität, dies wird als Kiessig-Oszillation bezeichnet. Diese entstehen durch Interferenzen an den Grenzschichten, die je nach Phasendifferenz konstruktiv oder destruktiv sind. Die Minima entstehen bei einem Gangunterschied vpn $N\cdot\dfrac{\lambda}{2}$, wobei N eine ungerade Zahl ist. Bei den kritischen Winkel $\alpha_\mathrm{c}$ sind Einbrüche im Plot zu finden, wodurch diese bestimmt werden können. Die Schichtdicke kann über die Ozillation und die Wellenlänge $\lambda$ bestimmt werden als:
 \begin{equation}
   \label{eqn:Schichtdicke}
 d = \dfrac{\lambda}{2\Delta a_\mathrm{i}}
@@ -51,7 +52,7 @@ Hierbei ist
   \label{eqn:kzj}
  k_\mathrm{z,j}= k\cdot\sqrt{n_\mathrm{j}^2-(\cos(\alpha_\mathrm{i})^2}
 \end{equation}
-die z-Komponente des j-ten Wellenvektors. Der Betrag ist dabei $k=\dfrac{2\pi}{\lambda}$ . Die Fresnelkoeffizienten werden dann über
+die z-Komponente des j-ten Wellenvektors. Der Betrag ist dabei $k=\dfrac{2\pi}{\lambda}$. Die Fresnelkoeffizienten werden dann über
 \begin{equation}
   \label{eqn:Veränderten Fresnelkoefizienten}
   r_\mathrm{j,j+1}= \dfrac{k_\mathrm{z,j}-k_\mathrm{z,j+1}}{ k_\mathrm{z,j}+ k_\mathrm{z,j+1}}
@@ -72,18 +73,18 @@ Damir werden die Fresnelkoeffizienten zu:
   \label{eqn:modkoeff2}
   \overline{t}_\mathrm{j,j+1}&=t_\mathrm{j,j+1}\cdot\exp\left(( k_\mathrm{z,j}-k_\mathrm{z,j+1})^2 \dfrac{\sigma_\mathrm{j}^2}{2}\right)
 \end{align}
-Diese modifizierten können im Oarrat-Algorythmus verwendert werden.
+Diese modifizierten können im Parrat-Algorithmus verwendert werden.
 \subsection{Funktionsweise der Geräte}
 \label{sec:Geräte}
-Für die Röntgenstrahlung wird eine Kupfer-Röntgenröhre verwendet. Elektronen werden zu einer Kupfer-Anode beschleunigt. Dort wird Bremstrahlung abgegeben und durch Stoßprozesse mit den Hüllenelektronen entstehen die charakteristischen Strahlungen, wobei die $K_\mathrm{\alpha}$-Linie für diesen Veruch verwendet wird. Um nur diese für die Reflektometrie zu verwenden, wird ein Göbelspiegel benutzt. Dieser bündelt die Strahlen, sodass diese monochromatisiert werden und parallel verlaufen. Die Wellenlänge die durch gelassen wird beträgt $\lambda=\SI{1.54 e-10}{\meter}$ und entspricht der $K_\mathrm{\alpha}$-Linie.
-Bei dem Versuch defnieren zwei Blenden jewils den Einfallswinkel und den Ausfalsswinkel. Eine zusätzliche Bedingung ist, dass erst ab einem Geometrie-Winkel $a_\mathrm{g}$ der gesamte Strahl reflektiert wird. Dieser Winkel lässt sich über
+Für die Röntgenstrahlung wird eine Kupfer-Röntgenröhre verwendet. Elektronen werden zu einer Kupfer-Anode beschleunigt. Dort wird Bremstrahlung abgegeben und durch Stoßprozesse mit den Hüllenelektronen entstehen die charakteristische Strahlung, wobei die $K_\mathrm{\alpha}$-Linie für diesen Veruch verwendet wird. Um nur diese für die Reflektometrie zu verwenden, wird ein Göbelspiegel benutzt. Dieser bündelt die Strahlen, sodass diese monochromatisiert werden und parallel verlaufen. Die Wellenlänge, die durch gelassen wird, beträgt $\lambda=\SI{1.54 e-10}{\meter}$ und entspricht der $K_\mathrm{\alpha}$-Linie.
+Bei dem Versuch defnieren zwei Blenden jewils den Einfallswinkel und den Ausfalsswinkel. Eine zusätzliche Bedingung ist, dass erst ab einem Geometrie-Winkel $\alpha_\mathrm{g}$ der gesamte Strahl reflektiert wird. Dieser Winkel lässt sich über
 \begin{equation}
   \label{eqn:Geometriewinkel}
 a_\mathrm{g}=\arcsin\left(\dfrac{d_\mathrm{0}}{D}\right)
 \end{equation}
-berechnen. Dabei ist $d_\mathrm{0}$ die Gesamtstrahlbreite und $D$ die Probelänge. Mit der tatsächlichen Strahlbreite $D\cdot\sin(a_\mathrm{e})$, die auf die Probe trifft lässt sich der Geometriefaktor G als
+berechnen. Dabei ist $d_\mathrm{0}$ die Gesamtstrahlbreite und $D$ die Probelänge. Mit der tatsächlichen Strahlbreite $D\cdot\sin(\alpha_\mathrm{e})$, die auf die Probe trifft lässt sich der Geometriefaktor G als
 \begin{align}
   \label{eqn:Geometriefaktorl}
-G= \dfrac{D\cdot\sin(a_\mathrm{e})}{d_\mathrm{0}}
+G= \dfrac{D\cdot\sin(\alpha_\mathrm{e})}{d_\mathrm{0}}
 \end{align}
-im Bereich $ a_\mathrm{e}< a_\mathrm{g}$ bestimmen. Für den Beich $ a_\mathrm{e}\geq\ a_\mathrm{g}$ beträgt der Geometriefaktor $G=1$.
+im Bereich $ \alpha_\mathrm{e}< \alpha_\mathrm{g}$ bestimmen. Für den Bereich $\alpha_\mathrm{e}\geq\ \alpha_\mathrm{g}$ beträgt der Geometriefaktor $G=1$.
