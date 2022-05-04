@@ -3,7 +3,7 @@
 \label{sec:Theorie}
 \subsection{Brechungsindex und Reflexion}
 \label{sec:Brechungsindex}
-Beim Auftreffen von Röntgenstrahlung vom Vakuum auf ein Medium, dessen Brechungsindex von eins abweicht, ist gegeben durch:
+Beim Auftreffen von Röntgenstrahlung vom Vakuum auf ein Medium, dessen Brechungsindex von eins abweicht, ist dieser gegeben durch:
 \begin{equation}
   \label{eqn:Brechungsindex}
   n=1-\delta+ i\cdot \beta
@@ -28,7 +28,7 @@ $r$ und $t$ beschrieben dabei die Fresnel`schen Reflexions- und Transmissionskoe
 beschrieben werden.
 \subsection{Mehrschichtensysteme}
 \label{sec:Mehrschichtensysteme}
-Die Systeme sind in der Realität bestehen meist nicht aus nur einer Schicht und sind auch nicht homogen. Als erstes wird die Reflexion an einer nicht homogenen Schicht untersucht, hier an einer  dicken Polystyrolschicht mit einer Dicke von $\SI{80}{\nano\meter}$. Wenn nun die Reflektivität gegen den Einfallswinkel aufgetragen wird, ergibt sich:
+Die Systeme bestehen in der Realität meist nicht aus nur einer Schicht und sind auch nicht homogen. Als erstes wird die Reflexion an einer nicht homogenen Schicht untersucht, hier an einer  dicken Polystyrolschicht mit einer Dicke von $\SI{80}{\nano\meter}$. Wenn nun die Reflektivität gegen den Einfallswinkel aufgetragen wird, ergibt sich:
 \begin{figure}[h!]
   \label{fig:kiessig}
   \centering
@@ -42,7 +42,7 @@ Die Systeme sind in der Realität bestehen meist nicht aus nur einer Schicht und
 d = \dfrac{\lambda}{2\Delta a_\mathrm{i}}
 \end{equation}
 wobei $d$ die Schichtdicke ist und  $a_\mathrm{i}$ der Winkel zwischen zwei Minima der Kiessig-Oszillation ist.
-Wenn nun weitere Schichten hinzukommen, werden sich die Oszillationen der einzelnen Schichten überlagern. Um dennoch etwas über die Reflektivität aussagen zu können, wird der Parrat-Algorithmus verwendet. Dieser besteht aus dem rekursiven Durchlaufen aller Schichten, angefangen von der untersten Schicht. Dabei wird die jeweils j-te Schicht und deren Amplitudenverhältnisse untersucht. Dabei ist der Parrat-Algorithmus gegeben durch:
+Wenn nun weitere Schichten hinzukommen, werden sich die Oszillationen der einzelnen Schichten überlagern. Um dennoch etwas über die Reflektivität aussagen zu können, wird der Parratt-Algorithmus verwendet. Dieser besteht aus dem rekursiven Durchlaufen aller Schichten, angefangen von der untersten Schicht. Dabei wird die jeweils j-te Schicht und deren Amplitudenverhältnisse untersucht. Dabei ist der Parratt-Algorithmus gegeben durch:
 \begin{align}
   \label{eqn:Parrat-Algorithmus}
 X_\mathrm{j}= \exp(-2i k_\mathrm{z,j}z_\mathrm{j})\cdot\dfrac{r_\mathrm{j,j+1}+X_\mathrm{j}\exp(-2i k_\mathrm{z,j+1}z_\mathrm{j})}{1+r_\mathrm{j,j+1}+X_\mathrm{j}\exp(-2i k_\mathrm{z,j+1}z_\mathrm{j})}
@@ -65,15 +65,15 @@ Die nächste Korektur ist die der Rauigkeit. Glatte Materialschichten sind in de
   \label{eqn:rms}
 \sigma_\mathrm{j}^2= \int (z-z_\mathrm{j})\cdot P_\mathrm{j}(z) dz.
 \end{equation}
-$P_\mathrm{j}(z)$ ist dabei die Wahrscheinlichkeit des Antrefens der j-ten Grenzfläche im Intervall $(z_\mathrm{j}+z,z_\mathrm{j}+z+dz)$.
-Damir werden die Fresnelkoeffizienten zu:
+$P_\mathrm{j}(z)$ ist dabei die Wahrscheinlichkeit des Antreffens der j-ten Grenzfläche im Intervall $(z_\mathrm{j}+z,z_\mathrm{j}+z+dz)$.
+Damit werden die Fresnelkoeffizienten zu:
 \begin{align}
   \label{eqn:modkoeff}
   \overline{r}_\mathrm{j,j+1}&=r_\mathrm{j,j+1}\cdot\exp(-2 k_\mathrm{z,j} k_\mathrm{z,j+1}\sigma_\mathrm{j}^2) \\
   \label{eqn:modkoeff2}
   \overline{t}_\mathrm{j,j+1}&=t_\mathrm{j,j+1}\cdot\exp\left(( k_\mathrm{z,j}-k_\mathrm{z,j+1})^2 \dfrac{\sigma_\mathrm{j}^2}{2}\right)
 \end{align}
-Diese modifizierten können im Parrat-Algorithmus verwendert werden.
+Diese modifizierten können im Parratt-Algorithmus verwendendt werden.
 \subsection{Funktionsweise der Geräte}
 \label{sec:Geräte}
 Für die Röntgenstrahlung wird eine Kupfer-Röntgenröhre verwendet. Elektronen werden zu einer Kupfer-Anode beschleunigt. Dort wird Bremsstrahlung abgegeben und durch Stoßprozesse mit den Hüllenelektronen entstehen die charakteristische Strahlung, wobei die $K_\mathrm{\alpha}$-Linie für diesen Versuch verwendet wird. Um nur diese für die Reflektometrie zu verwenden, wird ein Göbelspiegel benutzt. Dieser bündelt die Strahlen, sodass diese monochromatisiert werden und parallel verlaufen. Die Wellenlänge, die durch gelassen wird, beträgt $\lambda=\SI{1.54 e-10}{\meter}$ und entspricht der $K_\mathrm{\alpha}$-Linie.
