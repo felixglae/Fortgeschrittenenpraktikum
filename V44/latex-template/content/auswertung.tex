@@ -2,7 +2,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 In diesem Abschnitt werden die aufgenommenen Messdaten in Grafiken dargestellt und ausgewertet. Grafiken sowie dazugehörige Rechnungen sind mit Python \cite{python} erstellt bzw. berechnet worden.
-\subsection{Justierung}
+\subsection{Justage}
 Im ersten Auswertungsabschnitt des Versuches, werden zunächst zur Justage von Apparatur und Probe einige Scans aufgenommen und später benötigte Parameter erfasst.
 \subsubsection{Detektorscan}
 Wie in Abschnitt (\ref{sec:Durchführung}) beschrieben, wird zu Beginn ein Detektorscan durchgeführt. Die aufgenommenen Daten sind Abbildung (\ref{fig:detekscan}) zu finden.
@@ -78,14 +78,16 @@ In diesem Abschnitt wird aus dem aufgenommenen Reflektivitätsscan das Dipersion
   \caption{Theoretische Fresnelreflektivität von Silizium, Theoriekurve des Parratt-Algorithmus sowie mit Geometriefaktor korrigierter Reflektivitätsscan mit eingezeichneten Kiessing-Minima.}
   \label{fig:messungr2}
 \end{figure}
-\noindent Da die Messdaten im Bereich $\alpha_\mathrm{e} > \SI{1.7}{\degree}$ nicht aussagekräftig sind, werden diese in der Grafik nicht angezeigt. Die Reflektivität $R$ ergibt sich mit einer Abtastrate von 5 aus folgender Formel:
+\FloatBarrier
+\noindent Da die Messdaten im Bereich $\alpha_\mathrm{e} > \SI{1.7}{\degree}$ nicht aussagekräftig sind, werden diese in den Grafiken nicht angezeigt. Die Reflektivität $R$ ergibt sich mit einer Abtastrate von fünf aus folgender Formel:
 \begin{equation}
   R=\dfrac{I}{5\cdot I_\mathrm{max}}
 \end{equation}
 Der aufgenommene diffuse Scan wird, um Streueffekte so gut wie möglich zu unterdrücken, vom Reflektivitätsscan abgezogen. Da die gemessenen Intesitäten beim diffusen Scan gering waren, fällt
-dies in der Grafik kaum auf. Die Reflektivität wird mit einem Geometriefaktor korrigiert, dieser ergibt sich mit den aus der Justage ermittelten Größen nach Gleichung (\ref{eqn:Geometriefaktorl}). Außerdem ist in Abbildung (\ref{fig:messungr}) zu Vergleichszwecken die Fresenelreflektivität einer ideal glatten Siliziumoberfläche  aufgetragen.
+dies in der Grafik kaum auf (siehe Abbildung (\ref{fig:messungr})). Die Reflektivität wird mit einem Geometriefaktor korrigiert, dieser ergibt sich mit den aus der Justage ermittelten Größen nach Gleichung (\ref{eqn:Geometriefaktorl}). \\
+Außerdem ist in Abbildung (\ref{fig:messungr2}) zu Vergleichszwecken die Fresenelreflektivität einer ideal glatten Siliziumoberfläche aufgetragen.
 Diese wird aus dem Literaturwert \cite[5]{Anleitung3} $\alpha_\mathrm{c,Silizium} = \SI{0.223}{\degree}$ mit Hilfe von Gleichung (\ref{eqn:Fresnelref}) bestimmt. \\
-\\
+Desweiteren sind ideale Fresnelaktivität und Parratt-Theoriekurve nur bis zum kritischen Winkel $\alpha_\mathrm{c,PS}=\SI{0.06}{\degree}$ aufgetragen. Für $\alpha_\mathrm{e}<\alpha_\mathrm{c,PS}$ findet Totalreflexion statt.
 \subsubsection{Reflektivitätsmessung}
 Zur Bestimmung der Schichtdicke der Polystyrolschicht werden aus dem durch den Geometriefaktor korrigierten Reflektivitätsscan die Abstände $\Delta\alpha_\mathrm{e}$ der Minima der Kiessig-Oszillation
 ermittelt. Der Mittelwert dieser Abstände ergibt sich zu:
@@ -99,11 +101,19 @@ Die Schichtdicke berechnet sich aus Gleichung (\ref{eqn:Schichtdicke}) mit $\lam
 \subsubsection{Parratt-Algorithmus}
 In diesem Abschnitt wird ebenfalls die Schicktdicke sowie die kritischen Winkel der verschiedenen Substanzen ermittelt. Dazu wird der Parratt-Algorithmus aus Abschnitt (\ref{sec:Mehrschichtensysteme}) verwendet.
 Als erstes wird dafür die Reflektivität $R$ für den jeweiligen Einfallswinkel $\alpha_\mathrm{e}$ aus den Gleichungen (\ref{eqn:Parratt-Algorithmus}), (\ref{eqn:kzj}) und (\ref{eqn:modkoeff}) berechnet.
-Die hier betrachteten Schichten sind Luft (Schicht 1), Polystyrol (Schicht 2) und Silizium bzw. Substrat (Schicht 3). Da das Substrat als unendlich dick angenommen wird und damit die transmittierte Strahlung $t_\mathrm{N+1}$ nicht mehr reflektiert wird ergibt sich für $r_\mathrm{N+1}=0$, der als Startwert dient. Die bekannten Parameter sind gegeben durch:
+Die hier betrachteten Schichten sind Luft (Schicht 1), Polystyrol (Schicht 2) und Silizium bzw. Substrat (Schicht 3).
+Da das Substrat als unendlich dick angenommen wird und damit die transmittierte Strahlung $t_\mathrm{N+1}$ nicht mehr reflektiert wird ergibt sich für $r_\mathrm{N+1}=0$, der als Startwert dient. \\
+\noindent Zusätzlich ist zu bemerken, dass die Absorption nochmals um eine Größenordnung kleiner als die Dispersion ist und somit für den Intensitätsverlauf keine wirkliche Rolle spielt \cite[34,35]{Anleitung6}, daher wird sie im Folgenden konstant gehalten. Die Absorption berechnet sich aus:
+\begin{equation}
+  \beta = \dfrac{\lambda}{4\pi}\mu
+\end{equation}
+Dafür werden für die linearen Absorptionskoeffizienten $\mu$ die Literaturwerte verwendet \cite[5]{Anleitung3}. Die bekannten Parameter sind dann gegeben durch:
 \begin{align*}
   \delta_\mathrm{1,Luft}&=0 \\
   z_\mathrm{1}&=0 \\
-  \lambda&=\SI{1.54 e-10}{\meter}
+  \lambda&=\SI{1.54 e-10}{\meter} \\
+  \beta_\mathrm{PS}&=\SI{0.49 e-8}{} \\
+  \beta_\mathrm{Si}&=\SI{1.73 e-7}{}
 \end{align*}
 Die weiteren Parameter $\delta_\mathrm{2}$, $\delta_\mathrm{3}$, $\sigma_\mathrm{1}$, $\sigma_\mathrm{2}$ und $z_\mathrm{2}$ werden so gewählt, dass die Theoriekurve und die gemessene Reflektivität so gut wie möglich übereinstimmen.
 Die Theoriekurve aus Abbildung (\ref{fig:messungr}) hat die folgenden Parameter:

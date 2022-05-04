@@ -30,21 +30,19 @@ except FileNotFoundError as err:
 if not 'Messung' in Ergebnisse:
     Ergebnisse['Messung'] = dict()
 
-# Reflektivitätsscan:
+# reflectivity scan:
 a_refl, I_refl = np.genfromtxt('data/omega2thetascan.UXD', unpack=True)
-# Diffuser Scan
+# diffuse scan
 a_diff, I_diff = np.genfromtxt('data/diffusscan.UXD', unpack=True)
 
-if (a_refl != a_diff).any():
-    print('Der Diffuse Scan und der Reflektivitätsscan passen nicht zueinander!')
 
-# Winkel sollten gleich sein
+# angles are equal for a_refl and a_diff
 a = a_refl
 
-# Anfang und Ende abschneiden
+# cut off end data points
 a_min = 0
 a_max = 1.7
-mask = (a > a_min) & (a < a_max)
+mask = (a >= a_min) & (a < a_max)
 a = a[mask]
 I_refl = I_refl[mask]
 I_diff = I_diff[mask]
@@ -54,35 +52,37 @@ I_diff = I_diff[mask]
 #################
 # Eingehende Intensität als das Maximum vom Detektorscan
 # aber mit 5 multipliziert weil nun statt 1s 5s pro Winkel gemessen wurden
-I_0 = float(Ergebnisse['Detektorscan']['I_max_gauss']) * 5
 
-# Reflektivität: R=I_r/I_0
+
+I_0 = float(Ergebnisse['Detektorscan']['I_max_gauss']) * 5      #5s per angle
+
+# reflectivity: R=I_r/I_0
 R_refl = I_refl / I_0
 R_diff = I_diff / I_0
 
-# diffusen Scan abziehen
+# subtract diffuse scan
 R = R_refl - R_diff
 
-# Geometriewinkel
+# geometry angle
 a_g = float(Ergebnisse['Rockingscan']['alpha_g[degree]'])
 
-# Strahlbreite
+# beam width
 d_0 = float(Ergebnisse['Z-Scan']['d_0[mm]'])
 D = 20  # mm
 
-# Geometriefaktor
+# geometry factor
 G = np.ones_like(R)
 G[a < a_g] = D * np.sin(np.deg2rad(a[a < a_g])) / d_0
 
-# um Geometriefaktor korrigieren
-R_G = R * G
+# adjust R with G
+R_G = R / G
 
-# Ideale Fresnelreflektivität
+# ideal Fresnel reflectivity
 a_c_Si = 0.223
 R_ideal = (a_c_Si / (2 * a)) ** 4
 
-## Peaks finden
-# Curve Fit für find_peaks
+# find peaks
+# curve fit for find_peaks
 peaks_mask = (a >= 0.3) & (a <= 1.2)
 
 
@@ -108,7 +108,7 @@ d = lambda_ / (2 * delta_a_mean)
 Ergebnisse['Messung']['delta_a_mean[degree]'] = f'{delta_a_mean:.2u}'
 Ergebnisse['Messung']['d[m]'] = f'{d:.2u}'
 
-## Parrat algorithm
+# Parratt algorithm
 
 # save R_G und a_i for interactive plot
 np.savetxt('R_G.csv', list(zip(a, R_G)), header='a_i,R_G', fmt='%.4f,%.10e')
@@ -134,19 +134,19 @@ z2 = 8.6 * 10 ** (-8)  # m
 
 
 def parrat_rau(a_i, delta2, delta3, sigma1, sigma2, z2):
-    n2 = 1. - delta2
-    n3 = 1. - delta3
+    n2 = 1. - delta2 + 0.49 * 10 ** (-8) * 1.j
+    n3 = 1. - delta3 + 1.72 * 10 ** (-7) * 1.j
 
     a_i = np.deg2rad(a_i)
 
-    kz1 = k * np.sqrt(np.abs(n1 ** 2 - np.cos(a_i) ** 2))
-    kz2 = k * np.sqrt(np.abs(n2 ** 2 - np.cos(a_i) ** 2))
-    kz3 = k * np.sqrt(np.abs(n3 ** 2 - np.cos(a_i) ** 2))
+    kz1 = k * np.emath.sqrt(n1 ** 2 - np.cos(a_i) ** 2)
+    kz2 = k * np.emath.sqrt(n2 ** 2 - np.cos(a_i) ** 2)
+    kz3 = k * np.emath.sqrt(n3 ** 2 - np.cos(a_i) ** 2)
 
     r12 = (kz1 - kz2) / (kz1 + kz2) * np.exp(-2 * kz1 * kz2 * sigma1 ** 2)
     r23 = (kz2 - kz3) / (kz2 + kz3) * np.exp(-2 * kz2 * kz3 * sigma2 ** 2)
 
-    x2 = np.exp(-2j * kz2 * z2) * r23
+    x2 = np.exp(-2.j * kz2 * z2) * r23
     x1 = (r12 + x2) / (1 + r12 * x2)
     R_parr = np.abs(x1) ** 2
 
@@ -164,8 +164,8 @@ a_c3 = np.rad2deg(np.sqrt(2 * delta3))
 Ergebnisse['Messung']['a_c2[degree]'] = a_c2
 Ergebnisse['Messung']['a_c3[degree]'] = a_c3
 
-R_ideal[a <= a_c3] = np.nan
-R_parr[a <= a_c3] = np.nan
+R_ideal[a <= a_c2] = np.nan
+R_parr[a <= a_c2] = np.nan
 
 ############
 ## Plotten
@@ -193,7 +193,7 @@ mpl.rcParams['lines.linewidth'] = 0.9
 mpl.rcParams['axes.grid.which'] = 'major'
 plt.plot(a, R_ideal, '-', color='pink', label='Fresnelreflektivität von Si')
 plt.plot(a, R_parr, '-', label='Theoriekurve')
-plt.plot(a, R_G, '-', label=r'(Reflektivitätsscan - Diffuser Scan)$\cdot G$')
+plt.plot(a, R_G, '-', label=r'(Reflektivitätsscan - Diffuser Scan)$ \, / \, G $')
 plt.plot(a[i_peaks], R_G[i_peaks], 'kx', label='Oszillationsminima', alpha=0.8)
 # plt.plot(a[peaks_mask],R_fit, '--', label='Peaks Curve Fit')
 plt.xlabel(r'$\alpha_i \:/\:°$')

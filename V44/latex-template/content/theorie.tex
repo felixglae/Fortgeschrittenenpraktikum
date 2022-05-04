@@ -3,7 +3,7 @@
 \label{sec:Theorie}
 \subsection{Brechungsindex und Reflexion}
 \label{sec:Brechungsindex}
-Beim Auftreffen von Röntgenstrahlung vom Vakuum auf ein Medium, dessen Brechungsindex von eins abweicht, ist gegeben durch:
+Beim Auftreffen von Röntgenstrahlung vom Vakuum auf ein Medium, dessen Brechungsindex von eins abweicht, ist dieser gegeben durch:
 \begin{equation}
   \label{eqn:Brechungsindex}
   n=1-\delta+ i\cdot \beta
@@ -28,7 +28,7 @@ $r$ und $t$ beschrieben dabei die Fresnel`schen Reflexions- und Transmissionskoe
 beschrieben werden.
 \subsection{Mehrschichtensysteme}
 \label{sec:Mehrschichtensysteme}
-Die Systeme bestehen in der Realität meist nicht aus nur einer Schicht und sind auch nicht homogen. Als erstes wird die Reflexion an einer nicht homogenen Schicht untersucht, hier an einer  dicken Polystyrolschicht mit einer Dicke von $\SI{80}{\nano\meter}$. Wenn nun die Reflektivität gegen den Einfallswinkel aufgetragen wird, ergibt sich:
+Die Systeme bestehen in der Realität meist aus mehreren inhomogenen Schichten. Als erstes wird die Reflexion an einer inhomogenen Schicht untersucht, hier an einer Polystyrolschicht mit einer Dicke von $\SI{80}{\nano\meter}$. Wenn nun die Reflektivität gegen den Einfallswinkel aufgetragen wird, ergibt sich:
 \begin{figure}[h!]
   \label{fig:kiessig}
   \centering
@@ -60,7 +60,7 @@ die z-Komponente des j-ten Wellenvektors. Der Betrag ist dabei $k=\dfrac{2\pi}{\
 berechnet.
 \subsection{Rauigkeit}
 \label{sec:Rauigkeit}
-Die nächste Korektur ist die der Rauigkeit. Glatte Materialschichten sind in der Realität nicht anzutreffen, weshalb die Rauigkeit der j-ten Grenzfläche eingeführt wird. Dies ist gegeben durch:
+Die nächste Korrektur ist die der Rauigkeit. Glatte Materialschichten sind in der Realität nicht anzutreffen, weshalb die Rauigkeit der j-ten Grenzfläche eingeführt wird. Dies ist gegeben durch:
 \begin{equation}
   \label{eqn:rms}
 \sigma_\mathrm{j}^2= \int (z-z_\mathrm{j})\cdot P_\mathrm{j}(z) dz.
@@ -76,8 +76,8 @@ Damit werden die Fresnelkoeffizienten zu:
 Diese modifizierten Koeffizienten können im Parratt-Algorithmus verwendet werden.
 \subsection{Funktionsweise der Geräte}
 \label{sec:Geräte}
-Für die Röntgenstrahlung wird eine Kupfer-Röntgenröhre verwendet. Elektronen werden zu einer Kupfer-Anode beschleunigt. Dort wird Bremstrahlung abgegeben und durch Stoßprozesse mit den Hüllenelektronen entstehen die charakteristische Strahlung, wobei die $K_\mathrm{\alpha}$-Linie für diesen Versuch verwendet wird. Um nur diese für die Reflektometrie zu verwenden, wird ein Göbelspiegel benutzt. Dieser bündelt die Strahlen, sodass diese monochromatisiert werden und parallel verlaufen. Die Wellenlänge, die durch gelassen wird, beträgt $\lambda=\SI{1.54 e-10}{\meter}$ und entspricht der $K_\mathrm{\alpha}$-Linie.
-Bei dem Versuch defnieren zwei Blenden jeweils den Einfallswinkel und den Ausfallswinkel. Eine zusätzliche Bedingung ist, dass erst ab einem Geometrie-Winkel $\alpha_\mathrm{g}$ der gesamte Strahl reflektiert wird. Dieser Winkel lässt sich über
+Für die Röntgenstrahlung wird eine Kupfer-Röntgenröhre verwendet. Elektronen werden zu einer Kupfer-Anode beschleunigt. Dort wird Bremstrahlung abgegeben und durch Stoßprozesse mit den Hüllenelektronen entstehen die charakteristische Strahlung, wobei die $K_\alpha$-Linie für diesen Versuch verwendet wird. Um nur diese für die Reflektometrie zu verwenden, wird ein Göbelspiegel benutzt. Dieser bündelt die Strahlen, sodass diese monochromatisiert werden und parallel verlaufen. Die Wellenlänge, die durch gelassen wird, beträgt $\lambda=\SI{1.54 e-10}{\meter}$ und entspricht der $K_\alpha$-Linie.
+Bei dem Versuch definieren zwei Blenden jeweils den Einfallswinkel und den Ausfallswinkel. Eine zusätzliche Bedingung ist, dass erst ab einem Geometrie-Winkel $\alpha_\mathrm{g}$ der gesamte Strahl reflektiert wird. Dieser Winkel lässt sich über
 \begin{equation}
   \label{eqn:Geometriewinkel}
 a_\mathrm{g}=\arcsin\left(\dfrac{d_\mathrm{0}}{D}\right)

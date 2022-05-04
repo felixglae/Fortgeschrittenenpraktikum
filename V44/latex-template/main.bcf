@@ -2355,7 +2355,9 @@
     <bcf:citekey order="8">Anleitung4</bcf:citekey>
     <bcf:citekey order="9">python</bcf:citekey>
     <bcf:citekey order="10">Anleitung3</bcf:citekey>
-    <bcf:citekey order="11">Anleitung3</bcf:citekey>
+    <bcf:citekey order="11">Anleitung6</bcf:citekey>
+    <bcf:citekey order="12">Anleitung3</bcf:citekey>
+    <bcf:citekey order="13">Anleitung3</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

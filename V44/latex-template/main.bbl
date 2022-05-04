@@ -19,6 +19,36 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Anleitung6}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=e6b2f6043bd08f7fa471bb839dc47e51}{%
+           family={Bertram},
+           familyi={B\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6b2f6043bd08f7fa471bb839dc47e51}
+      \strng{fullhash}{e6b2f6043bd08f7fa471bb839dc47e51}
+      \strng{bibnamehash}{e6b2f6043bd08f7fa471bb839dc47e51}
+      \strng{authorbibnamehash}{e6b2f6043bd08f7fa471bb839dc47e51}
+      \strng{authornamehash}{e6b2f6043bd08f7fa471bb839dc47e51}
+      \strng{authorfullhash}{e6b2f6043bd08f7fa471bb839dc47e51}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Röntgenreflektometrie an ultradünnen Schichten}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.physik.uni-osnabrueck.de/fileadmin/documents/AG-Woll/Bachelor_Arbeiten/BachelorarbeitFlorianBertram.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.physik.uni-osnabrueck.de/fileadmin/documents/AG-Woll/Bachelor_Arbeiten/BachelorarbeitFlorianBertram.pdf
+      \endverb
+    \endentry
     \entry{Anleitung4}{manual}{}
       \name{author}{1}{}{%
         {{hash=6d77c529a16a06330c9d02017203f915}{%
