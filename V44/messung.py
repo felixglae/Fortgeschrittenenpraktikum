@@ -42,9 +42,9 @@ if (a_refl != a_diff).any():
 a = a_refl
 
 # Anfang und Ende abschneiden
-a_min = 0.01
+a_min = 0
 a_max = 1.7
-mask = (a >= a_min) & (a <= a_max)
+mask = (a > a_min) & (a < a_max)
 a = a[mask]
 I_refl = I_refl[mask]
 I_diff = I_diff[mask]
@@ -72,7 +72,7 @@ D = 20  # mm
 
 # Geometriefaktor
 G = np.ones_like(R)
-G[a < a_g] = D / d_0 * np.sin(np.deg2rad(a[a < a_g]))
+G[a < a_g] = D * np.sin(np.deg2rad(a[a < a_g])) / d_0
 
 # um Geometriefaktor korrigieren
 R_G = R * G
@@ -179,10 +179,6 @@ plt.axvline(a_c3, linewidth=0.6, linestyle='dashed', color='blue')
 plt.plot(a, R_refl, '-', color='black', label='Reflektivitätsscan')
 plt.plot(a, R_diff, '-', label='Diffuser Scan')
 plt.plot(a, R, '-', label='Reflektivitätsscan - Diffuser Scan')
-plt.plot(a, R_ideal, '-', color='pink', label='Fresnelreflektivität von Si')
-plt.plot(a, R_parr, '-', label='Theoriekurve')
-plt.plot(a, R_G, '-', label=r'(Reflektivitätsscan - Diffuser Scan)$\cdot G$')
-plt.plot(a[i_peaks], R_G[i_peaks], 'kx', label='Oszillationsminima', alpha=0.8)
 # plt.plot(a[peaks_mask],R_fit, '--', label='Peaks Curve Fit')
 plt.xlabel(r'$\alpha_i \:/\:°$')
 plt.ylabel(r'$R$')
@@ -193,6 +189,21 @@ plt.savefig('plot_messung.pdf')
 plt.show()
 plt.clf()
 
+mpl.rcParams['lines.linewidth'] = 0.9
+mpl.rcParams['axes.grid.which'] = 'major'
+plt.plot(a, R_ideal, '-', color='pink', label='Fresnelreflektivität von Si')
+plt.plot(a, R_parr, '-', label='Theoriekurve')
+plt.plot(a, R_G, '-', label=r'(Reflektivitätsscan - Diffuser Scan)$\cdot G$')
+plt.plot(a[i_peaks], R_G[i_peaks], 'kx', label='Oszillationsminima', alpha=0.8)
+# plt.plot(a[peaks_mask],R_fit, '--', label='Peaks Curve Fit')
+plt.xlabel(r'$\alpha_i \:/\:°$')
+plt.ylabel(r'$R$')
+plt.yscale('log')
+plt.legend(loc='upper right', prop={'size': 8})
+plt.tight_layout(pad=0.15, h_pad=1.08, w_pad=1.08)
+plt.savefig('plot_messung2.pdf')
+plt.show()
+plt.clf()
 ##########
 # Ergebnisse als JSON Datei speichern (am Ende)
 with open(json_file_path, 'w') as json_file:
