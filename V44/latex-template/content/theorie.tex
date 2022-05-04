@@ -8,13 +8,13 @@ Beim Auftreffen von Röntgenstrahlung vom Vakuum auf ein Medium, dessen Brechung
   \label{eqn:Brechungsindex}
   n=1-\delta+ i\cdot \beta
 \end{equation}
-$\beta$ ist dabei die Absorption und $\delta$ ist ein Korrektur. Bei Röntgenstrahlung ist bei diesem Übergang eine Totalreflexion möglich, da der Brechungsindex in Materie kleiner als Eins ist. Im allgemeinen Fall trifft die elektromagnetische Welle in einem Winkel $\alpha_\mathrm{e}$ auf eine unendlich dicke, homogene, glatte Materialschicht. Ein Teil wird dann im Winkel $\alpha_\mathrm{e}=\alpha_\mathrm{r}$ reflektiert. Der restliche Teil wird unter dem Winkel $\alpha_\mathrm{t}$ gebrochen und transmittiert. Die Totalreflexion tritt hierbei unter dem kritischen Winkel $\alpha_\mathrm{c}$ auf. Dies bedeutet, dass keine Transmission auftritt. Dieser Kritische Winkel beim Auftreffen von Röntgenstrahlung vom Vakuum auf ein Medium, dessen Brechungsindex von eins abweicht, ist gegeben durch:
+$\beta$ ist dabei die Absorption und $\delta$ ist eine Korrektur. Bei Röntgenstrahlung ist bei diesem Übergang eine Totalreflexion möglich, da der Brechungsindex in Materie kleiner als Eins ist. Im allgemeinen Fall trifft die elektromagnetische Welle in einem Winkel $\alpha_\mathrm{e}$ auf eine unendlich dicke, homogene, glatte Materialschicht. Ein Teil wird dann im Winkel $\alpha_\mathrm{e}=\alpha_\mathrm{r}$ reflektiert. Der restliche Teil wird unter dem Winkel $\alpha_\mathrm{t}$ gebrochen und transmittiert. Die Totalreflexion tritt hierbei unter dem kritischen Winkel $\alpha_\mathrm{c}$ auf. Dies bedeutet, dass keine Transmission auftritt. Dieser Kritische Winkel beim Auftreffen von Röntgenstrahlung vom Vakuum auf ein Medium, dessen Brechungsindex von eins abweicht, ist gegeben durch:
 \begin{align}
   \label{eqn:Totalreflexion}
   a_\mathrm{c} &= \sqrt{2 \delta} \\
   a_\mathrm{c} &= \lambda\cdot\sqrt{\dfrac{r_\mathrm{e}\cdot\rho}{\pi}}
 \end{align}
-Die Fresnelschen-Gleichungen beschrieben die Reflexion und Transmission an ebenen Grenzschichten. Die Polarisation kann aufgrund des Sonderfalles, dass die magnetischen Permeabilitäten ungefähr gleich groß sind, vernachlässigt werden. Die Gleichungen vereinfachen sich so zu:
+Die Fresnel`schen-Gleichungen beschrieben die Reflexion und Transmission an ebenen Grenzschichten. Die Polarisation kann aufgrund des Sonderfalles, dass die magnetischen Permeabilitäten ungefähr gleich groß sind, vernachlässigt werden. Die Gleichungen vereinfachen sich so zu:
 \begin{align}
   \label{eqn:Fresnelschen-Gleichungenl}
   t &= \dfrac{2\cdot n_\mathrm{1} \sin(\alpha_\mathrm{e}) }{n_\mathrm{1} \sin(\alpha_\mathrm{e})+ n_\mathrm{2} \sin(\alpha_\mathrm{c})}\\
@@ -28,7 +28,7 @@ $r$ und $t$ beschrieben dabei die Fresnel`schen Reflexions- und Transmissionskoe
 beschrieben werden.
 \subsection{Mehrschichtensysteme}
 \label{sec:Mehrschichtensysteme}
-Die Systeme  sind in der Realität bestehen meist nicht aus nur einer Schicht und sind auch nicht homogen. Als erstes wird die Reflexion an einer nicht homogenen Schicht untersucht, hier an einer  dicken Polystyrolschicht mit einer Dicke von $\SI{80}{\nano\meter}$. Wenn nun die Reflektivität gegen den Einfallswinkel aufgetragen wird, ergibt sich:
+Die Systeme sind in der Realität bestehen meist nicht aus nur einer Schicht und sind auch nicht homogen. Als erstes wird die Reflexion an einer nicht homogenen Schicht untersucht, hier an einer  dicken Polystyrolschicht mit einer Dicke von $\SI{80}{\nano\meter}$. Wenn nun die Reflektivität gegen den Einfallswinkel aufgetragen wird, ergibt sich:
 \begin{figure}[h!]
   \label{fig:kiessig}
   \centering
@@ -36,7 +36,7 @@ Die Systeme  sind in der Realität bestehen meist nicht aus nur einer Schicht un
   \caption{Reflektivität eines Siliziumwafers mit einer $\SI{80}{\nano\meter}$ dicken Polystyrolschicht \cite[8]{Anleitung3}}
 \end{figure}
 \FloatBarrier
-\noindent Die theoretische Fresenelreflektivität wird dabei als gestrichelte Linie dargstellt. In der Realität oszilliert die Reflektivität, dies wird als Kiessig-Oszillation bezeichnet. Diese entstehen durch Interferenzen an den Grenzschichten, die je nach Phasendifferenz konstruktiv oder destruktiv sind. Die Minima entstehen bei einem Gangunterschied vpn $N\cdot\dfrac{\lambda}{2}$, wobei N eine ungerade Zahl ist. Bei den kritischen Winkel $\alpha_\mathrm{c}$ sind Einbrüche im Plot zu finden, wodurch diese bestimmt werden können. Die Schichtdicke kann über die Ozillation und die Wellenlänge $\lambda$ bestimmt werden als:
+\noindent Die theoretische Fresenelreflektivität wird dabei als gestrichelte Linie dargestellt. In der Realität oszilliert die Reflektivität, dies wird als Kiessig-Oszillation bezeichnet. Diese entstehen durch Interferenzen an den Grenzschichten, die je nach Phasendifferenz konstruktiv oder destruktiv sind. Die Minima entstehen bei einem Gangunterschied von $N\cdot\dfrac{\lambda}{2}$, wobei N eine ungerade Zahl ist. Bei den kritischen Winkel $\alpha_\mathrm{c}$ sind Einbrüche im Plot zu finden, wodurch diese bestimmt werden können. Die Schichtdicke kann über die Oszillation und die Wellenlänge $\lambda$ bestimmt werden als:
 \begin{equation}
   \label{eqn:Schichtdicke}
 d = \dfrac{\lambda}{2\Delta a_\mathrm{i}}
@@ -76,8 +76,8 @@ Damir werden die Fresnelkoeffizienten zu:
 Diese modifizierten können im Parrat-Algorithmus verwendert werden.
 \subsection{Funktionsweise der Geräte}
 \label{sec:Geräte}
-Für die Röntgenstrahlung wird eine Kupfer-Röntgenröhre verwendet. Elektronen werden zu einer Kupfer-Anode beschleunigt. Dort wird Bremstrahlung abgegeben und durch Stoßprozesse mit den Hüllenelektronen entstehen die charakteristische Strahlung, wobei die $K_\mathrm{\alpha}$-Linie für diesen Veruch verwendet wird. Um nur diese für die Reflektometrie zu verwenden, wird ein Göbelspiegel benutzt. Dieser bündelt die Strahlen, sodass diese monochromatisiert werden und parallel verlaufen. Die Wellenlänge, die durch gelassen wird, beträgt $\lambda=\SI{1.54 e-10}{\meter}$ und entspricht der $K_\mathrm{\alpha}$-Linie.
-Bei dem Versuch defnieren zwei Blenden jewils den Einfallswinkel und den Ausfalsswinkel. Eine zusätzliche Bedingung ist, dass erst ab einem Geometrie-Winkel $\alpha_\mathrm{g}$ der gesamte Strahl reflektiert wird. Dieser Winkel lässt sich über
+Für die Röntgenstrahlung wird eine Kupfer-Röntgenröhre verwendet. Elektronen werden zu einer Kupfer-Anode beschleunigt. Dort wird Bremsstrahlung abgegeben und durch Stoßprozesse mit den Hüllenelektronen entstehen die charakteristische Strahlung, wobei die $K_\mathrm{\alpha}$-Linie für diesen Versuch verwendet wird. Um nur diese für die Reflektometrie zu verwenden, wird ein Göbelspiegel benutzt. Dieser bündelt die Strahlen, sodass diese monochromatisiert werden und parallel verlaufen. Die Wellenlänge, die durch gelassen wird, beträgt $\lambda=\SI{1.54 e-10}{\meter}$ und entspricht der $K_\mathrm{\alpha}$-Linie.
+Bei dem Versuch definieren zwei Blenden jeweils den Einfallswinkel und den Ausfallsswinkel. Eine zusätzliche Bedingung ist, dass erst ab einem Geometrie-Winkel $\alpha_\mathrm{g}$ der gesamte Strahl reflektiert wird. Dieser Winkel lässt sich über
 \begin{equation}
   \label{eqn:Geometriewinkel}
 a_\mathrm{g}=\arcsin\left(\dfrac{d_\mathrm{0}}{D}\right)
