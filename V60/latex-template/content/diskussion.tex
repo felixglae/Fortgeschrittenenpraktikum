@@ -1,50 +1,15 @@
+\newpage
 \section{Diskussion}
 \label{sec:Diskussion}
-Die durchgeführten Scans zur Justierung aus den Abbildungen (\ref{fig:detekscan}), (\ref{fig:zscan}) und (\ref{fig:rockscan}) entsprechen den erwarteten
-Plots aus Abbildung (\ref{fig:beispiele}), daher lässt sich sagen, dass die Justage
-erfolgreich durchgeführt werden konnte, allerdings wären die Ergebnisse vermutlich etwas genauer wären bei Detektor- und Z-Scan mehr Datenpunkte vorhanden. Dies wirkt sich beispielsweise auf den Geometriewinkel aus, denn die Strahlbreite, aus der der Geometriewinkel berechnet wird, kann nur relativ ungenau
-aus Abbildung (\ref{fig:zscan}) ermittelt werden. Der gemessene Geometriewinkel $\alpha_\mathrm{g,Messung}$ weicht vom berechneten Geometriewinkel $\alpha_\mathrm{g,Theorie}$ ab mit:
-\begin{align*}
-  \alpha_\mathrm{g,Messung}&= \SI{0.5}{\degree} \\
-  \alpha_\mathrm{g,Theorie}&= \SI{0.573}{\degree}
-\end{align*}
-Daraus ergibt sich eine Abweichung von ca. 12.7\%. \\
-
-\noindent Der in Abbildung (\ref{fig:messungr}) zu sehende korrigierte Reflektivitätsscan liegt zwar in der selben Größenordnung, aber dennoch
-über das ganze betrachtete Intervall unter dem Wert der Fresnelreflektivität von Silizium. Die erwarteten Kiessing-Oszillationen sind gut zu erkennen und auch die Näherung an
-die Kurve mit Hilfe des Parratt-Algorithmus ist für $\alpha_\mathrm{i}>\SI{0.5}{\degree}$ gut gelungen. Allerdings sind die Parameter dafür manuell angepasst worden. Im Folgenden
-sind die eingestellten Parameter mit den Literaturwerten \cite[5]{Anleitung3} verglichen. Zunächst wird die Dispersion sowie die Schichtdicke betrachet:
-\begin{align*}
-  \delta_\mathrm{PS,Parratt}&= \SI{0.55 e-6}{} \\
-  \delta_\mathrm{PS,Literatur}&= \SI{3.5 e-6}{} \\
-  \delta_\mathrm{Si,Parratt}&= \SI{6.6 e-6}{} \\
-  \delta_\mathrm{Si,Literatur}&= \SI{7.6 e-6}{} \\
-  d_\mathrm{PS,Messung}&=\SI{8.7 e-8}{\meter} \\
-  d_\mathrm{PS,Parratt}&=\SI{8.6 e-8}{\meter}
-\end{align*}
-Während für Silizium die Dispersion relativ gut übereinstimmt mit einer Abweichung von ca. 13\%, ist die Abweichung beim Polystyrol deutlich höher mit ca. 84\%.
-Die Schichtdicken, die einerseits aus dem Abstand der Minima der Kiessig-Oszillation und andererseits mit Hilfe des Parratt-Algorithmus berechnet wurden, stimmen fast exakt überein und sollten
-daher eine gute Einschätzung für die tatsächlichen Dicke der Probe geben können. \\
-
-\noindent Jetzt werden noch die kritischen Winkel betrachtet:
-\begin{align*}
-  \alpha_\mathrm{c,PS,Messung}&=\SI{0.060}{\degree} \\
-  \alpha_\mathrm{c,PS,Literatur}&=\SI{0.153}{\degree} \\
-  \alpha_\mathrm{c,Si,Messung}&=\SI{0.208}{\degree} \\
-  \alpha_\mathrm{c,Si,Literatur}&=\SI{0.223}{\degree} \\
-\end{align*}
-Da die Winkel direkt aus den Dispersionen bestimmt wurden mit Gleichung (\ref{eqn:Totalreflexion}), hat auch hier wieder der Wert für Silizium die wesentlich geringere Abweichung.
-In Abbildung (\ref{fig:messungr}) ist zu erkennen, dass die kritischen Winkel sehr gut mit den Intensitätseinbrüchen der jeweiligen Kurven übereinander liegen. \\
-
-\noindent Die letzten beiden Parameter, die für den Parratt-Algorithmus verwendet wurden sind die Rauigkeiten, diese lauten:
-\begin{align*}
-  \sigma_\mathrm{1} &=\SI{7.5 e-10}{\meter} \\
-  \sigma_\mathrm{2} &=\SI{6.3 e-10}{\meter} \\
-\end{align*}
-Dabei ist $\sigma_\mathrm{1}$ die Rauigkeit zwischen Luft und Polystyrol und $\sigma_\mathrm{2}$ die Rauigkeit zwischen Polystyrol und Silizium. Für diese Parameter liegen
-keine Literaturwerte vor. Allerdings hat $\sigma_\mathrm{2}$ einen großen Einfluss auf den Verlauf der Kurve des Parratt-Algorithmus, daher ist anzunehmen, dass die
-Rauigkeit $\sigma_\mathrm{2}$ relativ genau bestimmt wurde.\\
-
-\noindent Insgesamt lässt sich sagen, dass über den Parratt-Algorithmus als auch über die Abstände der Minima ein gutes Ergebnis für die Schichtdicke erzielt wurde. Allerdings
-war die Anpassung des Parratt-Algorithmus sehr subjektiv und es ist möglich, dass mit anderen Parametern eine bessere Annäherung an die Messung erzielt werden kann.
-Weitere Gründe für Abweichungen können eine nicht optimale Justage der Apparatur oder nicht genügend Datenpunkte wie oben beschrieben.
+Der Diodenlaser konnte fachgemäß in Betrieb genommen werden, wie die Ergebnisse aus den Abschnitten (\ref{sec:über1}) und (\ref{sec:über2}) beweisen. Die erwarteten Effekte, also Specklebildung ab
+Schwellenstrom und die Fluoreszenz des Rubidium sind beide eingetroffen.
+Das Bild des Absorptionsspektrum aus der Abbildung (\ref{fig:mess4}) stimmt mit dem aus der Theorie erwarteten Ergebnis (siehe Abbildung (\ref{fig:absot})) überein.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.7]{fig/absot.png}
+  \caption{Erwartetes Absorptionsspektrum \cite[13]{Anleitung4}.}
+  \label{fig:absot}
+\end{figure}
+\FloatBarrier
+\noindent Die Linien aus Abbildung (\ref{fig:mess4}) können demnach von links nach rechts den Übergangen 87b, 85b, 85a, 87a zugeordnet werden können.
+Das Experiment ist gelungen und alle aufgestellten Vermutungen konnten gezeigt werden.

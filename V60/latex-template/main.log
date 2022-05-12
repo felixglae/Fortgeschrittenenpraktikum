@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.20)  4 MAY 2022 17:42
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.20)  12 MAY 2022 20:35
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -475,11 +475,11 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            synonyms	
+(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            hyphenation	 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
@@ -1403,11 +1403,11 @@ LaTeX Info: Redefining \rmfamily on input line 26.
 LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            synonyms	
+(polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            hyphenation	 on input line 26
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 26
@@ -1580,7 +1580,7 @@ LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
 
 ! I can't write on file `main.pdf'.
-Please type another file name for output: V44_Korrektur
+Please type another file name for output: V60
 LaTeX Info: Redefining \rmfamily on input line 11.
 LaTeX Info: Redefining \sffamily on input line 11.
 LaTeX Info: Redefining \ttfamily on input line 11.
@@ -1633,126 +1633,162 @@ LaTeX Info: Redefining \ttfamily on input line 3.
  [2
 
 ] (./content/zielsetzung.tex) (./content/theorie.tex
-<fig/kiessing.png, id=62, 803.0pt x 482.80376pt>
-File: fig/kiessing.png Graphic file (type png)
-<use fig/kiessing.png>
-Package luatex.def Info: fig/kiessing.png  used on input line 35.
-(luatex.def)             Requested size: 321.1943pt x 193.11807pt.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 36.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 36.
- [3]
-[4<./fig/kiessing.png>]) (./content/durchfuehrung.tex [5]
-<fig/zscan.png, id=100, 668.4975pt x 322.20375pt>
-File: fig/zscan.png Graphic file (type png)
-<use fig/zscan.png>
-Package luatex.def Info: fig/zscan.png  used on input line 7.
-(luatex.def)             Requested size: 401.1016pt x 193.32373pt.
-<fig/beispiel.png, id=103, 598.235pt x 446.66875pt>
-File: fig/beispiel.png Graphic file (type png)
-<use fig/beispiel.png>
-Package luatex.def Info: fig/beispiel.png  used on input line 16.
-(luatex.def)             Requested size: 418.76164pt x 312.66599pt.
+<fig/niveau.png, id=63, 327.2225pt x 315.1775pt>
+File: fig/niveau.png Graphic file (type png)
+<use fig/niveau.png>
+Package luatex.def Info: fig/niveau.png  used on input line 15.
+(luatex.def)             Requested size: 229.05418pt x 220.62274pt.
+<fig/stimu.png, id=67, 348.30125pt x 262.9825pt>
+File: fig/stimu.png Graphic file (type png)
+<use fig/stimu.png>
+Package luatex.def Info: fig/stimu.png  used on input line 25.
+(luatex.def)             Requested size: 243.8092pt x 184.08649pt.
+ [3<./fig/niveau.png>]
+<fig/diod.png, id=80, 496.85625pt x 382.42876pt>
+File: fig/diod.png Graphic file (type png)
+<use fig/diod.png>
+Package luatex.def Info: fig/diod.png  used on input line 35.
+(luatex.def)             Requested size: 347.797pt x 267.69829pt.
 
-Overfull \hbox (0.50609pt too wide) in paragraph at lines 16--17
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4<./fig/stimu.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 40--43
+
+ []
+
+<fig/litt.png, id=94, 616.3025pt x 253.94875pt>
+File: fig/litt.png Graphic file (type png)
+<use fig/litt.png>
+Package luatex.def Info: fig/litt.png  used on input line 49.
+(luatex.def)             Requested size: 431.40881pt x 177.76291pt.
+
+Overfull \hbox (13.15326pt too wide) in paragraph at lines 49--50
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6<./fig/zscan.png>]
-<fig/zscan015.png, id=115, 312.16624pt x 273.02pt>
-File: fig/zscan015.png Graphic file (type png)
-<use fig/zscan015.png>
-Package luatex.def Info: fig/zscan015.png  used on input line 24.
-(luatex.def)             Requested size: 218.51488pt x 191.11269pt.
+[5<./fig/diod.png>]
+<fig/netga.png, id=106, 598.235pt x 400.49625pt>
+File: fig/netga.png Graphic file (type png)
+<use fig/netga.png>
+Package luatex.def Info: fig/netga.png  used on input line 59.
+(luatex.def)             Requested size: 418.76164pt x 280.34546pt.
+
+Overfull \hbox (0.50609pt too wide) in paragraph at lines 59--60
+ [][] 
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7<./fig/beispiel.png>]) (./content/auswertung.tex [8<./fig/zscan015.png>]
-<fig/plot_detektorscan.pdf, id=135, 462.528pt x 346.896pt>
-File: fig/plot_detektorscan.pdf Graphic file (type pdf)
-<use fig/plot_detektorscan.pdf>
-Package luatex.def Info: fig/plot_detektorscan.pdf  used on input line 11.
-(luatex.def)             Requested size: 323.76738pt x 242.82553pt.
+[6<./fig/litt.png>] [7<./fig/netga.png>]
+<fig/mode.png, id=125, 677.53125pt x 512.91624pt>
+File: fig/mode.png Graphic file (type png)
+<use fig/mode.png>
+Package luatex.def Info: fig/mode.png  used on input line 83.
+(luatex.def)             Requested size: 338.76479pt x 256.45749pt.
+) (./content/durchfuehrung.tex [8<./fig/mode.png>]
+<fig/auf1.png, id=138, 463.7325pt x 268.00125pt>
+File: fig/auf1.png Graphic file (type png)
+<use fig/auf1.png>
+Package luatex.def Info: fig/auf1.png  used on input line 9.
+(luatex.def)             Requested size: 324.61052pt x 187.59958pt.
+<fig/auf2.png, id=142, 529.98pt x 370.38374pt>
+File: fig/auf2.png Graphic file (type png)
+<use fig/auf2.png>
+Package luatex.def Info: fig/auf2.png  used on input line 20.
+(luatex.def)             Requested size: 370.98346pt x 259.26685pt.
+ [9<./fig/auf1.png>]
+<fig/auf3.png, id=154, 622.325pt x 278.03876pt>
+File: fig/auf3.png Graphic file (type png)
+<use fig/auf3.png>
+Package luatex.def Info: fig/auf3.png  used on input line 30.
+(luatex.def)             Requested size: 435.62453pt x 194.6258pt.
 
-[9<./fig/plot_detektorscan.pdf>]
-<fig/plot_zscan.pdf, id=196, 462.528pt x 346.896pt>
-File: fig/plot_zscan.pdf Graphic file (type pdf)
-<use fig/plot_zscan.pdf>
-Package luatex.def Info: fig/plot_zscan.pdf  used on input line 36.
-(luatex.def)             Requested size: 323.76738pt x 242.82553pt.
-<fig/plot_rockingscan.pdf, id=198, 462.528pt x 346.896pt>
-File: fig/plot_rockingscan.pdf Graphic file (type pdf)
-<use fig/plot_rockingscan.pdf>
-Package luatex.def Info: fig/plot_rockingscan.pdf  used on input line 50.
-(luatex.def)             Requested size: 323.76738pt x 242.82553pt.
- [10<./fig/plot_zscan.pdf>]
-<fig/plot_messung.pdf, id=257, 462.528pt x 346.896pt>
-File: fig/plot_messung.pdf Graphic file (type pdf)
-<use fig/plot_messung.pdf>
-Package luatex.def Info: fig/plot_messung.pdf  used on input line 70.
-(luatex.def)             Requested size: 323.76738pt x 242.82553pt.
+Overfull \hbox (17.36897pt too wide) in paragraph at lines 30--31
+ [][] 
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11<./fig/plot_rockingscan.pdf>]
-<fig/plot_messung2.pdf, id=314, 462.528pt x 346.896pt>
-File: fig/plot_messung2.pdf Graphic file (type pdf)
-<use fig/plot_messung2.pdf>
-Package luatex.def Info: fig/plot_messung2.pdf  used on input line 77.
-(luatex.def)             Requested size: 323.76738pt x 242.82553pt.
+[10<./fig/auf2.png>]
+<fig/auf4.png, id=167, 771.88374pt x 401.5pt>
+File: fig/auf4.png Graphic file (type png)
+<use fig/auf4.png>
+Package luatex.def Info: fig/auf4.png  used on input line 39.
+(luatex.def)             Requested size: 385.94092pt x 200.7495pt.
+<fig/auf5.png, id=171, 866.23625pt x 344.28625pt>
+File: fig/auf5.png Graphic file (type png)
+<use fig/auf5.png>
+Package luatex.def Info: fig/auf5.png  used on input line 47.
+(luatex.def)             Requested size: 433.11707pt x 172.1427pt.
+
+Overfull \hbox (14.86151pt too wide) in paragraph at lines 47--48
+ [][] 
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12<./fig/plot_messung.pdf><./fig/plot_messung2.pdf>] [13
-
-])
-(./content/diskussion.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--12
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 24--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--47
-
- []
-
-[15]) (./content/anhang.tex [16]
-<fig/parrat1.png, id=472, 535.2497pt x 424.58624pt>
-File: fig/parrat1.png Graphic file (type png)
-<use fig/parrat1.png>
-Package luatex.def Info: fig/parrat1.png  used on input line 6.
-(luatex.def)             Requested size: 374.67223pt x 297.20834pt.
-<fig/parratt2.png, id=473, 473.51906pt x 384.6872pt>
-File: fig/parratt2.png Graphic file (type png)
-<use fig/parratt2.png>
-Package luatex.def Info: fig/parratt2.png  used on input line 12.
-(luatex.def)             Requested size: 331.46106pt x 269.27919pt.
+[11<./fig/auf3.png><./fig/auf4.png>]) (./content/auswertung.tex
+<fig/led.jpeg, id=186, 1204.5pt x 1606.0pt>
+File: fig/led.jpeg Graphic file (type jpg)
+<use fig/led.jpeg>
+Package luatex.def Info: fig/led.jpeg  used on input line 9.
+(luatex.def)             Requested size: 120.45705pt x 160.6094pt.
+<fig/laser.jpeg, id=187, 1204.5pt x 1606.0pt>
+File: fig/laser.jpeg Graphic file (type jpg)
+<use fig/laser.jpeg>
+Package luatex.def Info: fig/laser.jpeg  used on input line 16.
+(luatex.def)             Requested size: 120.45705pt x 160.6094pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [17<./fig/parrat1.png>]
+[12<./fig/auf5.png><./fig/led.jpeg>]
+<fig/fluor.jpeg, id=197, 1204.5pt x 1606.0pt>
+File: fig/fluor.jpeg Graphic file (type jpg)
+<use fig/fluor.jpeg>
+Package luatex.def Info: fig/fluor.jpeg  used on input line 26.
+(luatex.def)             Requested size: 120.45705pt x 160.6094pt.
+<fig/spektrum.jpeg, id=199, 2055.68pt x 1224.575pt>
+File: fig/spektrum.jpeg Graphic file (type jpg)
+<use fig/spektrum.jpeg>
+Package luatex.def Info: fig/spektrum.jpeg  used on input line 35.
+(luatex.def)             Requested size: 308.3387pt x 183.67831pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./content/diskussion.tex [13<./fig/laser.jpeg><./fig/fluor.jpeg>]
+<fig/absot.png, id=211, 450.68375pt x 329.23pt>
+File: fig/absot.png Graphic file (type png)
+<use fig/absot.png>
+Package luatex.def Info: fig/absot.png  used on input line 9.
+(luatex.def)             Requested size: 315.47646pt x 230.45941pt.
+) [14<./fig/spektrum.jpeg><./fig/absot.png>]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+
+Overfull \hbox (12.95496pt too wide) in paragraph at lines 25--25
+[]\TU/lmr/m/n/10.95 Uni-ver-si-tät Wien. \TU/lmr/m/it/10.95 Grund-la-gen La-ser
+\TU/lmr/m/n/10.95 . \TU/lmr/m/sc/10.95 url\TU/lmr/m/n/10.95 : []$\TU/lmtt/m/n/1
+0.95 https : / / www . univie . ac . at / mikroskopie /
+ []
+
+
+Overfull \hbox (4.51476pt too wide) in paragraph at lines 25--25
+\TU/lmtt/m/n/10.95 1 _ grundlagen / mikroskop / licht / 4a _ laser _ prinzip . 
+htm$[] \TU/lmr/m/n/10.95 (be-sucht am 12.05.2022). 
+ []
+
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1787,49 +1823,46 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [18<./fig/parratt2.png>] (./main.aux
+[15] (./main.aux
 LaTeX Info: Redefining \rmfamily on input line 26.
 LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 )
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: E287E9D2387FF21763BCEF4214BF13BC;18205.
+(rerunfilecheck)             Checksum: 09AEF7C8DED8973F5EBEAA02C89B51B0;20106.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 709138DB0542F59906717DC323C73F73;2545.
+(rerunfilecheck)             Checksum: 3973F47F19F94BD3365CC0BC3B617FD6;2654.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 37599 strings out of 478092
+ 37600 strings out of 478092
  100000,1977958 words of node,token memory allocated
- 757 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 35 attribute, 78 glue_spec
-, 35 attribute_list, 1 write, 3 pdf_action nodes
-   avail lists: 1:1,2:736,3:289,4:134,5:421,6:67,7:5925,8:120,9:529,10:21,11:591
+ 653 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 11 attribute, 77 glue_spec
+, 11 attribute_list, 1 write, 4 pdf_action nodes
+   avail lists: 1:1,2:806,3:288,4:142,5:248,6:66,7:4227,8:116,9:294,10:18,11:504
 
- 56688 multiletter control sequences out of 65536+600000
- 106 fonts using 39401259 bytes
- 113i,12n,118p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56685 multiletter control sequences out of 65536+600000
+ 96 fonts using 35183119 bytes
+ 113i,8n,118p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmmono10-re
 gular.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/l
 mromancaps10-regular.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opent
 ype/public/lm/lmroman10-italic.otf></home/felix/.local/texlive/2021/texmf-dist/f
-onts/opentype/public/lm/lmroman7-regular.otf></home/felix/.local/texlive/2021/te
-xmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/felix/.local/texlive
-/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/felix
-/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></
-home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmod
-ern-math.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/l
-m/lmroman10-regular.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/openty
-pe/public/lm/lmroman12-regular.otf></home/felix/.local/texlive/2021/texmf-dist/f
-onts/opentype/public/lm/lmsans10-bold.otf></home/felix/.local/texlive/2021/texmf
--dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on V44_Korrektur.pdf (18 pages, 399762 bytes).
+onts/opentype/public/lm-math/latinmodern-math.otf></home/felix/.local/texlive/20
+21/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/felix/.local/te
+xlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/feli
+x/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf>
+</home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bo
+ld.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmro
+man12-bold.otf>
+Output written on V60.pdf (15 pages, 1484843 bytes).
 
-PDF statistics: 642 PDF objects out of 1000 (max. 8388607)
- 376 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 131072)
+PDF statistics: 365 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 131072)
  161 words of extra memory for PDF output out of 10000 (max. 100000000)
 

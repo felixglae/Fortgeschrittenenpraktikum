@@ -1,32 +1,52 @@
 \section{Durchführung}
 \label{sec:Durchführung}
-\subsection{Justage}
-Für die Durchführung des Versuches ist zunächst eine Justage der Apparatur nötig. Bei den verschieden Scans beträgt die Messdauer jeweils $t=\SI{1}{\second}$ pro Winkel. Als erstes wird ein Detektorscan durchgeführt und das Maximum dieses Scans wird als Nullpunkt des Detektors genommen. Dieser Scan wird um den Nullpunkt durchgeführt von $\SI{-0.5}{\degree}$ bis $\SI{0.5}{\degree}$. Mithilfe eines Z-Scans wird die Probe so justiert, dass sie sich genau an der Position in Z-Richtung befindet an der die maximale Intensität $I_\mathrm{max}$ halbiert ist.
+\subsection{Inbetriebnahme des Laser}
+Zur Beginn des Versuches werden zunächst die Laserdiode, sowie die Absorptionszelle mit dem Rubidium und ein Detektor justiert. Außerdem wird eine Temperatur von $T=\SI{50}{\degreeCelsius}$ am Laserkontrollgerät eingestellt und die Apparatur wird aufgeheizt. Da der Laserstrahl mit dem menschlichen Auge nicht zu sehen ist,
+muss zur Justage eine Infrarot Karte benutzt werden.
+Um sicherzustellen, dass der Laserstrahl die Absorptionszelle und den Detektor exakt trifft, wird mithilfe der IR-Karte der Laser sichtbar gemacht und per Kamera beobachtet. Der Aufbau ist in in Abbildung (\ref{fig:auf1}) dargestellt.
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.6]{fig/zscan.png}
-  \caption{Schematische Darstellung des Z-Scans (links) und des Rockingscan (rechts). \cite[5]{Anleitung4}}
-  \label{fig:zscanbei}
+  \includegraphics[scale=0.7]{fig/auf1.png}
+  \caption{Sichtbar machen des Laser durch IR-Karte \cite[6]{Anleitung4}.}
+  \label{fig:auf1}
 \end{figure}
 \FloatBarrier
-\noindent Mit einem X-Scan wird nun die Position in X-Richtung justiert.
-Daraufhin wird ein Rockingscan durchgeführt, wobei der Detektor und die Röhre um die Probe gedreht werden. Als Ergebnis sollte ein gleichschenkliges Dreieck herauskommen. Falls dies nicht der Fall sein sollte, muss nachjustiert werden.
+\noindent Jetzt wird der Strom solange erhöht bis sogenannte Speckle auf der IR-Karte sichtbar werden. Sobald diese erscheinen ist der Schwellenstrom erreicht und die Diode arbeitet im Laserbetrieb.
+\subsection{Bestimmung der Absorptionswellenlänge}
+Der Laser ist nun justiert, die Kamera wird auf die Rubidiumzelle ausgerichtet. Anschließend wird das Licht gedimmt, um den Einfluss von Hintergrundlicht auf die Photodiode, die als Detektor dient, zu minimieren. Ebenfalls muss die Intensität des Laserstrahl durch Neutralfilter reduziert werden, da sonst ebenfalls die Photodiode gesättigt wäre. Das Laserkontrollgerät wird mit einem Oszilloskop verbunden.
+In Abbildung (\ref{fig:auf2}) ist die verwendete Verkabelung dargestellt.
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.7]{fig/beispiel.png}
-  \caption{Beispielplots von Detektorscan (oben links), Rockingscan (oben rechts) und Z-Scan (unten). \cite[6]{Anleitung4}}
-  \label{fig:beispiele}
+  \includegraphics[scale=0.7]{fig/auf2.png}
+  \caption{Verkabelung des Kontrollgeräts \cite[10]{Anleitung4}.}
+  \label{fig:auf2}
 \end{figure}
 \FloatBarrier
-\noindent Durch die Ausrichtung im Rockingscan ist die Z-Position der Probe nicht mehr exakt, sodass ein weiterer Z-Scan durchgeführt wird. Für die Feinjustierung wird ein weiterer Rockingscan durchgeführt, dieser weicht vom ersten ab, da er unter einem Winkel von $2\theta=\SI{0.3}{\degree}$ durchgeführt wird. Es sollte ein deutlicher Reflex zu sehen sein.  Das Maximum der Kurve wird im Programm im Feld "Enter theorical Positon" auf $\SI{0.15}{\degree}$ gesetzt. Abschließend wird ein dritter Z-Scan durchgeführt, allerdings sind hier bei Detektor und Röhre jeweils um $\SI{0.15}{\degree}$ geneigt. Dies ist in Abbildung (\ref{fig:zscan015}) dargestellt.
+\noindent Beim Ramp-Generator wird die Frequenz auf $\SI{10}{\hertz}$ gestellt, sodass eine Dreieckswelle entsteht mit ausreichend großer Amplitude. Jetzt wird der Strom so justiert, dass die
+Rubidiumzelle Licht emittiert. Damit ist die richtige Frequenz gefunden und ein Foto der Rubidiumzelle wird aufgenommen.
+In Abbildung (\ref{fig:auf3}) ist der Experimentaufbau dafür schematisch dargestellt.
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.7]{fig/zscan015.png}
-  \caption{Z-Scan mit geneigter Röhre und Detektor \cite[7]{Anleitung4}}
-  \label{fig:zscan015}
+  \includegraphics[scale=0.7]{fig/auf3.png}
+  \caption{Aufbau zur Bestimmung der Absorptionswellenlänge \cite[9]{Anleitung4}.}
+  \label{fig:auf3}
 \end{figure}
 \FloatBarrier
-\noindent Damit ist die Justage der Messapparatur abgeschlossen.
-\subsection{Messung}
-Nachdem die Justage abgeschlossen ist, findet die eigentliche Messung der Probe statt. Dafür wird der "Omega/2Theta-Scan" verwendet. Der Scannbereich liegt dabei zwischen $\SI{0}{\degree}$ bis $\SI{2.5}{\degree}$ und die Schrittweite beträgt $\SI{0.005}{\degree}$ bei einer Messdauer von $t=\SI{5}{\second}$ pro Winkel. Zusätzlich wird ein  "Diffuse Scan" durchgeführt, wo der Detektor um $\SI{0.1}{\degree}$ zur Röntgenröhre geneigt ist. Die sonstigen Einstellungen bleiben dabei gleich. \\
-Abschließend werden die aufgenommenen Messdaten mit FileExchanger von einer .raw-Datei in eine .UXD-Datei umgewandelt und können ausgewertet werden.
+\subsection{Bestimmung des Absorptionsspektrum}
+Um die Modensprünge zu eliminieren wird die Verkabelung wie in Abbildung (\ref{fig:auf4}) geändert.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.5]{fig/auf4.png}
+  \caption{Verkabelung zur Bestimmung des Absorptionsspektrum \cite[16]{Anleitung4}.}
+  \label{fig:auf4}
+\end{figure}
+\FloatBarrier
+\noindent Ebenfalls wird eine zweite Photodiode hinzugefügt und ein 50/50 Strahlteiler wird vor die Rubidiumzelle gesetzt. Das Experiment sieht jetzt aus wie in Abbildung (\ref{fig:auf5}).
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.5]{fig/auf5.png}
+  \caption{Aufbau zur Bestimmung des Absorptionsspektrum \cite[16]{Anleitung4}.}
+  \label{fig:auf5}
+\end{figure}
+\FloatBarrier
+\noindent Als letztes wird nun solange mit den verschiedenen Reglern am Laserkontrollgerät nachjustiert, bis das Absorptionsspektrum vernünftig zu sehen ist und ein Foto aufgenommen werden kann.

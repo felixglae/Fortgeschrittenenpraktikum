@@ -19,36 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{Anleitung6}{manual}{}
-      \name{author}{1}{}{%
-        {{hash=e6b2f6043bd08f7fa471bb839dc47e51}{%
-           family={Bertram},
-           familyi={B\bibinitperiod},
-           given={Florian},
-           giveni={F\bibinitperiod}}}%
-      }
-      \strng{namehash}{e6b2f6043bd08f7fa471bb839dc47e51}
-      \strng{fullhash}{e6b2f6043bd08f7fa471bb839dc47e51}
-      \strng{bibnamehash}{e6b2f6043bd08f7fa471bb839dc47e51}
-      \strng{authorbibnamehash}{e6b2f6043bd08f7fa471bb839dc47e51}
-      \strng{authornamehash}{e6b2f6043bd08f7fa471bb839dc47e51}
-      \strng{authorfullhash}{e6b2f6043bd08f7fa471bb839dc47e51}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Röntgenreflektometrie an ultradünnen Schichten}
-      \field{urlday}{4}
-      \field{urlmonth}{5}
-      \field{urlyear}{2022}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.physik.uni-osnabrueck.de/fileadmin/documents/AG-Woll/Bachelor_Arbeiten/BachelorarbeitFlorianBertram.pdf
-      \endverb
-      \verb{url}
-      \verb https://www.physik.uni-osnabrueck.de/fileadmin/documents/AG-Woll/Bachelor_Arbeiten/BachelorarbeitFlorianBertram.pdf
-      \endverb
-    \endentry
     \entry{Anleitung4}{manual}{}
       \name{author}{1}{}{%
         {{hash=6d77c529a16a06330c9d02017203f915}{%
@@ -65,19 +35,19 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Anleitung zu V44 Röntgenreflektometrie}
-      \field{urlday}{26}
-      \field{urlmonth}{4}
+      \field{title}{Diode Laser Spectroscopy}
+      \field{urlday}{12}
+      \field{urlmonth}{5}
       \field{urlyear}{2022}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://moodle.tu-dortmund.de/pluginfile.php/1893660/mod_resource/content/2/V44.pdf
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1929926/mod_folder/content/0/Experiment.pdf?forcedownload=1
       \endverb
       \verb{url}
-      \verb https://moodle.tu-dortmund.de/pluginfile.php/1893660/mod_resource/content/2/V44.pdf
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1929926/mod_folder/content/0/Experiment.pdf?forcedownload=1
       \endverb
     \endentry
-    \entry{Anleitung3}{manual}{}
+    \entry{Anleitung}{manual}{}
       \name{author}{1}{}{%
         {{hash=2821a70f99517ac7757c95300d43e95c}{%
            family={Dortmund},
@@ -95,42 +65,76 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Roentgenreflektometrieversuch}
-      \field{urlday}{26}
-      \field{urlmonth}{4}
+      \field{title}{Diode Laser Physics}
+      \field{urlday}{12}
+      \field{urlmonth}{5}
       \field{urlyear}{2022}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://www.e1.physik.tu-dortmund.de/cms/Medienpool/Downloads/Roentgenreflektometrie_Versuch.pdf
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1929926/mod_folder/content/0/DLS_Laserphysik.pdf?forcedownload=1
       \endverb
       \verb{url}
-      \verb https://www.e1.physik.tu-dortmund.de/cms/Medienpool/Downloads/Roentgenreflektometrie_Versuch.pdf
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1929926/mod_folder/content/0/DLS_Laserphysik.pdf?forcedownload=1
       \endverb
     \endentry
-    \entry{python}{manual}{}
+    \entry{Anleitung3}{manual}{}
       \name{author}{1}{}{%
-        {{hash=a7f5f35426b927411fc9231b56382173}{%
-           family={Python},
-           familyi={P\bibinitperiod}}}%
+        {{hash=c796125372d652e632bd9f96131ce1d5}{%
+           family={Reinhold},
+           familyi={R\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
       }
-      \strng{namehash}{a7f5f35426b927411fc9231b56382173}
-      \strng{fullhash}{a7f5f35426b927411fc9231b56382173}
-      \strng{bibnamehash}{a7f5f35426b927411fc9231b56382173}
-      \strng{authorbibnamehash}{a7f5f35426b927411fc9231b56382173}
-      \strng{authornamehash}{a7f5f35426b927411fc9231b56382173}
-      \strng{authorfullhash}{a7f5f35426b927411fc9231b56382173}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \strng{namehash}{c796125372d652e632bd9f96131ce1d5}
+      \strng{fullhash}{c796125372d652e632bd9f96131ce1d5}
+      \strng{bibnamehash}{c796125372d652e632bd9f96131ce1d5}
+      \strng{authorbibnamehash}{c796125372d652e632bd9f96131ce1d5}
+      \strng{authornamehash}{c796125372d652e632bd9f96131ce1d5}
+      \strng{authorfullhash}{c796125372d652e632bd9f96131ce1d5}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{labelnamesource}{author}
-      \field{urlday}{27}
-      \field{urlmonth}{4}
+      \field{labeltitlesource}{title}
+      \field{title}{Laserbildsysteme}
+      \field{urlday}{12}
+      \field{urlmonth}{5}
       \field{urlyear}{2022}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://www.python.org
+      \verb https://www.fh-muenster.de/ciw/downloads/personal/juestel/juestel/Laser-Bildsysteme_Kai_Reinhold__.pdf
       \endverb
       \verb{url}
-      \verb https://www.python.org
+      \verb https://www.fh-muenster.de/ciw/downloads/personal/juestel/juestel/Laser-Bildsysteme_Kai_Reinhold__.pdf
+      \endverb
+    \endentry
+    \entry{Anleitung10}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=7fe74a31513170fd6e98abfe34eda537}{%
+           family={Wien},
+           familyi={W\bibinitperiod},
+           given={Universität},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{7fe74a31513170fd6e98abfe34eda537}
+      \strng{fullhash}{7fe74a31513170fd6e98abfe34eda537}
+      \strng{bibnamehash}{7fe74a31513170fd6e98abfe34eda537}
+      \strng{authorbibnamehash}{7fe74a31513170fd6e98abfe34eda537}
+      \strng{authornamehash}{7fe74a31513170fd6e98abfe34eda537}
+      \strng{authorfullhash}{7fe74a31513170fd6e98abfe34eda537}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Grundlagen Laser}
+      \field{urlday}{12}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.univie.ac.at/mikroskopie/1_grundlagen/mikroskop/licht/4a_laser_prinzip.htm
+      \endverb
+      \verb{url}
+      \verb https://www.univie.ac.at/mikroskopie/1_grundlagen/mikroskop/licht/4a_laser_prinzip.htm
       \endverb
     \endentry
   \enddatalist
