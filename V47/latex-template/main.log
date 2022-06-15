@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.20)  15 JUN 2022 13:06
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.20)  15 JUN 2022 13:28
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -475,12 +475,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	
 (polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            hyphenation	 on input line 10
+(polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -1403,12 +1403,12 @@ LaTeX Info: Redefining \rmfamily on input line 26.
 LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	
 (polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            hyphenation	 on input line 26
+(polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2 on input line 26
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 26
 )
@@ -1749,7 +1749,7 @@ Here is how much of LuaTeX's memory you used:
    avail lists: 1:2,2:957,3:261,4:126,5:428,6:65,7:5898,8:110,9:610,10:20,11:558
 
  56732 multiletter control sequences out of 65536+600000
- 142 fonts using 55745759 bytes
+ 142 fonts using 55746491 bytes
  113i,15n,118p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-i
 talic.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/l
@@ -1767,7 +1767,7 @@ t/fonts/opentype/public/lm/lmroman10-regular.otf></home/felix/.local/texlive/202
 1/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/felix/.local/
 texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/felix/
 .local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on V47.pdf (17 pages, 564610 bytes).
+Output written on V47.pdf (17 pages, 564658 bytes).
 
 PDF statistics: 444 PDF objects out of 1000 (max. 8388607)
  320 compressed objects within 4 object streams
