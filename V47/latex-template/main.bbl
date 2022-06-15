@@ -1,0 +1,221 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Anleitung7}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=3800682ae379fe784adb8420e5a63371}{%
+           family={Chemie.de},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{3800682ae379fe784adb8420e5a63371}
+      \strng{fullhash}{3800682ae379fe784adb8420e5a63371}
+      \strng{bibnamehash}{3800682ae379fe784adb8420e5a63371}
+      \strng{authorbibnamehash}{3800682ae379fe784adb8420e5a63371}
+      \strng{authornamehash}{3800682ae379fe784adb8420e5a63371}
+      \strng{authorfullhash}{3800682ae379fe784adb8420e5a63371}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{urlday}{15}
+      \field{urlmonth}{6}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.chemie.de/lexikon/Spezifische_Wärmekapazität.html
+      \endverb
+      \verb{url}
+      \verb https://www.chemie.de/lexikon/Spezifische_W%C3%A4rmekapazit%C3%A4t.html
+      \endverb
+    \endentry
+    \entry{Anleitung3}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=3800682ae379fe784adb8420e5a63371}{%
+           family={Chemie.de},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{3800682ae379fe784adb8420e5a63371}
+      \strng{fullhash}{3800682ae379fe784adb8420e5a63371}
+      \strng{bibnamehash}{3800682ae379fe784adb8420e5a63371}
+      \strng{authorbibnamehash}{3800682ae379fe784adb8420e5a63371}
+      \strng{authornamehash}{3800682ae379fe784adb8420e5a63371}
+      \strng{authorfullhash}{3800682ae379fe784adb8420e5a63371}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Debye-Modell}
+      \field{urlday}{15}
+      \field{urlmonth}{6}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.chemie.de/lexikon/Debye-Modell.html
+      \endverb
+      \verb{url}
+      \verb https://www.chemie.de/lexikon/Debye-Modell.html
+      \endverb
+    \endentry
+    \entry{Anleitung}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{%
+           family={Dortmund},
+           familyi={D\bibinitperiod},
+           given={TU},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Temperaturabhängigkeit der Molwärme von Festkörpern}
+      \field{urlday}{15}
+      \field{urlmonth}{6}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1929921/mod_resource/content/6/V47.pdf
+      \endverb
+      \verb{url}
+      \verb https://moodle.tu-dortmund.de/pluginfile.php/1929921/mod_resource/content/6/V47.pdf
+      \endverb
+    \endentry
+    \entry{Anleitung4}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=4d62a21aba142830bc26f490205265d3}{%
+           family={Lenntech},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d62a21aba142830bc26f490205265d3}
+      \strng{fullhash}{4d62a21aba142830bc26f490205265d3}
+      \strng{bibnamehash}{4d62a21aba142830bc26f490205265d3}
+      \strng{authorbibnamehash}{4d62a21aba142830bc26f490205265d3}
+      \strng{authornamehash}{4d62a21aba142830bc26f490205265d3}
+      \strng{authorfullhash}{4d62a21aba142830bc26f490205265d3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{urlday}{15}
+      \field{urlmonth}{6}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.lenntech.de/pse/elemente/cu.htm
+      \endverb
+      \verb{url}
+      \verb https://www.lenntech.de/pse/elemente/cu.htm
+      \endverb
+    \endentry
+    \entry{Anleitung10}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=d5ce33d5be8ba2e778535e4f6570ba2c}{%
+           family={Leoben},
+           familyi={L\bibinitperiod},
+           given={MU},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5ce33d5be8ba2e778535e4f6570ba2c}
+      \strng{fullhash}{d5ce33d5be8ba2e778535e4f6570ba2c}
+      \strng{bibnamehash}{d5ce33d5be8ba2e778535e4f6570ba2c}
+      \strng{authorbibnamehash}{d5ce33d5be8ba2e778535e4f6570ba2c}
+      \strng{authornamehash}{d5ce33d5be8ba2e778535e4f6570ba2c}
+      \strng{authorfullhash}{d5ce33d5be8ba2e778535e4f6570ba2c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Thermische Eigenschaften}
+      \field{urlday}{15}
+      \field{urlmonth}{6}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.oeaw.ac.at/fileadmin/Institute/ESI/PDF/student_corner/mp2_thermische-eigensch_dehm.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.oeaw.ac.at/fileadmin/Institute/ESI/PDF/student_corner/mp2_thermische-eigensch_dehm.pdf
+      \endverb
+    \endentry
+    \entry{python}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=a7f5f35426b927411fc9231b56382173}{%
+           family={Python},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7f5f35426b927411fc9231b56382173}
+      \strng{fullhash}{a7f5f35426b927411fc9231b56382173}
+      \strng{bibnamehash}{a7f5f35426b927411fc9231b56382173}
+      \strng{authorbibnamehash}{a7f5f35426b927411fc9231b56382173}
+      \strng{authornamehash}{a7f5f35426b927411fc9231b56382173}
+      \strng{authorfullhash}{a7f5f35426b927411fc9231b56382173}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.python.org
+      \endverb
+      \verb{url}
+      \verb https://www.python.org
+      \endverb
+    \endentry
+    \entry{Anleitung5}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=7d2f4debeb4283f875bc56073ae19ff6}{%
+           family={Rausch},
+           familyi={R\bibinitperiod},
+           given={René},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d2f4debeb4283f875bc56073ae19ff6}
+      \strng{fullhash}{7d2f4debeb4283f875bc56073ae19ff6}
+      \strng{bibnamehash}{7d2f4debeb4283f875bc56073ae19ff6}
+      \strng{authorbibnamehash}{7d2f4debeb4283f875bc56073ae19ff6}
+      \strng{authornamehash}{7d2f4debeb4283f875bc56073ae19ff6}
+      \strng{authorfullhash}{7d2f4debeb4283f875bc56073ae19ff6}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{urlday}{15}
+      \field{urlmonth}{6}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.periodensystem-online.de/index.php?el=29&id=modify
+      \endverb
+      \verb{url}
+      \verb https://www.periodensystem-online.de/index.php?el=29&id=modify
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
