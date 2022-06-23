@@ -1,0 +1,52 @@
+
+\section{Theorie}
+\label{sec:Theorie}
+Myonen gehören zusammen mit den Elektronen und Tauonen, sowie ihren dazugehörigen Neutrinos zu den Leptonen. Alle diese Teilchen unterliegen der schwachen Wechselwirkung, außerdem wirkt auf
+Myonen, Elektronen und Tauonen zusätzlich die elektromagnetische Wechselwirkung. Die Leptonen sind Fermionen und besitzen damit einen Spin von $S=\dfrac{\hbar}{2}$. \\
+Die Myonen, die in diesem Versuch betrachtet werden, sind Leptonen der zweiten Generation und besitzen die 206-fache Masse eines Elektrons.
+Desweiteren sind sie im Gegensatz zum Elektron instabil und zerfallen damit.
+\subsection{Detektion von Myonen}
+\label{sec:Detektion}
+Pionen entstehen in etwa $\SI{10}{\kilo\meter}$ Höhe über der Erde durch Wechselwirkungen zwischen hochenergetischen Protonen und Luftmolekülen. Diese Pionen zerfallen wie folgt schnell in Myonen:
+\begin{align*}
+  \pi^+ &\to \mu^+ + \nu_{\mu} \\
+  \pi^- &\to \mu^- + \overline{\nu}_{\mu}
+\end{align*}
+Die entstanden Myonen bewegen sich mit annähernd Lichtgeschwindigkeit. Der Myonenzerfall kann wie folgt angegeben werden:
+\begin{align*}
+  \mu^- &\to \mathrm{e}^- + \overline{\nu}_\mathrm{e} + \nu_{\mu} \\
+  \mu^+ &\to \mathrm{e}^+ + \nu_\mathrm{e} + \overline{\nu}_{\mu}
+\end{align*}
+Die Myonen können an der Erdoberfläche mithilfe eines Szintillators detektiert werden. Dabei geben die Myonen ihre kinetische Energie an die Moleküle der Szintillatormaterie ab, wodurch diese angeregt werden. Um in den Grundzustand zurückzugelangen, emittieren die Moleküle Photonen. Die Photonen werden durch ein Sekundärelektronenenverfielfacher (SEV) absorbiert und ein Elektron wird abgegeben. Dieses Elektron wird weiter beschleunigt und trifft auf einen Halbleiter oder eine Metallfläche. Dies wird so lange wiederholt, bis eine Verstärkungsleistung von ungefähr $10^5$ erreicht wird.
+Da die Myonen unterschiedliche Energien besitzen und in der Atmosphäre abgeben, können drei unterschiedliche Fälle entstehen:
+\begin{itemize}
+  \item Das Myon tritt in den Szintillator ein und zerfällt dort in ein Elektron. Dabei wird beim Eintreffen und beim Zerfall des Myons ein Impuls erzeugt. Somit kann die Lebensdauer des Myons gemessen werden.
+  \item Das Myon ist negativ geladen. Beim Eintreffen füllt das Myon durch Absorption einen leeren Platz in der Atomhülle der Szintillatormaterials auf und ein Myonatom entsteht.
+  \item Die kinetische Energie des Myons ist so hoch, dass es den Szintillator durchquert. Dabei wird ein Startimpuls beim Eintritt erzeugt, allerdings wird durch den fehlenden Zerfall kein dazugehöriger Stoppimpuls
+  erzeugt und die Lebensdauer kann somit nicht bestimmt werden (s. Abschnitt \ref{sec:Störeffekte})
+\end{itemize}
+\subsection{Lebensdauer der Myonen}
+Der Zerfall von Myonen ist ein statistischer Prozess, somit wird, um die Lebensdauer der Myonen zu definieren, ein Erwartungswert $\tau$ bestimmt der als die mittlere Lebensdauer der Myonen bezeichnet wird.
+Für einen Teil $\mathrm{d}N$ der Gesamtteilchenzahl $N$ ergibt sich in einer Zeit $\mathrm{d}t$ unter der Annahme, dass eine lineare Proportionalität zwischen Zerfallswahrscheinlichkeit und Beobachtungszeit besteht, der folgende Zusammenhang
+\begin{equation}
+  \label{eqn:Zerfallswahrscheinlichkeit}
+  \mathrm{d}N = -N\mathrm{d}W = -N \lambda \mathrm{d}t
+\end{equation}
+Dabei ist $\lambda$ die Zerfallskonstante der Myonen und damit der Proportionalitätsfaktor zwischen Wahrscheinlichkeit und Zeit. Wird der Ausdruck in Gleichung (\ref{eqn:Zerfallswahrscheinlichkeit}) integriert ergibt sich:
+\begin{align}
+  \label{eqn:Integriertes Zerfallsgesetz}
+\dfrac{N(t)}{N_\mathrm{0}} = \exp(-\lambda t)
+\end{align}
+$N_\mathrm{0}$ ist hierbei die Gesamtteilchenzahl und $N(t)$ die Teilchenzahl zur Beobachtungszeit $t$
+Daraus folgt für die Lebensdauer eine exponentielle Verteilung auf dem Intervall $t \, \mathrm{bis} \, t+\mathrm{d}t$ mit:
+\begin{align}
+  \label{eqn:Lebensdauer exponentiell}
+  \mathrm{d}N(t) = N_\mathrm{0} \lambda \exp(-\lambda t) \mathrm{d}t
+\end{align}
+Der Erwartungswert der Lebensdauer der Myonen $\tau$ ergibt sich dadurch zum inversen der Zerfallskonstante $\lambda$:
+\begin{align}
+  \label{eqn:erw}
+  \tau &= \int_{-\infty}^{\infty} \lambda t \exp(-\lambda t) \mathrm{d}t \\
+  \label{eqn:Erwa}
+  \tau &= \dfrac{1}{\lambda}
+\end{align}
