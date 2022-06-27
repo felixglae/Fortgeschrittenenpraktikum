@@ -8,7 +8,7 @@ Für die verschiedenen Messgeräte werden die folgenden Ungenauigkeiten angenomm
 	\sigma_{\symup\Delta t} &= \SI{0.1}{\second}	\,\text.
 \end{align*}
 Die Grafiken sowie Rechnungen werden mit Python erstellt bzw. durchgeführt \cite{python}.
-\subsection{Bestimmung der verschiedenen Molwärme}
+\subsection{Bestimmung der Molwärme}
 Die Molwärme bei konstantem $C_\mathrm{p}$ wird aus der zugeführten elektrischen Energie bestimmt.
 Diese kann aus den Werten in Tabelle \ref{tab:tab1} mit
 \begin{align}
@@ -19,7 +19,7 @@ Diese kann aus den Werten in Tabelle \ref{tab:tab1} mit
 berechnet werden.
 Dabei ist $E$ die zugeführte Energie, $U$ die Spannung, $I$ die Stromstärke, $\symup\Delta t$ die Dauer zwischen den Messpunkten, $\symup\Delta T$ der Temperaturunterschied zwischen den Messpunkten, $M$ die molare Masse von Kupfer und $m$ die Probenmasse. Die materialspezifischen Konstanten werden den Quellen \cite{Anleitung4} für die Molmasse von Kupfer, \cite{Anleitung5} für Kompressionsmodul und Dichte und zuletzt \cite[4]{Anleitung} für die Probenmasse, entnommen. Diese lauten:
 \begin{align*}
-  M &= \SI{0.0635}{\kilo\gram\mol^{-1}} \\
+  M &= \SI{0.063546}{\kilo\gram\mol^{-1}} \\
   \kappa &= \SI{140}{GPa} \\
   m &= \SI{0.342}{\kilo\gram} \\
   \rho &= \SI{8920}{\kilo\gram\meter^{-3}}
@@ -31,7 +31,7 @@ In Tabelle \ref{tab:tab1} finden sich zu diesen Größen zusätzlich die berechn
   \label{tab:tab1}
   \begin{tabular}{c c c c c}
     \toprule
-		$\Delta T$/K & $U$/V & $I$/A & $\Delta t$/s & $C_\mathrm{p}$ \\
+		$\Delta T \, / \, \si{\kelvin}$ & $U \, / \, \si{\volt}$ & $I \, / \, \si{\ampere}$ & $\Delta t \, / \, \si{\second} $ & $C_\mathrm{p} \, / \, \si{\joule\per\mole\per\kelvin}$ \\
     \midrule
     $9.63\pm0.3$ & $16.04\pm0.01$ & $0.1518\pm0.0001$ & $395\pm5$ & $18.5\pm0.7$ \\
     $9.92\pm0.3$ & $16.09\pm0.01$ & $0.1519\pm0.0001$ & $395\pm5$ & $18.1\pm0.7$ \\
@@ -78,7 +78,7 @@ Die Werte für $C_\mathrm{V}$ sind in Tabelle (\ref{tab:tab2}) angegeben.
   \label{tab:tab2}
   \begin{tabular}{c c c c}
     \toprule
-		$T$/K & $C_\mathrm{p}$ & $\alpha$ & $C_\mathrm{V}$ \\
+		$T \, / \, \si{\kelvin}$ & $C_\mathrm{p} \, / \, \si{\joule\per\mole\per\kelvin}$ & $\alpha \, / \, \si{1\per\degree}$ & $C_\mathrm{V} \, / \, \si{\joule\per\mole\per\kelvin}$ \\
     \midrule
     $123.63\pm0.24$ & $18.5\pm0.7$ & $\num{1.2500(22)e-05}$ & $18.4\pm0.7$ \\
     $133.27\pm0.24$ & $18.1\pm0.7$ & $\num{1.3391(22)e-05}$ & $17.9\pm0.7$ \\
@@ -111,24 +111,21 @@ Die Werte für $C_\mathrm{V}$ sind in Tabelle (\ref{tab:tab2}) angegeben.
 	\label{fig:cv1}
 \end{figure}
 \FloatBarrier
-\noindent Die Einheiten für $C_\mathrm{V}$ und $C_\mathrm{p}$ sind gegeben durch:
-\begin{equation*}
-	[C_\mathrm{V}] = [C_\mathrm{p}] = \si{\joule\per\mole\per\kelvin}\,\text.
-\end{equation*}
+
 
 \subsection{Bestimmung der Debye-Temperatur}
-Im letzten Auswertungsabschnitt soll nun noch die Debyetemperatur $\Theta_\mathrm{D}$ bestimmt werden, dabei wird ein experimenteller als auch ein theoretischer Wert erhalten.
+Im letzten Auswertungsabschnitt soll nun noch die Debye-Temperatur $\Theta_\mathrm{D}$ bestimmt werden, dabei wird ein experimenteller als auch ein theoretischer Wert erhalten.
 \subsubsection{Experimentelle Bestimmung}
 Zur experimentellen Bestimmung der Debye-Temperatur werden ausschließlich die Molwärmen $C_\mathrm{V}$ mit $T<\SI{170}{\kelvin}$ betrachtet.
 Die Quotienten $\Theta_\mathrm{D} / T$ werden für ein gegebenes $C_\mathrm{V}$ aus der Debye-Funktion aus der Versuchsanleitung \cite[2,3]{Anleitung} ausgelesen.
-Durch einfache Multiplikation kann dann die Debye-Temperatur bestimmt werden. In Tabelle \ref{tab:tab3} sind die daraus resultierenden Werte dargestellt.
+Durch Multiplikation kann dann die Debye-Temperatur bestimmt werden. In Tabelle \ref{tab:tab3} sind die daraus resultierenden Werte dargestellt.
 \begin{table}
   \centering
-  \caption{Daten zur Bestimmung der Debyetemperatur $\Theta_\mathrm{D}$.}
+  \caption{Daten zur Bestimmung der Debye-Temperatur $\Theta_\mathrm{D}$.}
   \label{tab:tab3}
   \begin{tabular}{c c c c}
     \toprule
-		$C_\mathrm{V}$ & $\Theta_\mathrm{D} / T$ & $T$/K & $\Theta_\mathrm{D}$/ \\
+		$C_\mathrm{V} \, / \, \si{\joule\per\mole\per\kelvin}$ & $\Theta_\mathrm{D} / T$ & $T \, / \, \si{\kelvin}$ & $\Theta_\mathrm{D} \, / \, \si{\kelvin}$ \\
     \midrule
     $18.4\pm0.7$ & $2.6$ & $123.63\pm0.24$ & $321.4\pm0.6$ \\
     $17.9\pm0.7$ & $2.6$ & $133.27\pm0.24$ & $346.5\pm0.6$ \\
@@ -140,7 +137,7 @@ Durch einfache Multiplikation kann dann die Debye-Temperatur bestimmt werden. In
   \end{tabular}
 \end{table}
 \FloatBarrier
-\noindent Daraus ergibt sich für die Debyetemperatur:
+\noindent Daraus ergibt sich für die Debye-Temperatur:
 \begin{equation*}
   \overline{\Theta}_\mathrm{D}=\SI{279.9(2)}{\kelvin}
 \end{equation*}

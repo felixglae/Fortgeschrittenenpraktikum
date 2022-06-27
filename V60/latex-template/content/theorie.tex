@@ -7,7 +7,7 @@ Im aktiven Medium entsteht die Laserstrahlung durch den Übergang von Elektronen
 Die Pumpe liefert die Energie, die nötig ist um eine Besetzungsinversion im aktiven Medium aufrecht zu erhalten. Besetzungsinversion bedeutet, dass sich mehr Teilchen in einem
 energetisch ungünstigeren Zustand befinden als im energetisch günstigen.
 Das letzte Bauteil, der Resonator, besteht aus zwei Spiegeln an denen die Photonen immer wieder reflektiert werden und so weitere Emissionen stimulieren können.
-Die dadurch ausgelösten Photonen haben die oben genannten Eigenschaften.
+Die dadurch ausgelösten Photonen sind kohärent, besitzen also die selbe Polarisation, Energie und Richtung.
 \subsection{Stimulierte Emission}
 Im Folgenden wird anhand eines 4-Niveau-Systems (siehe Abbildung (\ref{fig:4niv})) das Prinzip der stimulierten Emission erläutert.
 \begin{figure}[h!]
@@ -28,7 +28,7 @@ mit gleicher Phase, Energie und Richtung abgestrahlt. In Abbildung (\ref{fig:sti
 \end{figure}
 \FloatBarrier
 \subsection{Diodenlaser}
-In diesem Versuch wird mit einem Galliumarsenid-Diodenlaser gearbeitet. Ein Diodenlaser besteht aus mindestens drei Schichten. Diese sind die n-Schicht, die aktive Schicht sowie die p-Schicht.
+In diesem Versuch wird mit einem Galliumphosphid-Diodenlaser gearbeitet. Ein Diodenlaser besteht aus mindestens drei Schichten. Diese sind die n-Schicht, die aktive Schicht sowie die p-Schicht.
 In Abbildung (\ref{fig:diod}) ist ein schematischer Laserchip dargestellt.
 \begin{figure}[h!]
   \centering
@@ -66,12 +66,13 @@ In diesem Abschnitt wird darauf eingegangen wie die Frequenz des Diodenlasers zu
 Das Material aus dem die Laserdiode besteht hat den größten Einfluss auf die Wellenlänge mit der der Laser strahlt. Dieser Faktor kann einzig durch Erwärmung oder Abkühlung des Materials leicht
 beeinflusst werden.
 \subsubsection{Internal Cavity}
-Die optische Zunahme, die durch den internen Hohlraum entsteht, wird von der Länge des Hohlraums und vom induzierten Strom festgelegt. Diese Zunahme ist periodisch, da in jedem optischen
-Hohlraum eine Normal-Mode-Struktur vorliegt. Durch den induzierten Strom entsteht Wärme, die die Länge des Hohlraums verändert. Außerdem beeinflusst der Strom die Ladungskonzentration in
-der aktiven Schicht des Laser. Dadurch, dass sowohl die optische Zunahme von Material, als auch die des inneren Hohlraums verschieden temperaturabhängig ist, kommt es zu sog. Modensprüngen zwischen
-den Maxima der optischen Zunahme durch die innere Hohlkammer. Auf diese wird später noch explizit eingegangen.
+Die beiden Facetten des Kristalls haben eine unterschiedliche Reflektivität und bilden eine optische Kammer, die als Resonator fungiert.
+Die optische Zunahme, die durch diesen Resonator im Inneren des Kristalls entsteht, hängt von der Länge und vom induzierten Strom ab. Diese Zunahme ist periodisch, da in jeder optischen
+Kammer eine Normal-Mode-Struktur vorliegt. Durch den induzierten Strom entsteht Wärme, die die Länge des Kristalls verändert. Außerdem beeinflusst der Strom die Ladungskonzentration in
+der aktiven Schicht des Laser. Dadurch, dass sowohl die optische Zunahme von Material, als auch die des Resonator verschieden temperaturabhängig ist, kommt es zu sog. Modensprüngen zwischen
+den Maxima der optischen Zunahme durch den Resonator im Inneren des Kristalls. Auf diese wird später noch explizit eingegangen.
 \subsubsection{External Cavity}
-Im Gegensatz zur internen Hohlkammer ist die externe Kammer, die aus dem optischen Gitter und der Rückseite der Laserdiode besteht, wesentlich größer. Daher ist wie in Abbildung (\ref{fig:netga}) zu sehen, die Periodendauer wesentlich kürzer.
+Im Gegensatz zum Resonator im inneren des Kristalls ist die externe Kammer, die aus dem optischen Gitter und der Rückseite der Laserdiode besteht, wesentlich größer. Daher ist wie in Abbildung (\ref{fig:netga}) zu sehen, die Periodendauer wesentlich kürzer.
 \subsubsection{Grating Feedback}
 Das optische Gitter reflektiert nur eine geringe Bandweite an Frequenzen zurück in die Diode, daher hat dieser Faktor nur einen einzelnen Peak in Abbildung (\ref{fig:netga}). Um den Peak zu verschieben,
 wird der Winkel mit dem die Strahlung auf das optische Gitter trifft verändert.
@@ -85,6 +86,6 @@ diese dargestellt.
   \label{fig:mode}
 \end{figure}
 \FloatBarrier
-\noindent Dadurch, dass durch Änderung des Gitterwinkel sich die maximale Zunahme des Grating-Feedbacks ändert und gleichzeitig auch durch die interne Hohlkammer, ist es möglich, dass die
-emittierte Wellenlänge von einem Maximum der externen Hohlkammer zum nächsten Maximum springt (siehe Teil b in Abbildung (\ref{fig:mode})). Weiterhin ist es ebenfalls möglich, dass zu einem anderen Maximum der internen
-Hohlkammer gesprungen wird (siehe Teil d in Abbildung (\ref{fig:mode})). Um diese Modensprünge zu verhindern wird die interne Hohlkammer simultan mit Veränderung des Gitterwinkels sowie Veränderung des Stromes angepasst.
+\noindent Dadurch, dass durch Änderung des Gitterwinkel sich die maximale Zunahme des Grating-Feedbacks ändert und gleichzeitig auch durch den Resonator, ist es möglich, dass die
+emittierte Wellenlänge von einem Maximum der externen Hohlkammer zum nächsten Maximum springt (siehe Teil b in Abbildung (\ref{fig:mode})). Weiterhin ist es ebenfalls möglich, dass zu einem anderen Maximum des kristallinternen
+Resonator gesprungen wird (siehe Teil d in Abbildung (\ref{fig:mode})). Um diese Modensprünge zu verhindern wird der Resonator simultan mit Veränderung des Gitterwinkels sowie Veränderung des Stromes angepasst.

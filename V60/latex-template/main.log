@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.20)  12 MAY 2022 20:38
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.20)  27 JUN 2022 07:49
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -475,11 +475,11 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            synonyms	
-(polyglossia)            righthyphenmin	2
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns	hyph-de-1901.pat.txt on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
@@ -1403,11 +1403,11 @@ LaTeX Info: Redefining \rmfamily on input line 26.
 LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            synonyms	
-(polyglossia)            righthyphenmin	2
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns	hyph-de-1996.pat.txt on input line 26
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 26
@@ -1580,7 +1580,7 @@ LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
 
 ! I can't write on file `main.pdf'.
-Please type another file name for output: V60
+Please type another file name for output: V60_Korrektur
 LaTeX Info: Redefining \rmfamily on input line 11.
 LaTeX Info: Redefining \sffamily on input line 11.
 LaTeX Info: Redefining \ttfamily on input line 11.
@@ -1689,7 +1689,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <fig/mode.png, id=125, 677.53125pt x 512.91624pt>
 File: fig/mode.png Graphic file (type png)
 <use fig/mode.png>
-Package luatex.def Info: fig/mode.png  used on input line 83.
+Package luatex.def Info: fig/mode.png  used on input line 84.
 (luatex.def)             Requested size: 338.76479pt x 256.45749pt.
 ) (./content/durchfuehrung.tex [8<./fig/mode.png>]
 <fig/auf1.png, id=138, 463.7325pt x 268.00125pt>
@@ -1702,8 +1702,12 @@ File: fig/auf2.png Graphic file (type png)
 <use fig/auf2.png>
 Package luatex.def Info: fig/auf2.png  used on input line 20.
 (luatex.def)             Requested size: 370.98346pt x 259.26685pt.
- [9<./fig/auf1.png>]
-<fig/auf3.png, id=154, 622.325pt x 278.03876pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9<./fig/auf1.png>]
+<fig/auf3.png, id=155, 622.325pt x 278.03876pt>
 File: fig/auf3.png Graphic file (type png)
 <use fig/auf3.png>
 Package luatex.def Info: fig/auf3.png  used on input line 30.
@@ -1828,8 +1832,12 @@ LaTeX Info: Redefining \rmfamily on input line 26.
 LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 )
-Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 09AEF7C8DED8973F5EBEAA02C89B51B0;20106.
+
+Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `main.aux':
+(rerunfilecheck)             Before: 09AEF7C8DED8973F5EBEAA02C89B51B0;20106
+(rerunfilecheck)             After:  31960CBEB99AACBF8B182387257A34B3;20106.
 Package rerunfilecheck Info: File `main.toc' has not changed.
 (rerunfilecheck)             Checksum: 3973F47F19F94BD3365CC0BC3B617FD6;2654.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1843,10 +1851,10 @@ Here is how much of LuaTeX's memory you used:
  653 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 11 attribute, 77 glue_spec
 , 11 attribute_list, 1 write, 4 pdf_action nodes
-   avail lists: 1:1,2:806,3:288,4:142,5:248,6:66,7:4227,8:116,9:294,10:18,11:504
+   avail lists: 1:1,2:806,3:288,4:142,5:254,6:66,7:4313,8:116,9:294,10:18,11:520
 
  56685 multiletter control sequences out of 65536+600000
- 96 fonts using 35182975 bytes
+ 96 fonts using 35183407 bytes
  113i,8n,118p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmmono10-re
 gular.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/l
@@ -1859,7 +1867,7 @@ x/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf>
 </home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bo
 ld.otf></home/felix/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmro
 man12-bold.otf>
-Output written on V60.pdf (15 pages, 1484781 bytes).
+Output written on V60_Korrektur.pdf (15 pages, 1484887 bytes).
 
 PDF statistics: 365 PDF objects out of 1000 (max. 8388607)
  278 compressed objects within 3 object streams
