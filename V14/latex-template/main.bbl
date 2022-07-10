@@ -19,6 +19,86 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Anleitung7}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=fa16980b9e3f32e3522ce9e4782d0064}{%
+           family={Center},
+           familyi={C\bibinitperiod},
+           given={Material\bibnamedelima Data},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{fa16980b9e3f32e3522ce9e4782d0064}
+      \strng{fullhash}{fa16980b9e3f32e3522ce9e4782d0064}
+      \strng{bibnamehash}{fa16980b9e3f32e3522ce9e4782d0064}
+      \strng{authorbibnamehash}{fa16980b9e3f32e3522ce9e4782d0064}
+      \strng{authornamehash}{fa16980b9e3f32e3522ce9e4782d0064}
+      \strng{authorfullhash}{fa16980b9e3f32e3522ce9e4782d0064}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.materialdatacenter.com/ms/de/tradenames/Delrin/DuPont+Engineering+Polymers/Delrin®+100+NC010/6fc48544/791
+      \endverb
+      \verb{url}
+      \verb https://www.materialdatacenter.com/ms/de/tradenames/Delrin/DuPont+Engineering+Polymers/Delrin%C2%AE+100+NC010/6fc48544/791
+      \endverb
+    \endentry
+    \entry{Bild2}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=3800682ae379fe784adb8420e5a63371}{%
+           family={Chemie.de},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{3800682ae379fe784adb8420e5a63371}
+      \strng{fullhash}{3800682ae379fe784adb8420e5a63371}
+      \strng{bibnamehash}{3800682ae379fe784adb8420e5a63371}
+      \strng{authorbibnamehash}{3800682ae379fe784adb8420e5a63371}
+      \strng{authornamehash}{3800682ae379fe784adb8420e5a63371}
+      \strng{authorfullhash}{3800682ae379fe784adb8420e5a63371}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.chemie.de/lexikon/Zink.html
+      \endverb
+      \verb{url}
+      \verb https://www.chemie.de/lexikon/Zink.html
+      \endverb
+    \endentry
+    \entry{Anleitung5}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=783a60d02e9e9ef4c66b74d3a51bdacc}{%
+           family={Ld-Didactic},
+           familyi={L\bibinithyphendelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{783a60d02e9e9ef4c66b74d3a51bdacc}
+      \strng{fullhash}{783a60d02e9e9ef4c66b74d3a51bdacc}
+      \strng{bibnamehash}{783a60d02e9e9ef4c66b74d3a51bdacc}
+      \strng{authorbibnamehash}{783a60d02e9e9ef4c66b74d3a51bdacc}
+      \strng{authornamehash}{783a60d02e9e9ef4c66b74d3a51bdacc}
+      \strng{authorfullhash}{783a60d02e9e9ef4c66b74d3a51bdacc}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ld-didactic.de/software/524221de/Content/Appendix/Cs137.htm
+      \endverb
+      \verb{url}
+      \verb https://www.ld-didactic.de/software/524221de/Content/Appendix/Cs137.htm
+      \endverb
+    \endentry
     \entry{Anleitung}{manual}{}
       \name{author}{1}{}{%
         {{hash=2821a70f99517ac7757c95300d43e95c}{%
@@ -47,6 +127,36 @@
       \endverb
       \verb{url}
       \verb https://moodle.tu-dortmund.de/pluginfile.php/2014184/mod_resource/content/2/V14.pdf
+      \endverb
+    \endentry
+    \entry{Anleitung10}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=aed4ec0547c9426d82bf4245f5e06196}{%
+           family={Gilmore},
+           familyi={G\bibinitperiod},
+           given={Gordon\bibnamedelima R.},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{aed4ec0547c9426d82bf4245f5e06196}
+      \strng{fullhash}{aed4ec0547c9426d82bf4245f5e06196}
+      \strng{bibnamehash}{aed4ec0547c9426d82bf4245f5e06196}
+      \strng{authorbibnamehash}{aed4ec0547c9426d82bf4245f5e06196}
+      \strng{authornamehash}{aed4ec0547c9426d82bf4245f5e06196}
+      \strng{authorfullhash}{aed4ec0547c9426d82bf4245f5e06196}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Practical Gamma-Ray Spectrometry, 2nd Edition}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/book/10.1002/9780470861981
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/book/10.1002/9780470861981
       \endverb
     \endentry
     \entry{leifi}{manual}{}
@@ -125,6 +235,32 @@
       \endverb
       \verb{url}
       \verb https://www.python.org
+      \endverb
+    \endentry
+    \entry{Anleitung4}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=646af3d3a3162d30fb47a66d8a8757fe}{%
+           family={Weltstahl},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{646af3d3a3162d30fb47a66d8a8757fe}
+      \strng{fullhash}{646af3d3a3162d30fb47a66d8a8757fe}
+      \strng{bibnamehash}{646af3d3a3162d30fb47a66d8a8757fe}
+      \strng{authorbibnamehash}{646af3d3a3162d30fb47a66d8a8757fe}
+      \strng{authornamehash}{646af3d3a3162d30fb47a66d8a8757fe}
+      \strng{authorfullhash}{646af3d3a3162d30fb47a66d8a8757fe}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.weltstahl.com/spezifisches-gewicht-dichte-aluminium-tabelle/
+      \endverb
+      \verb{url}
+      \verb https://www.weltstahl.com/spezifisches-gewicht-dichte-aluminium-tabelle/
       \endverb
     \endentry
   \enddatalist

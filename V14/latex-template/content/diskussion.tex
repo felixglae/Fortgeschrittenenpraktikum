@@ -4,26 +4,31 @@
 \subsection{Absorptionskoeffizienten der einheitlichen Würfel}
 Für die Würfel die nur aus einem Material bestehen, sind für Aluminium ein Wert von $\mu=\SI{0.04(1)}{1\per\centi\meter}$ und für Blei ein Wert von $\mu=\SI{0.98(6)}{1\per\centi\meter}$
 bestimmt worden. Vergleicht man diese mit den Literaturwerten für die beiden Materialien (siehe Tabelle \ref{tab:tablit}) ergibt sich für Aluminium eine Abweichung von 80,3\% und für
-Blei eine Abweichung von 21\%. Dies lässt für den Aluminiumwürfel auf eine systematisch falsche Datenaufnahme durch das Analyseprogramm schließen, denn schon an den aufgenommenen Messdaten, die sich von der Intensität der leeren Aluminiumhülle, sowie bei den verschiedenen Weglängen kaum unterscheiden, lässt sich erkennen, dass die Messwerte nicht im angedachten Bereich sind.\\
-Für den Bleiwürfel ist die Abweichung deutlich niedriger, die hier auftretenden Abweichungen lassen sich eher durch andere Fehlerquellen, wie beispielsweise die manuelle Ausrichtung des Würfels, erklären.
+Blei eine Abweichung von 21\%. Es gibt einige Fehlerquellen, die die Messung beeinflussen. Eine ist die manuelle Ausrichtung der Würfel im Strahlengang. Da nur per Auge justiert wurde, ist es schwierig die angegebenen Projektionen genau zu treffen. Gerade bei den Diagonalprojektionen war es schwierig den Würfel optimal zu justieren, da es keine wirklichen Hilfen zur
+Orientierung gab. Weiter ist die Strahlungsquelle nicht ideal, dass heißt der Strahl hat in der Realität eine endliche Ausdehnung und ist nicht
+punktförmig.\\
 \begin{table}
   \centering
-  \caption{Literaturwerte für die verschiedenen Materialien \cite{Anleitung3}.}
+  \caption{Literaturwerte für die verschiedenen Materialien \cite{Anleitung3} entnommen für $E=\SI{661,6}{\kilo\electronvolt}$.}
   \label{tab:tablit}
   \begin{tabular}{c c}
     \toprule
 		$\mathrm{Material}$ & $\mu_\mathrm{Lit} \: [\si{1\per\centi\meter}]$ \\
     \midrule
-    $\mathrm{Delrin}$ & $\num{0,116}$ \\
-		$\mathrm{Blei}$ & $\num{1,245}$ \\
-    $\mathrm{Aluminium}$ & $\num{0,203}$ \\
-    $\mathrm{Messing}$ & $\num{0,614}$ \\
-    $\mathrm{Eisen}$ & $\num{0,574}$ \\
+    $\mathrm{Delrin}$ & $\num{0,1251}$ \\
+		$\mathrm{Blei}$ & $\num{1,2501}$ \\
+    $\mathrm{Aluminium}$ & $\num{0,2016}$ \\
+    $\mathrm{Messing}$ & $\num{0,6125}$ \\
+    $\mathrm{Eisen}$ & $\num{0,5776}$ \\
     \bottomrule
   \end{tabular}
 \end{table}
 \FloatBarrier
-\subsection{Absorptionskoefizienten des unbekannten Würfel}
+\noindent Die Dichten zur Berechnung der Literaturwerte sind gegeben für Delrin durch $\rho_\mathrm{Del}=\SI{1420}{\kilogram\per\cubic\meter}$ \cite{Anleitung7}, für Blei durch
+$\rho_\mathrm{Blei}=\SI{11350}{\kilogram\per\cubic\meter}$, für Eisen durch $\rho_\mathrm{Eisen}=\SI{7860}{\kilogram\per\cubic\meter}$, für den Kupferanteil
+des Messing durch $\rho_\mathrm{Kupfer}=\SI{8920}{\kilogram\per\cubic\meter}$ \cite[37]{Anleitung10}, für Aluminium durch $\rho_\mathrm{Alu}=\SI{2700}{\kilogram\per\cubic\meter}$ \cite{Anleitung4} und
+für den Zinkanteil des Messing durch $\rho_\mathrm{Zink}=\SI{7140}{\kilogram\per\cubic\meter}$ \cite{Bild2}.
+\subsection{Absorptionskoeffizienten des unbekannten Würfel}
 \noindent In Tabelle \ref{tab:tabdiv} sind die Abschwächungskoeffizienten aufgelistet die für den unbekannten Würfel bestimmt worden sind. Ebenfalls sind dort schon erste Vermutungen
 für das jeweilige Material angestellt worden. Aus der Anleitung ist bekannt, dass Delrin, Blei, Messing, Eisen und Aluminium die möglichen Materialien sein können.
 In Tabelle \ref{tab:tablit} sind die Literaturwerte für alle möglichen Materialien aufgelistet. Es ergeben sich die folgenden Abweichungen:
@@ -35,23 +40,21 @@ In Tabelle \ref{tab:tablit} sind die Literaturwerte für alle möglichen Materia
     \toprule
 		$\mathrm{Position ~ des ~ Würfel}$ & $\mu \: [\si{1\per\centi\meter}]$ & $\mathrm{Vermutetes ~ Material}$ & $\mathrm{Abweichung \: [\%]}$  \\
     \midrule
-    $\num{1}$ & $\num{0,08(9)}$ & $\mathrm{Delrin}$ & $\num{31}$\\
-		$\num{2}$ & $\num{1,04(8)}$ & $\mathrm{Blei}$ & $\num{16,5}$\\
-		$\num{3}$ & $\num{0,03(9)}$ & $\mathrm{Delrin}$ & $\num{74,1}$\\
-    $\num{4}$ & $\num{0,04(7)}$ & $\mathrm{Delrin}$ & $\num{65,5}$\\
-    $\num{5}$ & $\num{1,06(8)}$ & $\mathrm{Blei}$ & $\num{14,9}$\\
-    $\num{6}$ & $\num{0,07(7)}$ & $\mathrm{Delrin}$ & $\num{39,7}$\\
+    $\num{1}$ & $\num{0,08(9)}$ & $\mathrm{Delrin}$ & $\num{36}$\\
+		$\num{2}$ & $\num{1,04(8)}$ & $\mathrm{Blei}$ & $\num{16,8}$\\
+		$\num{3}$ & $\num{0,03(9)}$ & $\mathrm{Delrin}$ & $\num{76}$\\
+    $\num{4}$ & $\num{0,04(7)}$ & $\mathrm{Delrin}$ & $\num{68}$\\
+    $\num{5}$ & $\num{1,06(8)}$ & $\mathrm{Blei}$ & $\num{15,2}$\\
+    $\num{6}$ & $\num{0,07(7)}$ & $\mathrm{Delrin}$ & $\num{44}$\\
     $\num{7}$ & $\num{0,22(9)}$ & $\mathrm{Aluminium}$ & $\num{8,4}$\\
-    $\num{8}$ & $\num{0,88(7)}$ & $\mathrm{Messing}$ & $\num{43,3}$\\
-    $\num{9}$ & $\num{0,14(9)}$ & $\mathrm{Delrin}$ & $\num{20,7}$\\
+    $\num{8}$ & $\num{0,88(7)}$ & $\mathrm{Blei}$ & $\num{29,6}$\\
+    $\num{9}$ & $\num{0,14(9)}$ & $\mathrm{Delrin}$ & $\num{12}$\\
     \bottomrule
   \end{tabular}
 \end{table}
 \FloatBarrier
 \noindent Für die Würfel 3,4 und 6 sind die Werte ebenfalls zu niedrig um einem Material eindeutig zugeordnet zu werden, daher wird dort Delrin vermutet, da dies unter den angegebenen
-Materialien den kleinsten Abschwächungskoeffizienten besitzt. Desweiteren sind alle Abweichungen bis auf die von Würfel 7 im zweistelligen Bereich. Daher sind die aufgestellten Vermutungen keinesfalls belegt.
-Auch hier gibt es diverse Fehlerquellen, die die Messung beeinflusst haben könnten. Dazu gehören die manuelle Justierung der Würfel im Strahlengang sowie der nicht genau fokussierte Strahl
-der $\gamma$-Quelle. \\
+Materialien den kleinsten Abschwächungskoeffizienten besitzt. Desweiteren sind alle Abweichungen bis auf die von Würfel 7 im zweistelligen Bereich. Daher sind die aufgestellten Vermutungen keinesfalls belegt. \\
 Insgesamt lässt sich sagen, dass es durchaus möglich ist mithilfe von Tomographie Aufschluss über die Zusammensetzung gewisser Materialien zu erhalten, allerdings sollten dafür
 deutlich mehr Messreihen aufgenommen werden um Fehler wie die ungenaue Datenaufnahme durch das Analyseprogramm zu minimieren. Eine weitere Möglichkeit zur Verbesserung der Messung wäre
 eine Optimierung der Justierung der Würfel in Betracht zu ziehen.
