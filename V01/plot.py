@@ -16,7 +16,7 @@ from scipy.constants import physical_constants as pcon
 def linear(x, m, b):
     return m * x + b
 
-"""
+
 t = np.array([-24, -22, -20, -18, -16, -14, -12, -10, -8, -6, -4, -2, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28])
 n = np.array(
     [12, 32, 56, 71, 123, 157, 167, 180, 199, 183, 192, 196, 212, 218, 20 , 160, 162, 143, 133, 122, 119, 90, 85, 59, 46, 14, 6])
@@ -68,7 +68,7 @@ plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig("Plateau3.pdf")
 plt.clf()
-"""
+
 # Kalibrierung
 t2 = np.array([0.8, 1.8, 2.8, 3.8, 4.8, 5.8, 6.8, 7.8, 8.8, 9.8])
 kanal = np.array([37, 81, 126, 171, 216, 261, 306, 350, 395, 440])
