@@ -2,27 +2,34 @@ from tkinter import *
 from tkinter import messagebox
 from PIL import ImageTk, Image
 
+# create GUI
 root = Tk()
 root.title("Dart Game")
 root.geometry("600x600")
 root.iconbitmap("70956.ico")
 root.resizable(True, True)
+# get background image
 my_img = ImageTk.PhotoImage(Image.open("board.jpg"))
-my_label = Label(root, image=my_img)
-my_label.place(x=0, y=0)
+# set background
+my_background = Label(root, image=my_img)
+my_background.place(x=0, y=0)
+# set starting score
 new_score = 501
 new_score_2 = 501
 
 
-def new_game():
+def new_game():  # function to start a new game
     global new_score_2
     global new_score
     global player
     global player_2
+    # get both player names
     player_2 = s_player_name.get()
     player = f_player_name.get()
+    # set starting score
     new_score = 501
     new_score_2 = 501
+    # create Labels for both players
     pointlvl_2 = Label(root, text=f"{player_2} you need {new_score_2} points to finish", font=("helvetica", 11),
                        fg="white", bg="black")
     pointlvl_2.grid(row=5, column=11, columnspan=3)
@@ -31,7 +38,7 @@ def new_game():
     pointlvl.grid(row=5, column=1, columnspan=3)
 
 
-def choose2():
+"""def choose2():  # function to log in player 2
     global player_label_2
     player_label_2 = Label(root, text=s_player_name.get())
     pointlvl_2 = Label(root, text=f"{s_player_name.get()} you need {new_score_2} points to finish",
@@ -40,14 +47,14 @@ def choose2():
     s_player_name.delete(0, END)
 
 
-def choose1():
+def choose1():  # function to log in player 1
     global player_label
     player_label = Label(root, text=f_player_name.get())
     pointlvl = Label(root, text=f"{f_player_name.get()} you need {new_score} points to finish", font=("helvetica", 11),
                      fg="white", bg="black")
     pointlvl.grid(row=5, column=1, columnspan=3)
     f_player_name.delete(0, END)
-
+"""
 
 def score2():
     global new_score_2
@@ -59,8 +66,7 @@ def score2():
     global bust_box_2
 
     if new_score_2 > 0:
-        pointlvl_2 = Label(root, text=f"{s_player_name.get()} you need {new_score_2} points to finish",
-                           font=("helvetica", 11), fg="white", bg="black")
+        pointlvl_2 = Label(root)
         pointlvl_2.grid_forget()
         points_2 = int(score_field_2.get())
         result_2 = new_score_2 - points_2
@@ -92,8 +98,7 @@ def score1():
     global bust_box
 
     if new_score > 0:
-        pointlvl = Label(root, text=f"{f_player_name.get()} you need {new_score} points to finish",
-                         font=("helvetica", 11), fg="white", bg="black")
+        pointlvl = Label(root)
         pointlvl.grid_forget()
         points = int(score_field_1.get())
         result = new_score - points
@@ -133,6 +138,7 @@ def quit_game():
 
 f_player_label = Label(root, text="Enter first Player Name", font=("helvetica", 11), fg="white", bg="black")
 f_player_label.grid(row=0, column=1, pady=10, columnspan=2)
+
 f_player_name = Entry(root, width=25, borderwidth=5, font=("helvetica", 11), fg="white", bg="black")
 f_player_name.grid(row=1, column=1, columnspan=2, padx=10, sticky=N)
 
@@ -141,6 +147,7 @@ pointlvl.grid(row=5, column=1, columnspan=2)
 
 s_player_label = Label(root, text="Enter second Player Name", font=("helvetica", 11), fg="white", bg="black")
 s_player_label.grid(row=0, column=11, pady=10, columnspan=2)
+
 s_player_name = Entry(root, width=25, borderwidth=5, font=("helvetica", 11), fg="white", bg="black")
 s_player_name.grid(row=1, column=11, columnspan=2, padx=10, sticky=E)
 
@@ -150,11 +157,13 @@ pointlvl_2.grid(row=5, column=11, columnspan=2)
 
 score_1_label = Label(root, text="Enter your score", font=("helvetica", 11), fg="white", bg="#0B1042")
 score_1_label.grid(row=6, column=1, columnspan=2)
+
 score_field_1 = Entry(root, width=25, borderwidth=5, font=("helvetica", 11), fg="white", bg="black")
 score_field_1.grid(row=7, column=1, pady=5, columnspan=2)
 
 score_2_label = Label(root, text="Enter your score", fg="white", bg="#341209", font=("helvetica", 11))
 score_2_label.grid(row=6, column=11, columnspan=2)
+
 score_field_2 = Entry(root, width=25, borderwidth=5, font=("helvetica", 11), fg="white", bg="black")
 score_field_2.grid(row=7, column=11, pady=5, columnspan=2)
 
