@@ -1,0 +1,48 @@
+\makeatletter
+\defbeamertemplate*{note page}{mynotes}
+{%
+  {%
+    \scriptsize
+    \usebeamerfont{note title}\usebeamercolor[fg]{note title}%
+    \ifbeamercolorempty[bg]{note title}{}{%
+      \insertvrule{.45\paperheight}{note title.bg}%
+      \vskip-.45\paperheight%
+      \nointerlineskip%
+    }%
+    \vbox{
+      \hfill\insertslideintonotes{0.5}\hskip-\Gm@rmargin\hskip0pt%
+      \vskip-0.75\paperheight%
+      \nointerlineskip
+      \begin{pgfpicture}{0cm}{0cm}{0cm}{0cm}
+        \begin{pgflowlevelscope}{\pgftransformrotate{90}}
+          {\pgftransformshift{\pgfpoint{-4cm}{0.2cm}}%
+          \pgftext[base,left]{\usebeamerfont{note date}\usebeamercolor[fg]{note date}\the\year-\ifnum\month<10\relax0\fi\the\month-\ifnum\day<10\relax0\fi\the\day}}
+        \end{pgflowlevelscope}
+      \end{pgfpicture}}
+    \nointerlineskip
+    \vbox to .75\paperheight{\vskip0.5em\vfil}%
+  }%
+  \ifbeamercolorempty[bg]{note page}{}{%
+    \nointerlineskip%
+    \insertvrule{.55\paperheight}{note page.bg}%
+    \vskip-.55\paperheight%
+  }%
+  \vskip.25em
+  \nointerlineskip
+  \insertnote
+}
+\makeatother
+
+\makeatletter
+\defbeameroption{show only notes}[]%
+{
+  \beamer@notestrue
+  \beamer@notesnormalsfalse
+}
+\makeatother
+
+
+\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen=right}
+\setbeameroption{show only notes}
+\setbeamertemplate{note page}[mynotes]

@@ -1,0 +1,98 @@
+\PassOptionsToPackage{unicode}{hyperref}
+\documentclass[aspectratio=1610, professionalfonts, 9pt]{beamer}
+
+\usefonttheme[onlymath]{serif}
+\usetheme[showtotalframes]{tudo}
+%Figure label with "Figure #.:..."
+%\setbeamertemplate{caption}[numbered]
+
+\setbeamertemplate{caption}{\insertcaption}
+
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguages{german}
+\usepackage{blindtext}
+
+\usepackage{booktabs}
+\usepackage[autostyle]{csquotes}
+
+\usepackage{appendixnumberbeamer}
+
+% Mathematik
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{fontspec}
+\usepackage[version=4]{mhchem}
+\usepackage{xparse}
+\usepackage{braket}
+\usepackage{units}
+\usepackage[locale=UK, separate-uncertainty=true, per-mode=reciprocal]{siunitx}
+\sisetup{math-micro=\text{µ},text-micro=µ}
+\DeclareSIUnit\px{px}
+\DeclareSIUnit\parsec{pc}
+\usepackage[section]{placeins}
+\usepackage{pdflscape}
+\usepackage{expl3}
+\usepackage{bookmark}
+%Komma als Dezimaltrenner in der mathe Umgebung, um in Umgebungen wie [0, 2] ein Leerzeichen nach dem Komma zu erhalten einfach eins setzen
+\usepackage{icomma}
+\usepackage{cancel}
+\usepackage{tikz}
+% \usepackage{feynman-tikz}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{nicefrac}
+\usepackage[format=plain,
+            textfont={it, scriptsize}]{caption}
+%\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{float}
+\floatplacement{table}{htbp}
+\floatplacement{figure}{htbp}
+\usepackage[
+  backend=biber,
+  autolang=hyphen,
+  sorting=none,
+]{biblatex}
+%\usepackage{atlasbiblatex}
+\addbibresource{lit.bib}  % die Bibliographie einbinden
+\DefineBibliographyStrings{english}{andothers = {{et\,al\adddot}}}
+\usepackage{xpatch}
+\xapptocmd\citesetup{\tiny}{}{}
+
+\usepackage{mhchem}
+
+%\input{content/note_pages.tex}
+%\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen}
+%\setbeameroption{show only notes}
+
+%define some abbreviations so you spare some time writing
+\newcommand\elec{$\mathrm{e^{-}}$}
+\newcommand\he{\ce{^{3}He} }
+\newcommand\boronc{\ce{B_{4}C} }
+\newcommand\alphap{$\alpha$-particle }
+\newcommand\alphaps{$\alpha$-particles }
+\newcommand\boront{\ce{^{10}B} }
+\newcommand\borone{\ce{^{11}B} }
+\makeatletter
+\let \@@magyar@captionfix\relax
+\makeatother
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%-------------Hier Titel/Autor/Grafik/Lehrstuhl eintragen--------------%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Titel:
+\title{Investigation of the measured signal of protons in pixelated semiconductor detectors}
+
+%Autor
+\author[Felix Gläsemann]{Felix Gläsemann}
+%Lehrstuhl/Fakultät
+\institute[]{TU Dortmund, Department of Physics - AG Kröninger}
